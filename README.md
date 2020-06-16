@@ -81,6 +81,20 @@ DIPLOMA THESIS WEB DEV 19/20
 
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
 
+###Eidesstattliche Erklärung:
+Hiermit erkläre ich, dass ich die Diplomarbeit selbständig verfasst / programmiert und
+keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die aus
+fremden Quellen direkt oder indirekt übernommenen Gedanken als solche kenntlich
+gemacht habe. Die Arbeit habe ich bisher keinem anderen Prüfungsgremium in gleicher
+oder vergleichbarer Form vorgelegt. Sie wurde bisher auch nicht veröffentlicht.
+
+
+Name:______________
+Signature:___________________
+Date:______________
+
+
+
     
     
  
