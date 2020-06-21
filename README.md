@@ -71,6 +71,12 @@ DIPLOMA THESIS WEB DEV 19/20
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
 
+**Fonts:**
+
+1. Roboto
+2. RobotoSlab
+
+
 ###SETUP GUIDE:
 
 ###URL (OPERATIVE VERSION):
@@ -89,9 +95,8 @@ gemacht habe. Die Arbeit habe ich bisher keinem anderen Prüfungsgremium in glei
 oder vergleichbarer Form vorgelegt. Sie wurde bisher auch nicht veröffentlicht.
 
 
-Name:______________
-Signature:___________________
-Date:______________
+Name: Roger Killer
+Date: 21.06.2020
 
 
 
