@@ -1,0 +1,123 @@
+// include fonts with @font-face
+
+@font-face {
+  src: url("src/fonts/Roboto/RobotoSlab/RobotoSlab-Bold.ttf");
+  font-family: RobotoSlab;
+};
+
+@font-face {
+  src: url("src/fonts/Roboto/RobotoSlab/RobotoSlab-Regular.ttf");
+  font-family: RobotoSlabRegular;
+};
+
+@font-face {
+  src: url("src/fonts/Roboto/Roboto-Regular.ttf");
+  font-family: RobotoRegular;
+}
+
+@font-face {
+  src: url("src/fonts/Roboto/Roboto-Bold.ttf");
+  font-family: RobotoBold;
+}
+
+// Typografie for mobile and desktop
+
+.lead {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  font-family: RobotoSlabRegular;
+}
+
+.copy {
+  font-size: 17px;
+  line-height: 28px;
+  color: #000000;
+  font-family: RobotoRegular;
+}
+
+.footerLabels {
+  font-size: 17px;
+  line-height: 28px;
+  font-family: RobotoRegular;
+}
+
+.btnTabsHeader {
+  font-size: 17px;
+  line-height: 28px;
+  font-family: RobotoBold;
+}
+
+.breadcrumbInfosDatesLikes {
+  font-size: 13px;
+  line-height: 28px;
+  font-family: RobotoRegular;
+}
+
+
+// Typografie mobile
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-family: RobotoSlab;
+  color: #000000;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: RobotoSlab;
+  color: #000000;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 32px;
+  font-family: RobotoSlab;
+  color: #000000;
+}
+
+.FestivalFont {
+  font-size: 48px;
+  line-height: 40px;
+  font-family: RobotoSlab;
+  color: #FFFFFF;
+}
+
+
+// Typografie desktop
+
+//h1 {
+//  font-size: 56px;
+//  line-height: 80px;
+//  font-family: RobotoSlab;
+//  color: #000000;
+//}
+//
+//h2 {
+//  font-size: 32px;
+//  line-height: 40px;
+//  font-family: RobotoSlab;
+//  color: #000000;
+//
+//}
+//
+//h3 {
+//  font-size: 20px;
+//  line-height: 32px;
+//  font-family: RobotoSlab;
+//  color: #000000;
+//
+//}
+//
+//.FestivalFont {
+//  font-size: 144px;
+//  line-height: 144px;
+//  font-family: RobotoSlab;
+//  color: #FFFFFF;
+//}
+
+
+
+
