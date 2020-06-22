@@ -1,8 +1,9 @@
+
+
 // start with titleSection
 
 .titelSection {
   width: 100%;
-  height: 80px;
   margin-top: 60px;
   margin-bottom: 21px;
   text-align: center;
@@ -25,9 +26,39 @@
 
 // start with magazinSection
 
-//.magazinSection {
-//  background-color: hotpink;
-//  height: 50px;
-//  width: 50px;
-//}
+.magazinSection {
+  margin-top: 68px;
+}
+
+.magazinSection__box {
+  margin-top: 30px;
+  margin-bottom: 38px;
+  width: 100%;
+}
+
+.magazinSection__box--Title {
+}
+
+.magazinSection__box--Btn {
+  background-color: white;
+  border: none;
+  margin-top: 6px;
+}
+
+.magazinSection__box--border {
+  position: absolute;
+  width: 375px;
+  height: 1px;
+  background-color: #E5E5E5;
+  margin-top: 32px;
+}
+
+.magazinSection__moreBtn {
+  width: 343px;
+  height: 48px;
+  margin-top: 48px;
+  background-color: $white;
+  margin-left: 16px;
+
+}
 
