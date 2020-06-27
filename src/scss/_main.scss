@@ -123,4 +123,22 @@
 }
 
 
+// start with discoverySection
+
+.discoverySection {
+  margin-top: 80px;
+}
+
+.discoverySection__p {
+  text-align: center;
+  padding: 20px 16px 0 16px;
+}
+
+.discoverySection__img {
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-image: url("../images/Icons/music_jazz.png");
+}
+
 
