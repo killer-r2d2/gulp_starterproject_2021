@@ -26,12 +26,14 @@ body, body * {
 .wrapper {
   display: flex;
   justify-content: center;
+
 }
 
 // start with container
 
 .container {
   max-width: 375px;
+  background-color: #F2F2F2;
 }
 
 // start with headerSection

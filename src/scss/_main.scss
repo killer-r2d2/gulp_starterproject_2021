@@ -142,3 +142,33 @@
 }
 
 
+// start with newsSection
+
+.newsSection {
+  padding: 0 16px 0 16px;
+
+}
+
+.newsSection__title {
+  padding-bottom: 38px;
+}
+
+.newsSection__bigBox {
+  height: 440px;
+  background-color: #FFFFFF;
+}
+
+.newsSection__boxBig--img {
+  width: 100%;
+  height: 232px;
+}
+
+.newsSection__bigBox--content {
+  padding: 20px 24px 10px 24px;
+}
+
+.newsSection__bigBox--content--content {
+  border-bottom: #E5E5E5 solid 1px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
