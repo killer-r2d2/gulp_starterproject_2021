@@ -2,14 +2,14 @@
 
 // start with titleSection
 
-.titelSection {
+.titleSection {
   width: 100%;
   margin-top: 60px;
   margin-bottom: 21px;
   text-align: center;
 }
 
-.titelSection__btn {
+.titleSection__btn {
   width: 343px;
   height: 48px;
   top: 392px;
@@ -18,7 +18,7 @@
   margin-top: 39px;
 }
 
-.titelSection__bigPicture {
+.titleSection__bigPicture {
   width: 375px;
   height: 176px;
   margin-top: 56px;
@@ -26,27 +26,27 @@
 
 // start with magazinSection
 
-.magazinSection {
+.magazineSection {
   margin-top: 68px;
 }
 
-.magazinSection__box {
+.magazineSection__box {
   margin-top: 30px;
   margin-bottom: 38px;
   width: 100%;
 }
 
-.magazinSection__box--Title {
+.magazineSection__box--Title {
 }
 
-.magazinSection__box--Btn {
+.magazineSection__box--Btn {
   background-color: white;
   border: none;
   margin-top: 6px;
   text-decoration: underline;
 }
 
-.magazinSection__box--border {
+.magazineSection__box--border {
   position: absolute;
   width: 375px;
   height: 1px;
@@ -54,7 +54,7 @@
   margin-top: 32px;
 }
 
-.magazinSection__moreBtn {
+.magazineSection__moreBtn {
   width: 343px;
   height: 48px;
   margin-top: 48px;
