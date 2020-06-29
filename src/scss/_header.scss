@@ -26,7 +26,7 @@ body, body * {
 .wrapper {
   display: flex;
   justify-content: center;
-  background-color: peachpuff;
+  background-color: #F0F0F0;;
 
 }
 
@@ -34,7 +34,7 @@ body, body * {
 
 .container {
   max-width: 375px;
-  background-color: #F2F2F2;
+  background-color: $white;
 }
 
 // start with headerSection
