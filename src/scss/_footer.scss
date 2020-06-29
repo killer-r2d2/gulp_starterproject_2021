@@ -1,0 +1,32 @@
+// start with footerSection
+
+.footerSection {
+  background-color: hotpink;
+  width: 100%;
+  height: 112px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 15px 24px 15px;
+
+  & ul {
+    list-style-type: none;
+  }
+}
+
+.footerSection__box1 {
+  display: flex;
+  height: 50%;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding-bottom: 8.5px;
+  color: #767676;
+}
+
+.footerSection__box2 {
+  display: flex;
+  height: 50%;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 8.5px;
+}
