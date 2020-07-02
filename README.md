@@ -69,6 +69,25 @@ DIPLOMA THESIS WEB DEV 19/20
   - TECHNICAL DISCUSSION
   
   
+###WORK DOCUMENTAION
+
+| DATE      |      WHAT                     |                      HOURS |
+|----------|:------------------:|---------------------------------------:|
+| 12.06.2020 | ANALYSE DIPLOMA THESIS                           |      2 |
+| 14.06.2020 | INITIALIZE NEW PROJECT IN PHP STORM              |      2 |
+| 14.06.2020 | INITIALIZE NEW GIT REPOSITORY                    |      3 |
+| 16.06.2020 | HTML AND README                                  |      7 |
+| 17.06.2020 | HTML                                             |      8 |
+| 18.06.2020 | HTML                                             |      4 |
+| 21.06.2020 | HTML AND CSS                                     |      4 |
+| 25.06.2020 | HTML AND CSS                                     |      4 |
+| 27.06.2020 | HTML AND CSS                                     |      4 |
+| 28.06.2020 | HTML AND CSS                                     |      4 |
+| 29.06.2020 | HTML AND CSS                                     |      4 |
+| 30.06.2020 | HTML AND CSS                                     |      4 |
+| 02.07.2020 | UPDATE BASIC DISPOSITION                         |      2 |
+  
+  
 ###ABSTRACT / MANAGEMENT SUMMARY:
 
 **Fonts:**
