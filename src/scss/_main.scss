@@ -128,6 +128,7 @@
 
 .discoverySection {
   margin-top: 80px;
+  height: 1397px;
 }
 
 .discoverySection__p {
@@ -135,12 +136,36 @@
   padding: 20px 16px 0 16px;
 }
 
-.discoverySection__img {
-  height: 100px;
-  width: 100px;
-  background-repeat: no-repeat;
-  background-image: url("../images/Icons/music_jazz.png");
+#music_alternative {
+  background-repeat: repeat-x;
 }
+
+.discoverySection__img {
+  height: 181px;
+  width: 100%;
+  margin-top: 83px;
+  background-color: yellow;
+  display: flex;
+}
+
+.discoverySection__icon--hiphop {
+  -webkit-mask-image: url(../images/Icons/music_hiphop.svg);
+  height: 181px;
+  width: 100%;
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: repeat-x;
+  background-color: #D81B60;
+}
+
+.discoverySection__img--play {
+  -webkit-mask-image: url(../images/Icons/detail_video_play.svg);
+  height: 40px;
+  width: 29px;
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #000000;
+}
+
 
 
 // start with newsSection
