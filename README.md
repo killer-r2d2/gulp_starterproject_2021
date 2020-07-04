@@ -87,6 +87,8 @@ DIPLOMA THESIS WEB DEV 19/20
 | 30.06.2020 | HTML AND CSS                                     |      4 |
 | 02.07.2020 | UPDATE BASIC DISPOSITION                         |      2 |
 | 03.07.2020 | HTML AND CSS                                     |      4 |
+| 04.07.2020 | HTML AND CSS                                     |      3 |
+
   
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
