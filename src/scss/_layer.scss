@@ -1,9 +1,9 @@
 .navSection {
-  width: 375px;
+  width: 100%;
   height: 640px;
-  left: 0px;
-  top: 0px;
   background: rgba(0, 0, 0, 0.85);
+  padding: 0 16px 0 16px;
+  //display: none;
 }
 
 .navSection__h2 {
@@ -11,24 +11,52 @@
 }
 
 .navSection__titles {
-  background-color: hotpink;
-  height: 240px;
+  height: 307px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .navSection__input {
-  background-color: green;
   width: 100%;
+  height: 43px;
   display: flex;
   flex-direction: row;
+  border: none;
+  border-bottom: 2px solid #D8D8D8;
+  margin-top: 100px;
 }
 
-.navSection__searchIcon {
-  background-image: url("../images/Icons/navigation_suche.svg");
-  height: 50px;
-  width: 20%;
-  background-repeat: no-repeat;
+.navSection__text {
+  width: 92%;
+  border: none;
+  background-color: transparent;
 }
+
+.navSection__searchBox {
+  height: 100%;
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+
+
+.navSection__searchIcon {
+  height: 30px;
+  width: 30px;
+  background-image: url("../images/Icons/navigation_suche.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  fill: white;
+}
+
+
+
+
+
