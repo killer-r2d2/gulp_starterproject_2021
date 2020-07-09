@@ -52,6 +52,48 @@ body, body * {
   justify-content: space-between;
 }
 
+// start with hamburger
+
+.headerSection__hamburger {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  //transition: ease-in-out 0.3s;
+
+
+  &-close {
+
+    .rack.upper {
+      transform: rotate(-45deg);
+      position: relative;
+      top: 2px;
+
+    }
+
+    .rack.lower {
+      transform: rotate(45deg);
+      position: relative;
+      bottom: 4px;
+    }
+
+    .rack.middle {
+      opacity: 0;
+    }
+  }
+}
+
+
+.rack {
+  background-color: black;
+  width: 24px;
+  height: 3px;
+}
+
+
+
+
 .headerSection__Icon--navLike {
   width: 70%;
   height: 64px;
@@ -59,6 +101,7 @@ body, body * {
   align-items: center;
   border: #E5E5E5 1px solid;
   border-right: none;
+  justify-content: space-around;
 }
 
 .headerSection__Icon--loginTicket {

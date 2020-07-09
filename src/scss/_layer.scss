@@ -32,6 +32,7 @@
   width: 92%;
   border: none;
   background-color: transparent;
+  color: white;
 }
 
 .navSection__searchBox {
@@ -55,6 +56,23 @@
   background-color: transparent;
   fill: white;
 }
+
+.navSection__ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 64px;
+}
+
+#socialmedia_nav
+{
+  fill: white;
+  width: 34px;
+
+}
+
+// style the icons of the navigation
 
 
 
