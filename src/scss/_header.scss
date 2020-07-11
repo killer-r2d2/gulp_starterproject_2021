@@ -54,16 +54,29 @@ body, body * {
 
 // start with hamburger
 
+
+.rack {
+  background-color: black;
+  width: 24px;
+  height: 3px;
+}
+
+
+
+
 .headerSection__hamburger {
   height: 24px;
   width: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  //transition: ease-in-out 0.3s;
+  cursor: pointer;
+
+
 
 
   &-close {
+    cursor: pointer;
 
     .rack.upper {
       transform: rotate(-45deg);
@@ -72,24 +85,21 @@ body, body * {
 
     }
 
+    .rack.middle {
+      opacity: -1;
+    }
+
     .rack.lower {
       transform: rotate(45deg);
       position: relative;
       bottom: 4px;
     }
 
-    .rack.middle {
-      opacity: 0;
-    }
+
+
   }
 }
 
-
-.rack {
-  background-color: black;
-  width: 24px;
-  height: 3px;
-}
 
 
 
