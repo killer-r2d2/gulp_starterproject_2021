@@ -8,6 +8,9 @@ function toggler() {
     const hamburger = document.querySelector("#hamburger");
     // add the headerSection__hamburger-close with toggle to the headerSection__hamburger
     hamburger.classList.toggle("headerSection__hamburger-close");
+    const layer = document.querySelector(".navSection");
+    layer.style.display = "inline-block";
     // add the headerSection__hamburger with toggle to the headerSection__hamburger-close
     hamburger.classList.toggle("headerSection__hamburger");
 }
+

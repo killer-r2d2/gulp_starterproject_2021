@@ -90,6 +90,7 @@ DIPLOMA THESIS WEB DEV 19/20
 | 04.07.2020 | HTML AND CSS                                     |      3 |
 | 06.07.2020 | HTML AND CSS                                     |      3 |
 | 06.07.2020 | HTML AND CSS AND JS                              |      4 |
+| 11.07.2020 | HTML AND CSS AND JS                              |      1 |
 
   
   
