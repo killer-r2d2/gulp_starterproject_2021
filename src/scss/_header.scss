@@ -59,6 +59,10 @@ body, body * {
   background-color: black;
   width: 24px;
   height: 3px;
+
+  &--white {
+    background-color: white;
+  }
 }
 
 

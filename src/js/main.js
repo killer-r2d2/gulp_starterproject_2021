@@ -10,7 +10,11 @@ function toggler() {
     hamburger.classList.toggle("headerSection__hamburger-close");
     const layer = document.querySelector(".navSection");
     layer.style.display = "inline-block";
+    const text = document.querySelector(".headerSection__text");
+    text.innerText = 'Schliessen';
     // add the headerSection__hamburger with toggle to the headerSection__hamburger-close
     hamburger.classList.toggle("headerSection__hamburger");
 }
+
+
 
