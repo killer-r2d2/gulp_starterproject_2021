@@ -1,15 +1,23 @@
+.navSection__box {
+  position: absolute;
+}
+
 .navSection {
-  width: 100%;
+  width: 375px;
   height: 640px;
-  background: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 0 16px 0 16px;
   display: none;
+  z-index: 1;
+  position: relative;
+  top: 352px;
 
   &--hide {
     display: none;
   }
 
 }
+
 
 
 
