@@ -9,21 +9,20 @@ function toggler() {
     // add the headerSection__hamburger-close with toggle to the headerSection__hamburger
     hamburger.classList.toggle("headerSection__hamburger-close");
     hamburger.classList.toggle("headerSection__hamburger");
-    const layer = document.querySelector(".navSection");
-    layer.style.display = "inline-block";
-    // change the Menu to Schliessen
-    const headerSection = document.querySelector(".headerSection");
-    headerSection.style.backgroundColor = "rgba(0, 0, 0, 0.85)";
-    const text = document.querySelector(".headerSection__text");
-    text.innerText = 'Schliessen';
-    text.style.color = "white";
-    const ticket = documenKt.querySelector(".navigation__ticket");
-    ticket.classList.add("navigation__ticket--white");
-    const login = document.querySelector(".navigation__login");
-    login.classList.add("navigation__login--white");
-    const like = document.querySelector(".navigation__like");
-    like.classList.add("navigation__like--white");
-    // add the headerSection__hamburger with toggle to the headerSection__hamburger-close
+    const layer = document.querySelector("#navSection");
+    layer.classList.toggle("navSection--show");
+    layer.classList.toggle("navSection");
+    headerSection.classList.toggle("headerSection--changeColor");
+    // headerSection.classList.toggle("headerSection");
+    const ticket = document.querySelector("#navigation__ticketkauf");
+    ticket.classList.toggle("navigation__ticket--white");
+    ticket.classList.toggle("navigation__ticket");
+    const login = document.querySelector("#navigation_login");
+    login.classList.toggle("navigation__login--white");
+    login.classList.toggle("navigation__login");
+    const like = document.querySelector("#detail_like_filled");
+    like.classList.toggle("navigation__like");
+    like.classList.toggle("navigation__like--white");
 }
 
 

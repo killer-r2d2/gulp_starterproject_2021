@@ -46,6 +46,11 @@ body, body * {
   width: 100%;
   height: 64px;
   z-index: 1;
+  background-color: $white;
+
+  &--changeColor {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
 }
 
 .headerSection__Icon {
@@ -107,7 +112,11 @@ body, body * {
 }
 
 
+// start with navSection
 
+.headerSection__text--hide {
+  display: none;
+}
 
 
 .headerSection__Icon--navLike {
