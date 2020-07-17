@@ -10,7 +10,7 @@ html {
   box-sizing: border-box;
 }
 
-/* Ebedding styling */
+/* Embedding styling */
 
 
 body, body * {
@@ -70,8 +70,6 @@ body, body * {
 }
 
 
-
-
 .headerSection__hamburger {
   height: 24px;
   width: 24px;
@@ -81,8 +79,7 @@ body, body * {
   cursor: pointer;
 
 
-
- // .headerSection__hamburger-close
+  // .headerSection__hamburger-close
   &-close {
     cursor: pointer;
 
@@ -106,7 +103,6 @@ body, body * {
       background-color: white;
 
     }
-
 
 
   }
@@ -148,7 +144,6 @@ body, body * {
 }
 
 
-
 .headerSection__IconLogin {
   width: 64px;
   height: 64px;
@@ -180,9 +175,13 @@ body, body * {
 .navigation__login {
   fill: #C2C2C2;
 
- &--white {
-   fill: #FFFFFF;
- }
+  &--white {
+    fill: #FFFFFF;
+  }
+
+  &--black {
+    fill: #000000;
+  }
 
 
 }

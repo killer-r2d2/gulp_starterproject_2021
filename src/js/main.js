@@ -1,9 +1,9 @@
 // select the hamburger box with a variable
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
-menutoggler.addEventListener('click', toggler);
+menutoggler.addEventListener('click', togglermenu);
 
-// toggler function
-function toggler() {
+// togglermenu function
+function togglermenu() {
     // select the hamburger with the id
     const hamburger = document.querySelector("#hamburger");
     // add the headerSection__hamburger-close with toggle to the headerSection__hamburger
@@ -26,4 +26,17 @@ function toggler() {
 }
 
 
+// select the login Icon with a variable
+const logintoggler = document.querySelector(".headerSection__IconLogin");
+logintoggler.addEventListener('click', togglerlogin );
+
+// togglerlogin function
+function togglerlogin() {
+    const loginshow = document.querySelector('#loginSection__containter');
+    loginshow.classList.toggle("loginSection__containter--open");
+    loginshow.classList.toggle("loginSection__container");
+    const logincolor = document.querySelector("#navigation_login");
+    logincolor.classList.toggle("navigation__login--black");
+    logincolor.classList.toggle("navigation__login");
+}
 

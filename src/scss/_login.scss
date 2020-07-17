@@ -16,10 +16,17 @@
   position: absolute;
   width: 310px;
   height: 425px;
-  //color: white;
+  display: none;
   background-color: #000000;
-  top: 90px;
-  left: -230px
+  top: 98px;
+  left: -230px;
+
+  &--open {
+    display: inline-block;
+  }
+
+
+
 }
 
 .LoginSection__BoxA {
