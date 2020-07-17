@@ -47,6 +47,7 @@ body, body * {
   height: 64px;
   z-index: 1;
   background-color: $white;
+  position: relative;
 
   &--changeColor {
     background-color: rgba(0, 0, 0, 0.85);
@@ -81,7 +82,7 @@ body, body * {
 
 
 
-
+ // .headerSection__hamburger-close
   &-close {
     cursor: pointer;
 
@@ -154,6 +155,7 @@ body, body * {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .headerSection__IconLike {

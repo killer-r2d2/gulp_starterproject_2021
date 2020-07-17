@@ -1,12 +1,5 @@
-.loginSection__Box {
-  position: absolute;
-}
 
-.loginSection__triangleBox {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-}
+
 
 .loginSection__triangle {
   position: relative;
@@ -20,14 +13,13 @@
 
 
 .loginSection__containter {
-  position: relative;
+  position: absolute;
   width: 310px;
   height: 425px;
-  left: 370px;
-  top: 150px;
   //color: white;
-  top: 200px;
   background-color: #000000;
+  top: 90px;
+  left: -230px
 }
 
 .LoginSection__BoxA {
