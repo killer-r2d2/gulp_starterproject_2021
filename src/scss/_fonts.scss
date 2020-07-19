@@ -1,24 +1,30 @@
 // include fonts with @font-face
 
 @font-face {
-  src: url("src/fonts/Roboto/RobotoSlab/RobotoSlab-Bold.ttf");
-  font-family: RobotoSlab;
+  src: url("src/fonts/Adelle_Bold.otf");
+  font-family: AdelleBold, sans-serif;
 };
 
 @font-face {
-  src: url("src/fonts/Roboto/RobotoSlab/RobotoSlab-Regular.ttf");
-  font-family: RobotoSlabRegular;
+  src: url("src/fonts/Adelle_Reg.otf");
+  font-family: AdelleReg, sans-serif;
 };
 
 @font-face {
-  src: url("src/fonts/Roboto/Roboto-Regular.ttf");
-  font-family: RobotoRegular;
-}
+  src: url("src/fonts/ProximaNova-Reg.ttf");
+  font-family: ProximaNovaReg, sans-serif;
+};
 
 @font-face {
-  src: url("src/fonts/Roboto/Roboto-Bold.ttf");
-  font-family: RobotoBold;
-}
+  src: url("src/fonts/ProximaNova-Light.ttf");
+  font-family: ProximaNovaLight, sans-serif;
+};
+
+@font-face {
+  src: url("src/fonts/ProximaNova-Bold.ttf");
+  font-family: ProximaNovaBold, sans-serif;
+};
+
 
 // Typografie for mobile and desktop
 
@@ -26,32 +32,32 @@
   font-size: 20px;
   line-height: 32px;
   color: #000000;
-  font-family: RobotoSlabRegular;
+  font-family: AdelleReg, sans-serif;
 }
 
 .copy {
   font-size: 17px;
   line-height: 28px;
   color: #000000;
-  font-family: RobotoRegular;
+  font-family: ProximaNovaReg, sans-serif;
 }
 
 .footerLabels {
   font-size: 17px;
   line-height: 28px;
-  font-family: RobotoRegular;
+  font-family: ProximaNovaReg, sans-serif;
 }
 
 .btnTabsHeader {
   font-size: 17px;
   line-height: 28px;
-  font-family: RobotoBold;
+  font-family: ProximaNovaBold, sans-serif;
 }
 
 .breadcrumbInfosDatesLikes {
   font-size: 13px;
   line-height: 28px;
-  font-family: RobotoRegular;
+  font-family: ProximaNovaReg, sans-serif;
 }
 
 
@@ -60,7 +66,7 @@
 h1 {
   font-size: 32px;
   line-height: 40px;
-  font-family: RobotoSlab;
+  font-family: AdelleBold, sans-serif;
   color: #000000;
   text-align: center;
 }
@@ -68,21 +74,21 @@ h1 {
 h2 {
   font-size: 24px;
   line-height: 32px;
-  font-family: RobotoSlab;
+  font-family: AdelleBold, sans-serif;
   color: #000000;
 }
 
 h3 {
   font-size: 20px;
   line-height: 32px;
-  font-family: RobotoSlab;
+  font-family: AdelleBold, sans-serif;
   color: #000000;
 }
 
 .FestivalFont {
   font-size: 48px;
   line-height: 40px;
-  font-family: RobotoSlab;
+  font-family: AdelleBold, sans-serif;
   color: #FFFFFF;
 }
 
