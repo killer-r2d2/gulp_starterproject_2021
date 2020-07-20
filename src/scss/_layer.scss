@@ -1,22 +1,26 @@
 .navSection__box {
-  position: absolute;
+  position: relative;
 }
 
 .navSection {
-  width: 375px;
-  height: 640px;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 0 16px 0 16px;
+
   display: none;
-  z-index: 1;
-  position: relative;
-  top: 352px;
 
-  &--hide {
-    display: none;
+
+  &--show {
+    width: 375px;
+    height: 640px;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0 16px 0 16px;
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 64px;
   }
-
 }
+
+
 
 
 
@@ -87,7 +91,6 @@
 
 }
 
-// style the icons of the navigation
 
 
 
