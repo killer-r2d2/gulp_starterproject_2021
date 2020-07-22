@@ -1,28 +1,29 @@
 // include fonts with @font-face
 
 @font-face {
-  src: url("src/fonts/Adelle_Bold.otf");
-  font-family: AdelleBold, sans-serif;
+  src: url("../fonts/Adelle_Bold.otf");
+  font-family: Adelle;
+  font-weight: bold;
 };
 
 @font-face {
-  src: url("src/fonts/Adelle_Reg.otf");
-  font-family: AdelleReg, sans-serif;
+  src: url("../fonts/Adelle_Reg.otf");
+  font-family: Adelle;
 };
 
 @font-face {
-  src: url("src/fonts/ProximaNova-Reg.ttf");
-  font-family: ProximaNovaReg, sans-serif;
+  src: url("../fonts/ProximaNova-Reg.ttf");
+  font-family: ProximaNova;
 };
 
 @font-face {
-  src: url("src/fonts/ProximaNova-Light.ttf");
-  font-family: ProximaNovaLight, sans-serif;
+  src: url("../fonts/ProximaNova-Light.ttf");
+  font-family: ProximaNova;
 };
 
 @font-face {
-  src: url("src/fonts/ProximaNova-Bold.ttf");
-  font-family: ProximaNovaBold, sans-serif;
+  src: url("../fonts/ProximaNova-Bold.ttf");
+  font-family: ProximaNova;
 };
 
 
@@ -32,32 +33,33 @@
   font-size: 20px;
   line-height: 32px;
   color: #000000;
-  font-family: AdelleReg, sans-serif;
+  font-family: Adelle, sans-serif;
 }
 
 .copy {
   font-size: 17px;
   line-height: 28px;
   color: #000000;
-  font-family: ProximaNovaReg, sans-serif;
+  font-family: ProximaNova, sans-serif;
 }
 
 .footerLabels {
   font-size: 17px;
   line-height: 28px;
-  font-family: ProximaNovaReg, sans-serif;
+  font-family: ProximaNova, sans-serif;
 }
 
 .btnTabsHeader {
   font-size: 17px;
   line-height: 28px;
-  font-family: ProximaNovaBold, sans-serif;
+  font-family: ProximaNova, sans-serif;
+  font-weight: bold;
 }
 
 .breadcrumbInfosDatesLikes {
   font-size: 13px;
   line-height: 28px;
-  font-family: ProximaNovaReg, sans-serif;
+  font-family: ProximaNova, sans-serif;
 }
 
 
@@ -66,30 +68,35 @@
 h1 {
   font-size: 32px;
   line-height: 40px;
-  font-family: AdelleBold, sans-serif;
+  font-family: Adelle, sans-serif;
   color: #000000;
   text-align: center;
+  font-weight: bold;
 }
 
 h2 {
   font-size: 24px;
   line-height: 32px;
-  font-family: AdelleBold, sans-serif;
+  font-family: Adelle, sans-serif;
   color: #000000;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 20px;
   line-height: 32px;
-  font-family: AdelleBold, sans-serif;
+  font-family: Adelle, sans-serif;
   color: #000000;
+  font-weight: bold;
 }
 
 .FestivalFont {
   font-size: 48px;
   line-height: 40px;
-  font-family: AdelleBold, sans-serif;
+  font-family: Adelle, sans-serif;
   color: #FFFFFF;
+  font-weight: bold;
+
 }
 
 

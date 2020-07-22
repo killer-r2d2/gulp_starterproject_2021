@@ -1,3 +1,5 @@
+
+
 // start with titleSection
 
 .titleSection {
@@ -5,23 +7,35 @@
   margin-top: 60px;
   margin-bottom: 21px;
   text-align: center;
+
+  .titleSection__btn {
+    width: 343px;
+    height: 48px;
+    top: 392px;
+    background: $black100;
+    color: $white;
+    margin-top: 39px;
+    border: none;
+  }
+
+
+  .titleSection__img {
+    width: 100%;
+    height: 176px;
+    margin-top: 56px;
+    object-fit: cover;
+    object-position: 50%;
+
+    @include small {
+      height: 218px;
+    }
+
+  }
+
 }
 
-.titleSection__btn {
-  width: 343px;
-  height: 48px;
-  top: 392px;
-  background: $black100;
-  color: $white;
-  margin-top: 39px;
-  border: none;
-}
 
-.titleSection__img {
-  width: 375px;
-  height: 176px;
-  margin-top: 56px;
-}
+
 
 // start with magazinSection
 
@@ -72,33 +86,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .bannerSection__box {
+    position: relative;
+    height: 30%;
+
+    .bannerSection__pic {
+      width: 85px;
+      position: absolute;
+      transform: translate(-50%);
+      top: -64px;
+    }
+
+  }
+
+
+  .bannerSection__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+  }
+
+
+
 }
 
-.bannerSection__box {
-  position: relative;
-  height: 30%;
-}
 
-.bannerSection__pic {
-  width: 85px;
-  position: absolute;
-  transform: translate(-50%);
-  top: -64px;
-}
 
-.bannerSection__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 70%;
-}
 
 .bannerSection__title {
   color: $white;
   font-size: 32px;
   line-height: 40px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   padding: 0 32px 0 32px;
 }
 
