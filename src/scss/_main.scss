@@ -6,16 +6,40 @@
   width: 100%;
   margin-top: 5%;
   margin-bottom: 21px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    margin-bottom: 1em;
+  }
+
+
+  &__h3 {
+    width: 39%;
+    text-align: center;
+  }
+
 
   .titleSection__btn {
     width: 343px;
     height: 48px;
     top: 392px;
-    background: $black100;
+    background-color: $black100;
     color: $white;
     margin-top: 39px;
     border: none;
+
+    &--show {
+      display: none;
+    }
+
+    &--restore {
+      background-color: $white;
+      color: $black100;
+      border: solid $black100;
+    }
+
   }
 
 

@@ -179,6 +179,7 @@ body, body * {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     @include small {
       width: 60%;
@@ -193,12 +194,17 @@ body, body * {
       margin-left: 12px;
       display: none;
 
+
       @include small {
         display: inline-block;
       }
 
     }
 
+  }
+
+  .headerSection__IconTicket:hover {
+    background-color: #C2C2C2;
   }
 
 
@@ -209,6 +215,8 @@ body, body * {
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
+
 
     @include small {
       width: 40%;
@@ -229,14 +237,23 @@ body, body * {
       }
 
 
+
+
     }
-
-
-
-
-
   }
+
+
+
+  .headerSection__IconLogin:hover {
+    background-color: #C2C2C2;
+  }
+
+
+
+
 }
+
+
 
 
 
@@ -267,6 +284,8 @@ body, body * {
 
 .navigation__login {
   fill: #C2C2C2;
+
+
 
   &--white {
     fill: #FFFFFF;
