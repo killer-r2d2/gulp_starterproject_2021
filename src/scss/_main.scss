@@ -36,7 +36,10 @@
       color: $white;
       margin-top: 39px;
       border: none;
-      margin-right: 18px;
+
+      @include medium {
+        margin-right: 16px;
+      }
 
       &--show {
 
@@ -85,6 +88,10 @@
 
     @include small {
       height: 218px;
+    }
+
+    @include medium {
+      height: 450px;
     }
 
   }
@@ -141,15 +148,33 @@
 .magazinSection {
   //margin-top: 68px;
   padding: 0 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    text-align: center;
+  }
+
 }
 
-.magazineSection__box {
-  margin-top: 30px;
-  margin-bottom: 38px;
-  width: 100%;
+.magazinSection__container {
+  display: grid;
+  grid-template-columns: 336px 336px 336px;
+  grid-column-gap: 72px;
+
+  .magazineSection__box {
+    margin-top: 30px;
+    margin-bottom: 38px;
+    width: 100%;
+
+    @include small {
+      text-align: center;
+    }
+
 }
 
-.magazineSection__box--Title {
+
 }
 
 .magazineSection__box--Btn {
@@ -157,6 +182,11 @@
   margin-top: 6px;
   text-decoration: underline;
   background-color: transparent;
+
+  @include large {
+    display: none;
+  }
+
 }
 
 //.magazineSection__box--border {
