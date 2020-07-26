@@ -91,11 +91,18 @@
 
   .titleSection__genres {
 
-    display: flex;
+    display: none;
     width: 100%;
     padding-left: 135px;
-    padding-right: 258px;
+    padding-right: 135px;
     justify-content: space-around;
+
+    @include medium {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
 
     &--more {
       border: none;
@@ -114,7 +121,10 @@
       border-radius: 10px;
       border: none;
       height: 48px;
-      padding: 14px 14px 14px 14px;
+      padding: 14px 16px 14px 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
 
       &--icon {
         fill: white;
