@@ -1,5 +1,3 @@
-
-
 // start with titleSection
 
 .titleSection {
@@ -20,24 +18,52 @@
     text-align: center;
   }
 
+  &__btnBox {
+    display: flex;
 
-  .titleSection__btn {
-    width: 343px;
-    height: 48px;
-    top: 392px;
-    background-color: $black100;
-    color: $white;
-    margin-top: 39px;
-    border: none;
+    .titleSection__btn {
+      width: 343px;
+      height: 48px;
+      top: 392px;
+      background-color: $black100;
+      color: $white;
+      margin-top: 39px;
+      border: none;
+      margin-right: 18px;
 
-    &--show {
-      display: none;
-    }
+      &--show {
 
-    &--restore {
-      background-color: $white;
-      color: $black100;
-      border: solid $black100;
+        @include medium {
+          display: none;
+        }
+
+      }
+
+      &--restore {
+        background-color: $white;
+        color: $black100;
+        border: solid $black100;
+        display: none;
+
+        @include medium {
+          display: inline-block;
+        }
+
+
+
+      }
+
+      &--result {
+
+        display: none;
+
+        @include medium {
+          display: inline-block;
+        }
+
+
+      }
+
     }
 
   }
@@ -57,8 +83,6 @@
   }
 
 }
-
-
 
 
 // start with magazinSection
@@ -134,10 +158,7 @@
   }
 
 
-
 }
-
-
 
 
 .bannerSection__title {
@@ -194,6 +215,7 @@
   justify-content: center;
   align-items: center;
 }
+
 /* Todo: embed background-image
 .discoverySection__icon--hiphop {
   height: 181px;
@@ -208,7 +230,6 @@
   width: 29px;
   background-repeat: no-repeat;
 }
-
 
 
 // start with newsSection

@@ -182,7 +182,7 @@ body, body * {
     cursor: pointer;
 
     @include small {
-      width: 60%;
+      width: 50%;
     }
 
     .headerSection__IconTicketText {
@@ -195,7 +195,7 @@ body, body * {
       display: none;
 
 
-      @include small {
+      @include medium {
         display: inline-block;
       }
 
@@ -219,7 +219,7 @@ body, body * {
 
 
     @include small {
-      width: 40%;
+      width: 50%;
     }
 
 
@@ -232,7 +232,7 @@ body, body * {
       margin-left: 12px;
       display: none;
 
-      @include small {
+      @include medium {
         display: inline-block;
       }
 
