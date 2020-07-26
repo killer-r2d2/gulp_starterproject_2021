@@ -1,48 +1,4 @@
-/* Set globals */
 
-html {
-  box-sizing: border-box;
-}
-
-/* Setup box sizing*/
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* Embedding styling */
-
-
-body, body * {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* global styling */
-
-// start with wrapper
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  background-color: #F0F0F0;;
-
-  @include small {
-    background-color: red;
-  }
-
-}
-
-// start with container
-
-.container {
-  background-color: $white;
-  max-width: 1600px;
-
-
-
-}
 
 // start with headerSection
 
@@ -68,14 +24,21 @@ body, body * {
       height: 23px;
       display: none;
 
-      @include small {
+      @include medium {
+        margin-left: auto;
         display: inline-block;
-        margin-left: 40%;
       }
+
+      //@include small {
+      //  display: inline-block;
+      //  margin-left: 25%;
+      //}
 
     }
 
     .headerSection__hamburgerBox {
+
+      padding-left: 2%;
 
 
       .headerSection__hamburger {
@@ -143,7 +106,6 @@ body, body * {
     border: #E5E5E5 1px solid;
     border-right: none;
     justify-content: flex-start;
-    padding-left: 2%;
 
 
   }
@@ -260,7 +222,7 @@ body, body * {
 .headerSection__IconLike {
   margin-left: 40%;
 
-  @include small {
+  @include medium {
     visibility: hidden;
   }
 

@@ -1,0 +1,45 @@
+/* Set globals */
+
+html {
+  box-sizing: border-box;
+}
+
+/* Setup box sizing*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Embedding styling */
+
+
+body, body * {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* global styling */
+
+// start with wrapper
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #F0F0F0;;
+
+  @include small {
+    background-color: red;
+  }
+
+}
+
+// start with container
+
+.container {
+  background-color: $white;
+  max-width: 1600px;
+
+
+
+}
