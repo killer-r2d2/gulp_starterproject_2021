@@ -144,10 +144,9 @@
 
 
 // start with magazinSection
-// we use the CSS-GRID layout technic
+// we use the CSS-GRID layout technic CSS-grid
 
 .magazinSection {
-  //margin-top: 68px;
   padding: 0 16px 0 16px;
   display: flex;
   flex-direction: column;
@@ -161,12 +160,22 @@
 }
 
 .magazinSection__container {
-  display: grid;
-  grid-template-columns: 336px 336px 336px;
-  grid-column-gap: 72px;
+
+
+  @include large {
+    display: grid;
+    grid-template-columns: 336px 336px 336px;
+    grid-column-gap: 72px;
+
+  }
+
 
   .magazineSection__box {
     width: 100%;
+
+    @include medium {
+      text-align: center;
+    }
 
 
     &--B {
@@ -181,6 +190,20 @@
       font-family: Roboto, sans-serif;
       font-size: 17px;
       line-height: 28px;
+      display: none;
+
+      @include small {
+        display: none;
+      }
+
+      @include medium {
+        display: none;
+      }
+
+      @include large {
+        display: inline-block;
+      }
+
     }
 
 }
