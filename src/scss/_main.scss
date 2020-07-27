@@ -144,6 +144,7 @@
 
 
 // start with magazinSection
+// we use the CSS-GRID layout technic
 
 .magazinSection {
   //margin-top: 68px;
@@ -154,6 +155,7 @@
 
   &__h1 {
     text-align: center;
+    margin-bottom: 83px;
   }
 
 }
@@ -164,18 +166,27 @@
   grid-column-gap: 72px;
 
   .magazineSection__box {
-    margin-top: 30px;
-    margin-bottom: 38px;
     width: 100%;
 
-    @include small {
-      text-align: center;
+
+    &--B {
+      align-self: center;
+    }
+
+    //@include small {
+    //  text-align: center;
+    }
+
+    .magazinSection__text {
+      font-family: Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 28px;
     }
 
 }
 
 
-}
+
 
 .magazineSection__box--Btn {
   border: none;

@@ -96,6 +96,8 @@ DIPLOMA THESIS WEB DEV 19/20
 | 19.07.2020 | HTML AND CSS AND JS                              |      4 |
 | 22.07.2020 | HTML AND CSS                                     |      4 |
 | 25.07.2020 | HTML AND CSS                                     |      4 |
+| 26.07.2020 | HTML AND CSS                                     |      7 |
+
   
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
@@ -105,6 +107,8 @@ DIPLOMA THESIS WEB DEV 19/20
 ###URL (OPERATIVE VERSION):
 
 ###TECHNICAL DOCUMENTATION:
+
+
 
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGIY, AND JUSTIFICATION):
 
