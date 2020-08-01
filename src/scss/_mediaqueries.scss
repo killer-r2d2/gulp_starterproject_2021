@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin extralarge {
+  @media (min-width: 1410px) {
+    @content;
+  }
+}

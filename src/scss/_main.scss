@@ -60,7 +60,6 @@
         }
 
 
-
       }
 
       &--result {
@@ -108,7 +107,6 @@
       display: flex;
       flex-wrap: wrap;
     }
-
 
 
     &--more {
@@ -173,39 +171,32 @@
     width: 100%;
 
 
-
-
-
-
-
     //@include small {
     //  text-align: center;
-    }
+  }
 
-    .magazinSection__text {
-      font-family: Roboto, sans-serif;
-      font-size: 17px;
-      line-height: 28px;
+  .magazinSection__text {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    display: none;
+
+    @include small {
       display: none;
-
-      @include small {
-        display: none;
-      }
-
-      @include medium {
-        display: none;
-      }
-
-      @include large {
-        display: inline-block;
-        text-align: left;
-      }
-
     }
+
+    @include medium {
+      display: none;
+    }
+
+    @include large {
+      display: inline-block;
+      text-align: left;
+    }
+
+  }
 
 }
-
-
 
 
 .magazineSection__box--Btn {
@@ -239,66 +230,150 @@
 // start with bannerSection
 
 .bannerSection {
-  width: 375px;
+  position: relative;
   height: 432px;
+  width: 100%;
   background-color: $black100;
   margin-top: 125px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+  "pic"
+  "content";
 
-  .bannerSection__box {
-    position: relative;
-    height: 30%;
 
-    .bannerSection__pic {
-      width: 85px;
-      position: absolute;
-      transform: translate(-50%);
-      top: -64px;
+
+
+  @include large {
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+    "pic content";
+
+  }
+
+
+  @include large {
+    height: 375px;
+  }
+
+
+  &__pic {
+    width: 85px;
+    height: 173px;
+    grid-area: pic;
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    margin-left: -42.5px;
+    top: -48%;
+
+    @include large {
+      width: 200px;
+      height: 300px;
+      left: 28%;
+    }
+  }
+
+  &__content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "title"
+    "btn"
+    "panel";
+
+    @include large() {
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+    "title"
+    "panel";
+      grid-row-gap: 30px;
     }
 
   }
 
-
-  .bannerSection__content {
+  &__imgBox {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 70%;
+    justify-content: center;
+    align-self: center;
+
+    @include large() {
+      grid-area: panel;
+    }
   }
 
 
-}
+  &__title {
+    color: $white;
+    grid-area: title;
+    max-width: 66%;
+    justify-self: center;
+    text-align: center;
+
+    @include large() {
+      justify-self: flex-start;
+      text-align: left;
+      margin-top: 43px;
+    }
+  }
 
 
-.bannerSection__title {
-  color: $white;
-  font-size: 32px;
-  line-height: 40px;
-  font-family: Roboto, sans-serif;
-  padding: 0 32px 0 32px;
-}
+  &__btn {
+    width: 227px;
+    height: 48px;
+    color: $white;
+    background-color: $black100;
+    border: solid 2px $white;
+    font-family: Roboto sans-serif;
+    font-weight: 200;
+    grid-area: btn;
+    justify-self: center;
+    align-self: center;
 
-.bannerSection__btn {
-  width: 227px;
-  height: 48px;
-  color: $white;
-  background-color: $black100;
-  border: solid 0.5px $white;
-  font-family: Roboto sans-serif;
-  font-weight: 200;
-}
 
-.bannerSection__img--1 {
-  width: 172px;
-  height: 70px;
-}
+    @include large() {
+      grid-area: panel;
+      justify-self: flex-start;
+    }
 
-.bannerSection__img--2 {
-  width: 172px;
-  height: 70px;
+  }
+
+  &__img {
+    width: 147px;
+    height: 60px;
+    grid-area: content;
+
+    &--google {
+      grid-area: panel;
+      background-color: #3949AB;
+      width: 147px;
+      height: 33px;
+
+      @include large() {
+        //margin-left: 53px;
+      }
+
+    }
+
+    &--apple {
+      grid-area: panel;
+      background-color: #1DE9B6;
+      width: 147px;
+      height: 33px;
+      margin-left: 53px;
+    }
+
+  }
+
+  &__panel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
 }
 
 
