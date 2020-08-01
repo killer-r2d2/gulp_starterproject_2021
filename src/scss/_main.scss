@@ -164,23 +164,19 @@
 
   @include large {
     display: grid;
-    grid-template-columns: 336px 336px 336px;
-    grid-column-gap: 72px;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
   }
 
 
   .magazineSection__box {
     width: 100%;
 
-    @include medium {
-      text-align: center;
-    }
 
 
-    &--B {
-      align-self: center;
-    }
+
+
+
 
     //@include small {
     //  text-align: center;
@@ -202,6 +198,7 @@
 
       @include large {
         display: inline-block;
+        text-align: left;
       }
 
     }
