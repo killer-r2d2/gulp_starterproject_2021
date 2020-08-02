@@ -219,13 +219,7 @@
 //  margin-top: 32px;
 //}
 
-.magazineSection__moreBtn {
-  width: 343px;
-  height: 48px;
-  margin-top: 48px;
-  background-color: $white;
-  border: solid black 1px;
-}
+
 
 // start with bannerSection
 
@@ -385,47 +379,82 @@
 
 .discoverySection {
   margin-top: 80px;
+  width: 100%;
   height: 1397px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__intro {
+    text-align: center;
+    padding: 20px 16px 0 16px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 83px;
+  }
+
+  &__imgContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 20px;
+    grid-template-areas:
+    "jazz"
+    "hiphop"
+    "indie"
+    "poprock"
+    "electronic";
+
+  }
+
+  &__imgBox {
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+
+    &--jazz {
+      background-color: #FDD835;
+
+    }
+
+    &--hiphop {
+      background-color: #D81B60;
+    }
+
+    &--indie {
+      background-color: #00D79F;
+
+    }
+
+    &--poprock {
+      background-color: #3949AB;
+
+    }
+
+    &--electronic {
+      background-color: #5E35B1;
+
+    }
+
+  }
+
+
+
+  &__play {
+    background-image: url("../images/Icons/detail_video_play.svg");
+    width: 29px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
 }
 
-.discoverySection__p {
-  text-align: center;
-  padding: 20px 16px 0 16px;
-  width: 100%;
-  max-width: 700px;
-}
 
-#music_alternative {
-  background-repeat: repeat-x;
-}
-
-.discoverySection__img {
-  height: 153px;
-  width: 100%;
-  margin-top: 83px;
-  background-color: lightblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Todo: embed background-image
-.discoverySection__icon--hiphop {
-  height: 181px;
-  width: 100%;
-}
-*/
-
-
-.discoverySection__img--play {
-  background-image: url(../images/Icons/detail_video_play.svg);
-  height: 40px;
-  width: 29px;
-  background-repeat: no-repeat;
-}
 
 
 // start with newsSection
