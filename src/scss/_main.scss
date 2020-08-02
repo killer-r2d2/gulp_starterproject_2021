@@ -247,6 +247,7 @@
 
   @include large {
     grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "pic content";
 
@@ -273,7 +274,7 @@
     @include large {
       width: 200px;
       height: 415px;
-      left: 28%;
+      margin-left: -100px;
     }
   }
 
@@ -288,6 +289,7 @@
     "panel";
 
     @include large() {
+      grid-area: content;
       grid-template-rows: 1fr auto;
       grid-template-areas:
     "title"
