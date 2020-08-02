@@ -262,15 +262,17 @@
     width: 85px;
     height: 173px;
     grid-area: pic;
-    background-color: grey;
     position: absolute;
+    background-image: url("../images/Links/iPodTouch-Portrait-Silver.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     left: 50%;
     margin-left: -42.5px;
     top: -48%;
 
     @include large {
       width: 200px;
-      height: 300px;
+      height: 415px;
       left: 28%;
     }
   }
@@ -348,10 +350,10 @@
 
     &--google {
       grid-area: panel;
-      background-color: #3949AB;
-      width: 147px;
-      height: 33px;
-
+      background-image: url("../images/Links/google-play-badge.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       @include large() {
         //margin-left: 53px;
       }
@@ -359,11 +361,11 @@
     }
 
     &--apple {
+      background-position: center;
       grid-area: panel;
-      background-color: #1DE9B6;
-      width: 147px;
-      height: 33px;
       margin-left: 53px;
+      background-image: url("../images/Links/app-store-badge.svg");
+      background-repeat: no-repeat;
     }
 
   }
