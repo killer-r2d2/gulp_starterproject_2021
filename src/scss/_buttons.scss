@@ -1,5 +1,8 @@
 // Primary Button
 
+.primaryButton {
+
+}
 
 
 // Secondary Button
@@ -7,7 +10,6 @@
 .secondaryButton {
   width: 343px;
   height: 48px;
-  margin-top: 48px;
   background-color: transparent;
   border: solid $black100 2px;
   cursor: pointer;
