@@ -480,19 +480,32 @@
 .newsSection {
   padding: 0 16px 0 16px;
   background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 154px;
+
+  &__masonryBox {
+    column-count: 4;
+    column-gap: 20px;
+    border: 1px solid red;
+  }
+
+  &.__bigBox {
+    height: 440px;
+    background-color: #FFFFFF;
+    margin-bottom: 16px;
+  }
 
 }
 
-.newsSection__h1 {
-  padding-bottom: 38px;
-  padding-top: 63px;
-}
 
-.newsSection__bigBox {
-  height: 440px;
-  background-color: #FFFFFF;
-  margin-bottom: 16px;
-}
+
+
+
+
+
+
 
 .newsSection__boxBig--img {
   width: 100%;
