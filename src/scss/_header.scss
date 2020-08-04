@@ -66,9 +66,11 @@
           .rack.upper {
             transform: rotate(-45deg);
             position: relative;
-            top: 2px;
+            top: -1px;
             background-color: white;
-
+            width: 24px;
+            height: 3px;
+            transition: ease-in-out 0.5s;
           }
 
           .rack.middle {
@@ -80,7 +82,9 @@
             position: relative;
             bottom: 4px;
             background-color: white;
-
+            width: 24px;
+            height: 3px;
+            transition: ease-in-out 0.5s;
           }
 
 
@@ -107,7 +111,8 @@
     border: #E5E5E5 1px solid;
     border-right: none;
     justify-content: flex-start;
-
+    border-top: none;
+    border-left: none;
 
   }
 
@@ -134,6 +139,8 @@
   display: flex;
   align-items: center;
   border: #E5E5E5 1px solid;
+  border-top: none;
+  border-right: none;
 
   .headerSection__IconTicket {
     width: 50%;
