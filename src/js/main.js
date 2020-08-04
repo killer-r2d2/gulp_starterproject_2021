@@ -2,8 +2,11 @@
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
 menutoggler.addEventListener('click', togglermenu);
 
-// togglermenu function
+
+// // togglermenu function
 function togglermenu() {
+
+
     // select the hamburger with the id
     const hamburger = document.querySelector("#hamburger");
     // add the headerSection__hamburger-close with toggle to the headerSection__hamburger
@@ -23,12 +26,26 @@ function togglermenu() {
     const like = document.querySelector("#detail_like_filled");
     like.classList.toggle("navigation__like");
     like.classList.toggle("navigation__like--white");
+    const text = document.querySelector(".headerSection__text");
+    // change the color of the text
+    // text.classList.toggle("headerSection__text--color");
+    // text.classList.toggle("headerSection__text");
+    // change the text
+    if (text.innerHTML === "Menu") {
+        text.innerHTML = "Schliessen";
+        text.style.color ="white";
+    } else {
+        text.innerHTML = "Menu";
+        text.style.color = "black"
+    }
+
+
 }
 
 
 // select the login Icon with a variable
 const logintoggler = document.querySelector(".headerSection__IconLogin");
-logintoggler.addEventListener('click', togglerlogin );
+logintoggler.addEventListener('click', togglerlogin);
 
 // togglerlogin function
 function togglerlogin() {
@@ -38,5 +55,7 @@ function togglerlogin() {
     const logincolor = document.querySelector("#navigation_login");
     logincolor.classList.toggle("navigation__login--black");
     logincolor.classList.toggle("navigation__login");
+    const changeColor = document.querySelector(".headerSection__IconLoginText");
+    changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
 

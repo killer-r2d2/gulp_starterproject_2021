@@ -2,124 +2,381 @@
 
 .titleSection {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 10%;
   margin-bottom: 21px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+
+  &__h3 {
+    text-align: center;
+
+    @include medium {
+      width: 39%;
+
+    }
+
+
+  }
+
+  &__btnBox {
+    display: flex;
+
+    .titleSection__btn {
+      width: 343px;
+      height: 48px;
+      top: 392px;
+      background-color: $black100;
+      color: $white;
+      margin-top: 39px;
+      border: none;
+
+      @include medium {
+        margin-right: 16px;
+      }
+
+      &--show {
+
+        @include medium {
+          display: none;
+        }
+
+      }
+
+      &--restore {
+        background-color: $white;
+        color: $black100;
+        border: solid $black100;
+        display: none;
+
+        @include medium {
+          display: inline-block;
+        }
+
+
+      }
+
+      &--result {
+
+        display: none;
+
+        @include medium {
+          display: inline-block;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+  .titleSection__img {
+    width: 100%;
+    height: 176px;
+    margin-top: 56px;
+    object-fit: cover;
+    object-position: 50%;
+
+    @include small {
+      height: 218px;
+    }
+
+    @include medium {
+      height: 450px;
+    }
+
+  }
+
+  .titleSection__genres {
+
+    display: none;
+    width: 100%;
+    padding-left: 135px;
+    padding-right: 135px;
+    justify-content: space-around;
+
+    @include medium {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+
+    &--more {
+      border: none;
+      background-color: transparent;
+      text-decoration: underline;
+      font-family: Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 28px;
+      font-weight: bold;
+    }
+
+
+    .titleSection__btnGenres {
+      background-color: $greyC2;
+      color: $white;
+      border-radius: 10px;
+      border: none;
+      height: 48px;
+      padding: 14px 16px 14px 12px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+
+      &--icon {
+        fill: white;
+      }
+    }
+
+  }
+
 }
 
-.titleSection__btn {
-  width: 343px;
-  height: 48px;
-  top: 392px;
-  background: $black100;
-  color: $white;
-  margin-top: 39px;
-  border: none;
-}
-
-.titleSection__img {
-  width: 375px;
-  height: 176px;
-  margin-top: 56px;
-}
 
 // start with magazinSection
+// we use the CSS-GRID layout technic CSS-grid
 
 .magazinSection {
-  //margin-top: 68px;
   padding: 0 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__h1 {
+    text-align: center;
+    margin-bottom: 83px;
+  }
+
 }
 
-.magazineSection__box {
-  margin-top: 30px;
-  margin-bottom: 38px;
-  width: 100%;
+.magazinSection__container {
+
+  margin-bottom: 48px;
+
+
+  @include large {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+
+
+  .magazineSection__box {
+    width: 100%;
+
+
+    //@include small {
+    //  text-align: center;
+  }
+
+  .magazinSection__text {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    display: none;
+
+    @include small {
+      display: none;
+    }
+
+    @include medium {
+      display: none;
+    }
+
+    @include large {
+      display: inline-block;
+      text-align: left;
+    }
+
+  }
+
 }
 
-.magazineSection__box--Title {
-}
 
 .magazineSection__box--Btn {
   border: none;
   margin-top: 6px;
   text-decoration: underline;
   background-color: transparent;
+
+  @include large {
+    display: none;
+  }
+
 }
 
-.magazineSection__box--border {
-  position: absolute;
-  width: 375px;
-  height: 1px;
-  background-color: #E5E5E5;
-  margin-top: 32px;
-}
+//.magazineSection__box--border {
+//  position: absolute;
+//  width: 100%;
+//  height: 1px;
+//  background-color: #E5E5E5;
+//  margin-top: 32px;
+//}
 
-.magazineSection__moreBtn {
-  width: 343px;
-  height: 48px;
-  margin-top: 48px;
-  background-color: $white;
-  border: solid black 1px;
-}
+
 
 // start with bannerSection
 
 .bannerSection {
-  width: 375px;
+  position: relative;
   height: 432px;
+  width: 100%;
   background-color: $black100;
   margin-top: 125px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 70%;
+  grid-template-areas:
+  "pic"
+  "content";
 
-.bannerSection__box {
-  position: relative;
-  height: 30%;
-}
 
-.bannerSection__pic {
-  width: 85px;
-  position: absolute;
-  transform: translate(-50%);
-  top: -64px;
-}
 
-.bannerSection__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 70%;
-}
 
-.bannerSection__title {
-  color: $white;
-  font-size: 32px;
-  line-height: 40px;
-  font-family: Roboto;
-  padding: 0 32px 0 32px;
-}
+  @include large {
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "pic content";
 
-.bannerSection__btn {
-  width: 227px;
-  height: 48px;
-  color: $white;
-  background-color: $black100;
-  border: solid 0.5px $white;
-  font-family: Roboto sans-serif;
-  font-weight: 200;
-}
+  }
 
-.bannerSection__img--1 {
-  width: 172px;
-  height: 70px;
-}
 
-.bannerSection__img--2 {
-  width: 172px;
-  height: 70px;
+  @include large {
+    height: 375px;
+  }
+
+
+  &__pic {
+    width: 85px;
+    height: 173px;
+    grid-area: pic;
+    position: absolute;
+    background-image: url("../images/Links/iPodTouch-Portrait-Silver.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -42.5px;
+    top: -48%;
+
+    @include large {
+      width: 200px;
+      height: 415px;
+      margin-left: -100px;
+      top: -25%;
+    }
+  }
+
+  &__content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "title"
+    "btn"
+    "panel";
+
+    @include large() {
+      grid-area: content;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+    "title"
+    "panel";
+      grid-row-gap: 30px;
+    }
+
+  }
+
+  &__imgBox {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+
+
+    @include large() {
+      grid-area: panel;
+    }
+  }
+
+
+  &__title {
+    color: $white;
+    grid-area: title;
+    max-width: 66%;
+    justify-self: center;
+    text-align: center;
+
+    @include large() {
+      justify-self: flex-start;
+      text-align: left;
+      margin-top: 43px;
+    }
+  }
+
+
+  &__btn {
+    width: 227px;
+    height: 48px;
+    color: $white;
+    background-color: $black100;
+    border: solid 2px $white;
+    font-family: Roboto sans-serif;
+    font-weight: 200;
+    grid-area: btn;
+    justify-self: center;
+    align-self: center;
+
+
+    @include large() {
+      grid-area: panel;
+      justify-self: flex-start;
+    }
+
+  }
+
+  &__img {
+    width: 147px;
+    height: 60px;
+    grid-area: content;
+
+    &--google {
+      grid-area: panel;
+      background-image: url("../images/Links/google-play-badge.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include large() {
+        //margin-left: 53px;
+      }
+
+    }
+
+    &--apple {
+      background-position: center;
+      grid-area: panel;
+      margin-left: 53px;
+      background-image: url("../images/Links/app-store-badge.svg");
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &__panel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
 }
 
 
@@ -127,105 +384,164 @@
 
 .discoverySection {
   margin-top: 80px;
+  width: 100%;
   height: 1397px;
-}
-
-.discoverySection__p {
-  text-align: center;
-  padding: 20px 16px 0 16px;
-}
-
-#music_alternative {
-  background-repeat: repeat-x;
-}
-
-.discoverySection__img {
-  height: 153px;
-  width: 100%;
-  margin-top: 83px;
-  background-color: lightblue;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-/* Todo: embed background-image
-.discoverySection__icon--hiphop {
-  height: 181px;
-  width: 100%;
-}
-*/
+
+  &__intro {
+    text-align: center;
+    padding: 20px 16px 0 16px;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 83px;
+  }
+
+  &__imgContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 40px;
+    grid-template-areas:
+    "jazz"
+    "hiphop"
+    "indie"
+    "poprock"
+    "electronic";
+
+  }
+
+  &__imgBox {
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
 
-.discoverySection__img--play {
-  background-image: url(../images/Icons/detail_video_play.svg);
-  height: 40px;
-  width: 29px;
-  background-repeat: no-repeat;
+    &--jazz {
+      background-color: #FDD835;
+
+    }
+
+    &--hiphop {
+      background-color: #D81B60;
+    }
+
+    &--indie {
+      background-color: #00D79F;
+
+    }
+
+    &--poprock {
+      background-color: #3949AB;
+
+    }
+
+    &--electronic {
+      background-color: #5E35B1;
+
+    }
+
+
+
+  }
+
+  &__btn {
+
+    display: none;
+
+    @include medium {
+      display: inline-block;
+      margin-top: 150px;
+    }
+
+
+
+  }
+
+  &__play {
+    background-image: url("../images/Icons/detail_video_play.svg");
+    width: 29px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
 }
+
 
 
 
 // start with newsSection
 
 .newsSection {
+  width: 100%;
   padding: 0 16px 0 16px;
   background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 154px;
+  padding-top: 114px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__Box {
+    width: 100%;
+    padding-top: 24px;
+
+    @include medium{
+      width: 221px;
+    }
+  }
+
+  &__pic {
+    width: 100%;
+    height: 144px;
+    background-color: #00D79F;
+
+
+  }
+
+  &__content {
+    padding: 20px 16px 10px 16px;
+    background-color: $white;
+  }
+
+  &__like {
+    border-top: 1px #E5E5E5;
+    border-top: solid #E5E5E5 1px;
+    margin-top: 19px;
+    padding-top: 10px;
+    display: flex;
+  }
+
+  &__heart {
+    background-image: url("../images/Icons/detail_like_filled.svg");
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__qty {
+    margin-left: 7px;
+    position: relative;
+    top: 5px;
+  }
+
+  &__btn {
+    margin-top: 42px;
+  }
+
 
 }
 
-.newsSection__h1 {
-  padding-bottom: 38px;
-  padding-top: 63px;
-}
-
-.newsSection__bigBox {
-  height: 440px;
-  background-color: #FFFFFF;
-  margin-bottom: 16px;
-}
-
-.newsSection__boxBig--img {
-  width: 100%;
-  height: 232px;
-}
-
-.newsSection__bigBox--content {
-  padding: 20px 24px 10px 24px;
-}
-
-.newsSection__bigBox--content--content {
-  border-bottom: #E5E5E5 solid 1px;
-  width: 100%;
-  background-color: #FFFFFF;
-}
-
-.newsSection__boxBig--icon {
-  padding-top: 16px;
-}
-
-.newsSection__smallBox {
-  width: 100%;
-  height: 208px;
-  background-color: #FFFFFF;
-  margin-bottom: 16px;
-}
-
-.newsSection__smallBox--content {
-  padding: 20px 24px 10px 24px;
-
-
-}
-
-.newsSection__smallBox--content--content {
-  border-bottom: #E5E5E5 solid 1px;
-  width: 100%;
-  background-color: #FFFFFF;
-}
-
-.newsSection__moreBtn--transp {
-  background: transparent;
-  border: 2px solid #000000;
-  width: 100%;
-  margin-left: 0;
-  margin-bottom: 72px;
-}

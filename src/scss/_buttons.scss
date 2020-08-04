@@ -1,0 +1,25 @@
+// Primary Button
+
+.primaryButton {
+
+}
+
+
+// Secondary Button
+
+.secondaryButton {
+  width: 343px;
+  height: 48px;
+  background-color: transparent;
+  border: solid $black100 2px;
+  cursor: pointer;
+
+  @include large {
+    width: 201px;
+  }
+
+  &:hover {
+    background-color: $black100;
+    color: $white;
+  }
+}

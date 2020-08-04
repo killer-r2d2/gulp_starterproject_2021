@@ -91,16 +91,21 @@ DIPLOMA THESIS WEB DEV 19/20
 | 06.07.2020 | HTML AND CSS                                     |      3 |
 | 06.07.2020 | HTML AND CSS AND JS                              |      4 |
 | 11.07.2020 | HTML AND CSS AND JS                              |      1 |
-| 12.07.2020 | HTML AND CSS AND JS                              |      4 |
-| 12.07.2020 | HTML AND CSS AND JS                              |      5 |
+| 12.07.2020 | HTML AND CSS AND JS                              |      9 |
+| 15.07.2020 | HTML AND CSS AND JS                              |      5 |
+| 19.07.2020 | HTML AND CSS AND JS                              |      4 |
+| 22.07.2020 | HTML AND CSS                                     |      4 |
+| 25.07.2020 | HTML AND CSS                                     |      4 |
+| 26.07.2020 | HTML AND CSS                                     |      7 |
+| 26.07.2020 | HTML AND CSS                                     |      4 |
+| 29.07.2020 | HTML AND CSS                                     |      4 |
+| 01.08.2020 | HTML AND CSS                                     |      8 |
+| 01.08.2020 | HTML AND CSS                                     |      10 |
+
   
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
 
-**Fonts:**
-
-1. Roboto
-2. RobotoSlab
 
 
 ###SETUP GUIDE:
@@ -108,6 +113,8 @@ DIPLOMA THESIS WEB DEV 19/20
 ###URL (OPERATIVE VERSION):
 
 ###TECHNICAL DOCUMENTATION:
+
+
 
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGIY, AND JUSTIFICATION):
 
