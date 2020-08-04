@@ -96,6 +96,11 @@
 
     .headerSection__text {
       margin-left: 11px;
+      color: black;
+
+      &--color {
+        color: white;
+      }
     }
 
 
@@ -228,7 +233,7 @@
 
 
 .headerSection__IconLike {
-  margin-left: 40%;
+  margin-left: 28%;
 
   @include medium {
     visibility: hidden;

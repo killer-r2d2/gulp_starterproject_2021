@@ -27,18 +27,18 @@ function togglermenu() {
     like.classList.toggle("navigation__like");
     like.classList.toggle("navigation__like--white");
     const text = document.querySelector(".headerSection__text");
+    // change the color of the text
+    // text.classList.toggle("headerSection__text--color");
+    // text.classList.toggle("headerSection__text");
     // change the text
     if (text.innerHTML === "Menu") {
         text.innerHTML = "Schliessen";
+        text.style.color ="white";
     } else {
         text.innerHTML = "Menu";
+        text.style.color = "black";
     }
-    // change the color of the text
-    if (text.style.color = 'black') {
-        text.style.color = 'white';
-    } else {
-        text.style.color = 'black';
-    }
+
 
 }
 
