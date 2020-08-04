@@ -36,7 +36,7 @@ function togglermenu() {
         text.style.color ="white";
     } else {
         text.innerHTML = "Menu";
-        text.style.color = "black";
+        text.style.color = "black"
     }
 
 
@@ -55,5 +55,7 @@ function togglerlogin() {
     const logincolor = document.querySelector("#navigation_login");
     logincolor.classList.toggle("navigation__login--black");
     logincolor.classList.toggle("navigation__login");
+    const changeColor = document.querySelector(".headerSection__IconLoginText");
+    changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
 
