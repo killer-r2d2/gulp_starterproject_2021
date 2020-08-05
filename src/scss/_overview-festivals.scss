@@ -11,34 +11,49 @@
     grid-template-areas:
     "date location container";
     color: #767676;
-
+  }
+  &__icon {
+    margin-left: 20px;
   }
 
-  &__dateIcon {
-    background-image: url("../images/Icons/steuerung_sortierung.svg");
-    background-repeat: no-repeat;
-    height: 18px;
-    width: 9px;
+
+  &__labelContainer--date {
     grid-area: date;
+    display: flex;
   }
 
-  &__locationIcon {
+  &__labelContainer--location {
     grid-area: location;
-    background-image: url("../images/Icons/steuerung_dropdown.svg");
-    background-repeat: no-repeat;
-    height: 18px;
-    width: 24px;
+    display: flex;
   }
 
-  &__tilesListContainer {
+  &____tilesListContainer {
     grid-area: container;
   }
 
-  &__tilesIcon {
+  &__icon--date {
+    background-image: url("../images/Icons/steuerung_sortierung.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+    align-self: center;
+  }
+
+  &__icon--location {
     background-image: url("../images/Icons/steuerung_dropdown.svg");
     background-repeat: no-repeat;
     height: 18px;
     width: 24px;
+    align-self: center;
+  }
+
+  &__tilesIcon {
+    background-image: url("../images/Icons/steuerung_kacheln.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+    margin-right: 10px;
+    align-self: center;
   }
 
   &__listIcon {
@@ -46,19 +61,26 @@
     background-repeat: no-repeat;
     height: 18px;
     width: 24px;
-
+    margin-right: 10px;
+    align-self: center;
   }
 
-  &__labelContainer {
+  &__tilesListContainer {
     display: flex;
+    justify-content: flex-end;
   }
 
+  &__labelContainer--tiles {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
+  &__labelContainer--list {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 30px;
+  }
 
 
 }
-//
-//input[type="date"] {
-//  //opacity: 0;
-//}
 
