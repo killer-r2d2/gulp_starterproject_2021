@@ -1,0 +1,64 @@
+.overviewSection {
+  width: 100%;
+  padding: 48px 120px 80px 120px;
+  background-color: $greyF0;
+
+  &__controlPanel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "date location container";
+    color: #767676;
+
+  }
+
+  &__dateIcon {
+    background-image: url("../images/Icons/steuerung_sortierung.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 9px;
+    grid-area: date;
+  }
+
+  &__locationIcon {
+    grid-area: location;
+    background-image: url("../images/Icons/steuerung_dropdown.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+  }
+
+  &__tilesListContainer {
+    grid-area: container;
+  }
+
+  &__tilesIcon {
+    background-image: url("../images/Icons/steuerung_dropdown.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+  }
+
+  &__listIcon {
+    background-image: url("../images/Icons/steuerung_liste.svg");
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 24px;
+
+  }
+
+  &__labelContainer {
+    display: flex;
+  }
+
+
+
+
+}
+//
+//input[type="date"] {
+//  //opacity: 0;
+//}
+
