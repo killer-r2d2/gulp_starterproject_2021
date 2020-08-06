@@ -2,6 +2,9 @@
   width: 100%;
   background-color: $greyF0;
   padding: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include medium {
     padding: 0 120px 0 120px;
@@ -110,7 +113,7 @@
     grid-template-columns: 343px;
     grid-auto-rows: auto;
     justify-content: center;
-    grid-gap: 16px;
+    grid-gap: 24px;
 
     @include medium {
       grid-template-columns: 343px 343px;
@@ -169,13 +172,24 @@
     display: grid;
     padding: 28px 24px 21px 24px;
     grid-template-columns: 1fr;
-    grid-auto-rows: 0 auto auto auto auto;
+    grid-auto-rows: 0 auto auto auto;
     grid-template-areas:
+    "panel"
+    "info"
+    "title";
+
+
+    @include medium {
+      padding: 28px 24px 21px 24px;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 0 auto auto auto auto;
+      grid-template-areas:
     "panel"
     "info"
     "title"
     "content"
     "notice";
+    }
 
   }
 
@@ -229,20 +243,48 @@
   }
 
   &__cardText {
-    grid-area: content;
-    color: rgba(0, 0, 0, 0.746065);
+
+    display: none;
+
+    @include medium {
+      display: inline-block;
+      grid-area: content;
+      color: rgba(0, 0, 0, 0.746065);
+    }
+
   }
 
   &__noticeContainer {
-    grid-area: notice;
+    grid-area: title;
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
+    justify-self: flex-end;
+
+
+    @include medium {
+      grid-area: notice;
+      align-self: flex-end;
+      justify-self: flex-start;
+    }
+  }
+
+  &__notice {
+    display: none;
+
+    @include medium {
+      display: inline-block;
+    }
   }
 
   &__noticeStar {
     margin-right: 6px;
   }
+
+  &__btn {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
 
 
 
