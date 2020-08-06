@@ -1,7 +1,13 @@
 .overviewSection {
   width: 100%;
-  padding: 48px 120px 80px 120px;
   background-color: $greyF0;
+  padding: 0 15px 0 15px;
+
+  @include medium {
+    padding: 0 120px 0 120px;
+  }
+
+
 
   &__controlPanel {
     width: 100%;
@@ -11,6 +17,7 @@
     grid-template-areas:
     "date location container";
     color: #767676;
+    padding: 24px 0 24px 0;
   }
   &__icon {
     margin-left: 20px;
@@ -104,16 +111,23 @@
     grid-auto-rows: auto;
     justify-content: center;
     grid-gap: 16px;
-    //grid-template-columns: 384px 384px 384px;
-    //grid-template-rows: 576px 576px 576px;
-    //grid-gap: 24px 24px;
-    //justify-content: center;
-    //background-color: hotpink;
+
+    @include medium {
+      grid-template-columns: 343px 343px;
+    }
+
+    @include large {
+      grid-template-columns: 384px 384px 384px;
+    }
   }
 
   &__cardBox {
     background-color: #00D79F;
     height: 352px;
+
+    @include medium {
+      height: 576px;
+    }
 
   }
 
