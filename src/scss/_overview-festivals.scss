@@ -10,7 +10,7 @@
     padding: 0 120px 0 120px;
   }
 
-
+// start with controll panel (date, location, tiles, list)
 
   &__controlPanel {
     width: 100%;
@@ -106,6 +106,8 @@
     margin-left: 30px;
   }
 
+// start with cardContainer (bord the cardBoxes)
+
   &__cardContainer {
     background-color: hotpink;
     width: 100%;
@@ -124,7 +126,9 @@
     }
   }
 
-  &__cardBox {
+// tiles view
+
+  &__cardBoxTiles {
     background-color: white;
     height: 352px;
     display: grid;
@@ -284,9 +288,5 @@
     margin-top: 80px;
     margin-bottom: 80px;
   }
-
-
-
-
 }
 
