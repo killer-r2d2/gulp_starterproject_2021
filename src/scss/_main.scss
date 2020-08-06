@@ -7,23 +7,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 16px 0 16px;
 
   &__h1 {
     margin-bottom: 1em;
     text-align: center;
+    width: 45%;
   }
 
 
   &__h3 {
     text-align: center;
+    width: 57%;
+
 
     @include medium {
       width: 39%;
 
     }
 
-
   }
+
 
   &__btnBox {
     display: flex;

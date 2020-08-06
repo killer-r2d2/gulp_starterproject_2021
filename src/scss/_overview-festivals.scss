@@ -20,6 +20,7 @@
   &__labelContainer--date {
     grid-area: date;
     display: flex;
+    align-items: center;
   }
 
   &__labelContainer--location {
@@ -36,7 +37,6 @@
     background-repeat: no-repeat;
     height: 18px;
     width: 24px;
-    align-self: center;
   }
 
   &__icon--location {
@@ -61,7 +61,6 @@
     background-repeat: no-repeat;
     height: 18px;
     width: 24px;
-    margin-right: 10px;
     align-self: center;
   }
 
@@ -80,6 +79,42 @@
     flex-direction: row-reverse;
     margin-left: 30px;
   }
+
+  &__cardContainer {
+    background-color: hotpink;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 343px;
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-gap: 16px;
+    //grid-template-columns: 384px 384px 384px;
+    //grid-template-rows: 576px 576px 576px;
+    //grid-gap: 24px 24px;
+    //justify-content: center;
+    //background-color: hotpink;
+  }
+
+  &__cardBox {
+    background-color: #00D79F;
+    height: 352px;
+
+  }
+
+  &__text--tiles {
+    display: none;
+  }
+
+  &__text--list {
+    display: none;
+  }
+
+  &__text--choose {
+    display: none;
+  }
+
+
+
 
 
 }
