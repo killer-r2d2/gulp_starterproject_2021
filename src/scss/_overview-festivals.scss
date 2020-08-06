@@ -32,36 +32,52 @@
     grid-area: container;
   }
 
-  &__icon--date {
-    background-image: url("../images/Icons/steuerung_sortierung.svg");
-    background-repeat: no-repeat;
-    height: 18px;
-    width: 24px;
+  &__icon {
+    cursor: pointer;
   }
 
-  &__icon--location {
-    background-image: url("../images/Icons/steuerung_dropdown.svg");
-    background-repeat: no-repeat;
+  &__controllSort {
+    height: 18px;
+    width: 24px;
+    fill: $grey76;
+
+    &:hover {
+      fill: $black100;
+    }
+  }
+
+  &__controllDropdown {
     height: 18px;
     width: 24px;
     align-self: center;
+    fill: $grey76;
+
+    &:hover {
+      fill: $black100;
+    }
   }
 
-  &__tilesIcon {
-    background-image: url("../images/Icons/steuerung_kacheln.svg");
-    background-repeat: no-repeat;
+  &__controllTiles {
     height: 18px;
     width: 24px;
     margin-right: 10px;
     align-self: center;
+    fill: $grey76;
+
+    &:hover {
+      fill: $black100;
+    }
   }
 
-  &__listIcon {
-    background-image: url("../images/Icons/steuerung_liste.svg");
-    background-repeat: no-repeat;
+  &__controllList {
     height: 18px;
     width: 24px;
     align-self: center;
+    fill: $grey76;
+
+    &:hover {
+      fill: $black100;
+    }
   }
 
   &__tilesListContainer {
@@ -111,6 +127,11 @@
 
   &__text--choose {
     display: none;
+
+    @include medium {
+      display: inline-block;
+      margin-left: 4px;
+    }
   }
 
 
