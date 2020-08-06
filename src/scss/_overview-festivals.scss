@@ -124,6 +124,12 @@
   &__cardBox {
     background-color: white;
     height: 352px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 232px 1fr;
+    grid-template-areas:
+    "pic"
+    "content";
 
     @include medium {
       height: 576px;
@@ -155,9 +161,11 @@
     background-color: lightslategrey;
     width: 100%;
     height: 232px;
+    grid-area: pic;
   }
 
   &__cardBoxContent {
+    grid-area: content;
     display: grid;
     padding: 28px 24px 21px 24px;
     grid-template-columns: 1fr;
@@ -212,6 +220,7 @@
 
   &__info {
     grid-area: info;
+    color: rgba(0, 0, 0, 0.746065);
   }
 
   &__cardTitle {
@@ -221,27 +230,19 @@
 
   &__cardText {
     grid-area: content;
-    margin-top: 12px;
+    color: rgba(0, 0, 0, 0.746065);
   }
 
   &__noticeContainer {
     grid-area: notice;
     display: flex;
     flex-direction: row;
-    margin-top: 79px;
+    align-self: flex-end;
   }
 
   &__noticeStar {
     margin-right: 6px;
   }
-
-
-
-
-
-
-
-
 
 
 
