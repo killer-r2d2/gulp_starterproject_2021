@@ -56,8 +56,11 @@ function togglerlogin() {
     changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
 
+
+// Change the view between list and tiles
+
 // select the list icon with a variable
-const viewList = document.querySelector(".overviewSection__icon-list");
+const viewList = document.querySelector(".overviewSection__labelContainer--list");
 viewList.addEventListener('click', listView);
 
 // listView function
@@ -65,18 +68,18 @@ function listView() {
     console.log("hallo hölle");
     const listShow = document.querySelector(".overviewSection__cardContainerTiles");
     // listShow.classList.remove("overviewSection__cardContainerTiles");
-    listShow.classList.add("overviewSection__listContainer");
+    listShow.classList.add("overviewSection__cardContainerlist");
 }
 
 // select the list icon with a variable
-const viewTiles = document.querySelector(".overviewSection__icon-tiles");
+const viewTiles = document.querySelector(".overviewSection__labelContainer--tiles");
 viewTiles.addEventListener('click', tilesView);
 
 // tilesView function
 function tilesView() {
     console.log("hallo frucht");
     const tilesShow = document.querySelector(".overviewSection__cardContainerTiles");
-    tilesShow.classList.add("overviewSection__cardContainerTiles");
+    tilesShow.classList.remove("overviewSection__cardContainerlist");
 }
 
 

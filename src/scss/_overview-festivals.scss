@@ -87,7 +87,7 @@
     }
   }
 
-  &__tilesContainer {
+  &__tilesListContainer {
     display: flex;
     justify-content: flex-end;
     grid-area: container;
@@ -108,7 +108,7 @@
 
   &__cardContainerTiles {
     //display: none;
-    background-color: green;
+    background-color: hotpink;
     width: 100%;
     display: grid;
     grid-template-columns: 343px;
@@ -293,8 +293,72 @@
 
 // list view
 
-.overviewSection__listContainer {
+.overviewSection__cardContainerlist {
   background-color: green;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1200px;
+
+  & .overviewSection__cardBox {
+    display: grid;
+    grid-template-columns: 169px 1fr;
+    grid-template-rows: 104px;
+    grid-template-areas: "pic content";
+    height: unset;
+  }
+
+  & .overviewSection__pic {
+    grid-area: pic;
+    background-color: lightgray;
+    height: 104px;
+  }
+
+  & .overviewSection__cardBoxContent {
+    padding: unset;
+    display: grid;
+    grid-template-columns: 104px 380px 396px 156px;
+    grid-template-areas: "panel tilte info notice";
+    grid-template-rows: auto;
+  }
+
+  & .overviewSection__iconPanel {
+    grid-area: panel;
+    position: static;
+    margin-left: 0;
+    width: 104px;
+    height: 104px;
+  }
+
+  & .overviewSection__cardTitle {
+    grid-area: unset;
+    align-self: center;
+    margin-left: 31px;
+  }
+
+  & .overviewSection__location {
+    grid-area: location;
+  }
+
+  & .overviewSection__info {
+    grid-area: info;
+
+  }
+
+  & .overviewSection__noticeContainer {
+    grid-area: notice;
+    align-self: center;
+    justify-self: center;
+  }
+
+  & .overviewSection__cardText {
+    display: none;
+  }
+
+  & .overviewSection__slash {
+    display: none;
+  }
+
+
 }
 
 
