@@ -113,7 +113,6 @@
 
   &__cardContainerTiles {
     //display: none;
-    background-color: hotpink;
     width: 100%;
     display: grid;
     grid-template-columns: 343px;
@@ -299,15 +298,14 @@
 // list view
 
 .overviewSection__cardContainerlist {
-  background-color: green;
   width: 100%;
   display: grid;
-  grid-template-columns: 1200px;
+  grid-template-columns: 1fr;
   grid-template-rows: 104px;
 
   & .overviewSection__cardBox {
     display: grid;
-    grid-template-columns: 169px 1fr;
+    grid-template-columns: 14% auto;
     grid-template-rows: 104px;
     grid-template-areas: "pic content";
     height: unset;
@@ -316,13 +314,14 @@
   & .overviewSection__pic {
     grid-area: pic;
     background-color: lightgray;
+    max-width: 169px;
     height: 104px;
   }
 
   & .overviewSection__cardBoxContent {
     padding: unset;
     display: grid;
-    grid-template-columns: 104px 380px 396px 156px;
+    grid-template-columns: 10% 39% 37% 14%;
     grid-template-areas: "panel tilte info notice";
     grid-template-rows: auto;
   }
@@ -331,7 +330,7 @@
     grid-area: panel;
     position: static;
     margin-left: 0;
-    width: 104px;
+    width: 100%;
     height: 104px;
   }
 
@@ -351,12 +350,13 @@
     align-items: center;
     border-right: solid #E5E5E5;
     font-size: 17px;
+    text-align: center;
   }
 
   & .overviewSection__info {
     grid-area: info;
     display: grid;
-    grid-template-columns: 185px 210px;
+    grid-template-columns: 44% 56%;
     grid-template-areas: "location date";
     border-right: solid #E5E5E5;
 
@@ -366,6 +366,15 @@
     grid-area: notice;
     align-self: center;
     justify-self: center;
+  }
+
+  & .overviewSection__notice {
+
+    display: none;
+
+    @include large {
+      display: inline-block;
+    }
   }
 
   & .overviewSection__cardText {
@@ -381,6 +390,7 @@
     align-self: center;
     justify-self: center;
     font-size: 17px;
+    text-align: center;
   }
 
   & .overviewSection__svg {
