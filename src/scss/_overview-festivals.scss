@@ -26,6 +26,11 @@
     margin-left: 20px;
   }
 
+  &__svg {
+    width: 24px;
+    height: 17.8px;
+  }
+
 
   &__labelContainer--date {
     grid-area: date;
@@ -376,6 +381,11 @@
     align-self: center;
     justify-self: center;
     font-size: 17px;
+  }
+
+  & .overviewSection__svg {
+    width: 52px;
+    height: 38.57px;
   }
 
 
