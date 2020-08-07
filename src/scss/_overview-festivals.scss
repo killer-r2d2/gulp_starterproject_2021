@@ -337,10 +337,16 @@
 
   & .overviewSection__location {
     grid-area: location;
+    align-self: center;
+    justify-self: center;
   }
 
   & .overviewSection__info {
     grid-area: info;
+    background-color: hotpink;
+    display: grid;
+    grid-template-columns: 185px 210px;
+    grid-template-areas: "location date";
 
   }
 
@@ -356,6 +362,12 @@
 
   & .overviewSection__slash {
     display: none;
+  }
+
+  & .overviewSection__date {
+    grid-area: date;
+    align-self: center;
+    justify-self: center;
   }
 
 
