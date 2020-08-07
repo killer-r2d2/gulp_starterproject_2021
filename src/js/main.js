@@ -27,9 +27,6 @@ function togglermenu() {
     like.classList.toggle("navigation__like");
     like.classList.toggle("navigation__like--white");
     const text = document.querySelector(".headerSection__text");
-    // change the color of the text
-    // text.classList.toggle("headerSection__text--color");
-    // text.classList.toggle("headerSection__text");
     // change the text
     if (text.innerHTML === "Menu") {
         text.innerHTML = "Schliessen";
@@ -58,4 +55,30 @@ function togglerlogin() {
     const changeColor = document.querySelector(".headerSection__IconLoginText");
     changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
+
+// select the list icon with a variable
+const viewList = document.querySelector(".overviewSection__icon-list");
+viewList.addEventListener('click', listView);
+
+// listView function
+function listView() {
+    console.log("hallo hölle");
+    const listShow = document.querySelector(".overviewSection__cardContainerTiles");
+    // listShow.classList.remove("overviewSection__cardContainerTiles");
+    listShow.classList.add("overviewSection__listContainer");
+}
+
+// select the list icon with a variable
+const viewTiles = document.querySelector(".overviewSection__icon-tiles");
+viewTiles.addEventListener('click', tilesView);
+
+// tilesView function
+function tilesView() {
+    console.log("hallo frucht");
+    const tilesShow = document.querySelector(".overviewSection__cardContainerTiles");
+    tilesShow.classList.add("overviewSection__cardContainerTiles");
+}
+
+
+
 

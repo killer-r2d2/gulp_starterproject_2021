@@ -38,9 +38,6 @@
     display: flex;
   }
 
-  &____tilesListContainer {
-    grid-area: container;
-  }
 
   &__icon {
     cursor: pointer;
@@ -90,9 +87,10 @@
     }
   }
 
-  &__tilesListContainer {
+  &__tilesContainer {
     display: flex;
     justify-content: flex-end;
+    grid-area: container;
   }
 
   &__labelContainer--tiles {
@@ -110,7 +108,7 @@
 
   &__cardContainerTiles {
     //display: none;
-    background-color: hotpink;
+    background-color: green;
     width: 100%;
     display: grid;
     grid-template-columns: 343px;
@@ -129,7 +127,7 @@
 
 
 
-  &__cardBoxTiles {
+  &__cardBox {
 
     background-color: white;
     height: 352px;
@@ -265,6 +263,7 @@
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
+    cursor: pointer;
 
 
     @include medium {
@@ -294,187 +293,8 @@
 
 // list view
 
-
-&__cardContainerList{
-  //display: none;
-  background-color: yellow;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 343px;
-  grid-auto-rows: auto;
-  justify-content: center;
-  grid-gap: 24px;
-
-  @include medium {
-    grid-template-columns: 343px 343px;
-  }
-
-  @include large {
-    grid-template-columns: 384px 384px 384px;
-  }
+.overviewSection__listContainer {
+  background-color: green;
 }
 
 
-
-&__cardBoxTiles {
-
-  background-color: white;
-  height: 352px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 232px 1fr;
-  grid-template-areas:
-    "pic"
-    "content";
-
-  @include medium {
-    height: 576px;
-  }
-
-}
-
-&__text--tiles {
-  display: none;
-}
-
-&__text--list {
-  display: none;
-}
-
-&__text--choose {
-  display: none;
-
-  @include medium {
-    display: inline-block;
-    margin-left: 4px;
-  }
-}
-
-// start with style the cardBoxes
-
-
-&__pic {
-  background-color: lightslategrey;
-  width: 100%;
-  height: 232px;
-  grid-area: pic;
-}
-
-&__cardBoxContent {
-  grid-area: content;
-  display: grid;
-  padding: 28px 24px 21px 24px;
-  grid-template-columns: 1fr;
-  grid-auto-rows: 0 auto auto auto;
-  grid-template-areas:
-    "panel"
-    "info"
-    "title";
-
-
-  @include medium {
-    padding: 28px 24px 21px 24px;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 0 auto auto auto auto;
-    grid-template-areas:
-    "panel"
-    "info"
-    "title"
-    "content"
-    "notice";
-  }
-
-}
-
-&__iconPanel {
-  grid-area: panel;
-  position: relative;
-  bottom: 76px;
-  width: 48px;
-  height: 48px;
-  left: 50%;
-  margin-left: -24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &--indie {
-    background-color: $indiemint;
-
-  }
-
-  &--hiphop {
-    background-color: $HipHoppink;
-  }
-
-  &--electronic {
-    background-color: $Electronicviolett;
-  }
-
-  &--jazz {
-    background-color: $Jazzgelb;
-  }
-
-  &--poprock {
-    background-color: $PopRockblau;
-  }
-}
-
-&__sign {
-  fill: $white;
-}
-
-
-&__info {
-  grid-area: info;
-  color: rgba(0, 0, 0, 0.746065);
-}
-
-&__cardTitle {
-  grid-area: title;
-
-}
-
-&__cardText {
-
-  display: none;
-
-  @include medium {
-    display: inline-block;
-    grid-area: content;
-    color: rgba(0, 0, 0, 0.746065);
-  }
-
-}
-
-&__noticeContainer {
-  grid-area: title;
-  display: flex;
-  flex-direction: row;
-  justify-self: flex-end;
-
-
-  @include medium {
-    grid-area: notice;
-    align-self: flex-end;
-    justify-self: flex-start;
-  }
-}
-
-&__notice {
-  display: none;
-
-  @include medium {
-    display: inline-block;
-  }
-}
-
-&__noticeStar {
-  margin-right: 6px;
-}
-
-&__btn {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-}
