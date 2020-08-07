@@ -298,6 +298,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1200px;
+  grid-template-rows: 104px;
 
   & .overviewSection__cardBox {
     display: grid;
@@ -331,22 +332,28 @@
 
   & .overviewSection__cardTitle {
     grid-area: unset;
-    align-self: center;
     margin-left: 31px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-right: solid #E5E5E5;
   }
 
   & .overviewSection__location {
     grid-area: location;
-    align-self: center;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid #E5E5E5;
+    font-size: 17px;
   }
 
   & .overviewSection__info {
     grid-area: info;
-    background-color: hotpink;
     display: grid;
     grid-template-columns: 185px 210px;
     grid-template-areas: "location date";
+    border-right: solid #E5E5E5;
 
   }
 
@@ -368,6 +375,7 @@
     grid-area: date;
     align-self: center;
     justify-self: center;
+    font-size: 17px;
   }
 
 
