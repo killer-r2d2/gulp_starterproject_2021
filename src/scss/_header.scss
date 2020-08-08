@@ -122,7 +122,6 @@
   &__breadCrumbContainer {
     width: 134px;
     height: 28px;
-    border: solid black 2px;
     position: absolute;
     left: 1.5%;
     top: 135%;
@@ -137,6 +136,21 @@
   &__rightArrow {
     width: 4.26px;
     height: 7.33px;
+  }
+
+  &__dropdownContainer {
+    width: 18px;
+    height: 18px;
+    border: solid 1px $greyC2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+  }
+
+  &__dropdown {
+    width: 10px;
+    height: 10px;
   }
 
   &__festivals  {
