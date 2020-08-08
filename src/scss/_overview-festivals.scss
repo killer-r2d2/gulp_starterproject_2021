@@ -247,6 +247,11 @@
 
   &__cardTitle {
     grid-area: title;
+    font-weight: normal;
+
+    @include medium {
+      font-weight: bold;
+    }
 
   }
 
@@ -371,6 +376,7 @@
     align-items: center;
     height: 100%;
     padding-left: 24px;
+    font-weight: normal;
 
 
     @include medium {
@@ -378,6 +384,7 @@
       grid-area: unset;
       border-right: solid #E5E5E5;
       margin-left: 31px;
+      font-weight: bold;
     }
   }
 
