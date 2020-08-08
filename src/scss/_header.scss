@@ -121,21 +121,29 @@
 
   &__breadCrumbContainer {
     width: 134px;
-    height: 28px;
+    height: 40px;
     position: absolute;
     left: 1.5%;
     top: 135%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 15% 15% 55% 15%;
+    grid-template-areas: "home arrow text dd";
+    justify-items: center;
+    grid-gap: 5px;
+    align-items: center;
   }
   &__home {
     width: 16px;
     height: 15.04px;
+    grid-area: home;
+    cursor: pointer;
   }
 
   &__rightArrow {
-    width: 4.26px;
-    height: 7.33px;
+    width: 8px;
+    height: 8px;
+    grid-area: arrow;
+
   }
 
   &__dropdownContainer {
@@ -146,6 +154,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 80%;
+    grid-area: dd;
+    cursor: pointer;
   }
 
   &__dropdown {
@@ -155,6 +165,8 @@
 
   &__festivals  {
     color: $greyC2;
+    grid-area: text;
+    align-self: flex-end;
   }
 
   &__homeIcon, &__rightIcon, &__dropdownIcon {
