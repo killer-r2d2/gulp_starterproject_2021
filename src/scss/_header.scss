@@ -117,6 +117,38 @@
 
   }
 
+  // start with breadcrumb styling
+
+  &__breadCrumbContainer {
+    width: 134px;
+    height: 28px;
+    border: solid black 2px;
+    position: absolute;
+    left: 1.5%;
+    top: 135%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__home {
+    width: 16px;
+    height: 15.04px;
+  }
+
+  &__rightArrow {
+    width: 4.26px;
+    height: 7.33px;
+  }
+
+  &__festivals  {
+    color: $greyC2;
+  }
+
+  &__homeIcon, &__rightIcon, &__dropdownIcon {
+    fill: $greyC2;
+  }
+
+
+
 
 }
 
@@ -285,8 +317,10 @@
   &--white {
     fill: #FFFFFF;
   }
-
 }
+
+
+
 
 
 
