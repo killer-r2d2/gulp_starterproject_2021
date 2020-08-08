@@ -301,29 +301,56 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 104px;
+  grid-template-rows: 176px;
+
+  @include medium {
+    grid-template-rows: 104px;
+
+  }
 
   & .overviewSection__cardBox {
     display: grid;
-    grid-template-columns: 14% auto;
-    grid-template-rows: 104px;
-    grid-template-areas: "pic content";
+    grid-template-rows: 176px;
+    grid-template-columns: auto;
     height: unset;
+    grid-template-areas: "content";
+
+    @include medium {
+      grid-template-columns: 14% auto;
+      grid-template-rows: 104px;
+      grid-template-areas: "pic content";
+    }
   }
 
   & .overviewSection__pic {
-    grid-area: pic;
-    background-color: lightgray;
-    max-width: 169px;
-    height: 104px;
+    display: none;
+
+    @include medium {
+      display: inline-block;
+      grid-area: pic;
+      background-color: lightgray;
+      max-width: 169px;
+      height: 104px;
+    }
   }
 
   & .overviewSection__cardBoxContent {
     padding: unset;
     display: grid;
-    grid-template-columns: 10% 39% 37% 14%;
-    grid-template-areas: "panel tilte info notice";
-    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "panel"
+    "title"
+    "location"
+    "info";
+    grid-template-rows: auto auto auto auto;
+
+    @include medium {
+      grid-template-columns: 10% 39% 37% 14%;
+      grid-template-areas: "panel tilte info notice";
+      grid-template-rows: auto;
+    }
+
   }
 
   & .overviewSection__iconPanel {
@@ -331,41 +358,68 @@
     position: static;
     margin-left: 0;
     width: 100%;
-    height: 104px;
+    height: 48px;
+
+    @include medium {
+      height: 104px;
+    }
   }
 
   & .overviewSection__cardTitle {
-    grid-area: unset;
-    margin-left: 31px;
+    grid-area: title;
     display: flex;
     align-items: center;
     height: 100%;
-    border-right: solid #E5E5E5;
+    padding-left: 24px;
+
+
+    @include medium {
+      padding-left: unset;
+      grid-area: unset;
+      border-right: solid #E5E5E5;
+      margin-left: 31px;
+    }
   }
 
   & .overviewSection__location {
     grid-area: location;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: solid #E5E5E5;
     font-size: 17px;
-    text-align: center;
+
+
+    @include medium {
+      border-right: solid #E5E5E5;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   & .overviewSection__info {
     grid-area: info;
     display: grid;
-    grid-template-columns: 44% 56%;
-    grid-template-areas: "location date";
-    border-right: solid #E5E5E5;
+    grid-template-columns: 80%;
+    grid-template-areas: "location" "date";
+    padding-left: 24px;
+
+    @include medium {
+      border-right: solid #E5E5E5;
+      grid-template-columns: 44% 56%;
+      grid-template-areas: "location date";
+      padding-left: unset;
+    }
+
 
   }
 
   & .overviewSection__noticeContainer {
-    grid-area: notice;
+    grid-area: info;
     align-self: center;
-    justify-self: center;
+
+    @include medium {
+      grid-area: notice;
+      justify-self: center;
+    }
   }
 
   & .overviewSection__notice {
@@ -385,17 +439,35 @@
     display: none;
   }
 
+  & .overviewSection__noticeStar {
+    margin-right: 24px;
+
+    @include medium {
+      margin-right: 6px;
+    }
+  }
+
   & .overviewSection__date {
     grid-area: date;
-    align-self: center;
-    justify-self: center;
     font-size: 17px;
-    text-align: center;
+
+
+    @include medium {
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   & .overviewSection__svg {
-    width: 52px;
-    height: 38.57px;
+    width: 24px;
+    height: 17.8px;
+
+    @include medium {
+      width: 52px;
+      height: 38.57px;
+    }
+
   }
 
 
