@@ -41,6 +41,8 @@
 
   &__link {
 
+    color: #767676;
+
     &:hover {
       color: black;
     }
@@ -79,11 +81,12 @@
 
 .footerSection__item {
   cursor: pointer;
+  text-decoration: none;
+  color: $grey76;
 
   &:hover {
     color: black;
   }
-
 
 }
 
