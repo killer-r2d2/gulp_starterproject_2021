@@ -43,3 +43,23 @@ body, body * {
 
 
 }
+
+// links
+
+a {
+
+    color: $grey76;
+    text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: black;
+  }
+
+  &:visited {
+    color: unset;
+  }
+}
