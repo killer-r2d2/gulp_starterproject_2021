@@ -24,17 +24,6 @@
     list-style-type: none;
   }
 
-  &__text {
-    display: none;
-
-    @include medium {
-      display: inline-block;
-    }
-
-    &--position {
-      justify-self: flex-end;
-    }
-  }
 
   &__arrowPic {
     justify-self: center;
@@ -43,6 +32,27 @@
 
     @include small {
       justify-self: flex-start;
+    }
+
+    @include medium {
+      margin-left: 12px;
+    }
+  }
+
+  &__link {
+
+    color: #767676;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__linkText {
+    display: none;
+
+    @include medium {
+      display: inline-block;
     }
   }
 }
@@ -56,6 +66,7 @@
   grid-gap: 35px;
   justify-self: flex-end;
 
+
   @include small {
     justify-self: center;
 
@@ -67,6 +78,20 @@
     justify-self: center;
   }
 }
+
+.footerSection__item {
+  cursor: pointer;
+  text-decoration: none;
+  color: $grey76;
+
+  &:hover {
+    color: black;
+  }
+
+}
+
+
+
 
 .footerSection__box2 {
   grid-area: icons;
@@ -94,11 +119,11 @@
   grid-template-columns: auto;
   grid-template-rows: 1fr;
   align-items: center;
-  justify-self: center;
   grid-gap: 12px;
+  justify-items: center;
 
   @include medium {
-    grid-template-columns: 50% 47%;
+    grid-template-columns: 100%;
   }
 }
 

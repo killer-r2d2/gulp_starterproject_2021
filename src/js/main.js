@@ -27,13 +27,10 @@ function togglermenu() {
     like.classList.toggle("navigation__like");
     like.classList.toggle("navigation__like--white");
     const text = document.querySelector(".headerSection__text");
-    // change the color of the text
-    // text.classList.toggle("headerSection__text--color");
-    // text.classList.toggle("headerSection__text");
     // change the text
     if (text.innerHTML === "Menu") {
         text.innerHTML = "Schliessen";
-        text.style.color ="white";
+        text.style.color = "white";
     } else {
         text.innerHTML = "Menu";
         text.style.color = "black"
@@ -58,4 +55,43 @@ function togglerlogin() {
     const changeColor = document.querySelector(".headerSection__IconLoginText");
     changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
+
+
+// Change the view between list and tiles of the festivals site
+
+// select the list icon with a variable
+const viewList = document.querySelector(".overviewSection__labelContainer--list");
+viewList.addEventListener('click', listView);
+
+// listView function
+function listView() {
+    console.log("hallo hölle");
+    const listShow = document.querySelector(".overviewSection__cardContainerTiles");
+    // listShow.classList.remove("overviewSection__cardContainerTiles");
+    listShow.classList.add("overviewSection__cardContainerlist");
+}
+
+// select the list icon with a variable
+const viewTiles = document.querySelector(".overviewSection__labelContainer--tiles");
+viewTiles.addEventListener('click', tilesView);
+
+// tilesView function
+function tilesView() {
+    console.log("hallo frucht");
+    const tilesShow = document.querySelector(".overviewSection__cardContainerTiles");
+    tilesShow.classList.remove("overviewSection__cardContainerlist");
+}
+
+// change the color of the notice star by a click. I use an arrow function of ES6
+
+const changeColor = document.querySelector(".overviewSection__noticeContainer");
+changeColor.addEventListener('click', () => {
+    console.log('sonne');
+
+});
+
+
+
+
+
 
