@@ -7,9 +7,16 @@
     position: absolute;
     top: 100px;
     left: 50%;
-    margin-left: -105px;
-    width: 210px;
-    height: 156px;
+    margin-left: -27.5px;
+    width: 55px;
+    height: 41px;
+
+    @include medium {
+      width: 210px;
+      height: 156px;
+      margin-left: -105px;
+    }
+
 
   }
 
@@ -19,10 +26,15 @@
 
   &__title {
 
-    bottom: 95px;
-    left: 114px;
+    bottom: 12px;
+    left: 16px;
     position: relative;
     color: $white;
+
+    @include large {
+      bottom: 95px;
+      left: 114px;
+    }
 
   }
 
@@ -36,20 +48,34 @@
 
     background-color: $indiemint;
     width: 100%;
-    height: 472px;
+    height: 240px;
+
+    @include large {
+
+      height: 472px;
+    }
 
   }
 
   &__panelContainer {
+
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "A" "B" "C" "D";
+    grid-template-columns: 100%;
     background-color: $Indieminthell;
-    height: 264px;
+    height: 544px;
     width: 100%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    grid-template-areas: "A B C D";
     align-items: center;
     justify-items: center;
+
+
+    @include medium {
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-rows: 100%;
+      grid-template-areas: "A B C D";
+      height: 264px;
+    }
   }
 
   &__panelItems {
@@ -107,7 +133,7 @@
   }
 
   &__panelBox {
-    border-right: #00D79F solid 1px;
+    border-bottom: #00D79F solid 1px;
     height: 100%;
     align-items: center;
     width: 100%;
@@ -118,5 +144,79 @@
     "text"
     "number";
     justify-items: center;
+
+    @include medium {
+      border-right: #00D79F solid 1px;
+
+    }
+  }
+}
+
+.textSection {
+
+
+  &__breadCrumbContainer {
+    width: 410px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
+    grid-template-areas: "A B C D E F G ";
+    justify-items: center;
+    grid-gap: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 23px;
+  }
+
+  &__homeLink {
+    grid-area: A;
+  }
+
+  &__rightArrow {
+    width: 8px;
+    height: 8px;
+    grid-area: B;
+
+    &--2 {
+      grid-area: E;
+    }
+  }
+   &__homeIcon {
+     fill: #C2C2C2;
+   }
+
+  &__festivals {
+    color: #C2C2C2;
+    grid-area: C;
+    align-self: flex-end;
+
+    &--2 {
+      grid-area: F;
+    }
+  }
+
+  &__dropdownContainer {
+    width: 18px;
+    height: 18px;
+    border: solid 1px #C2C2C2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+    grid-area: D;
+    cursor: pointer;
+
+    &--2 {
+      grid-area: G;
+    }
+  }
+
+  &__dropdown {
+    width: 10px;
+    height: 10px;
   }
 }
