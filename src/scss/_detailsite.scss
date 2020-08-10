@@ -19,6 +19,9 @@
 
   &__title {
 
+    bottom: 95px;
+    left: 114px;
+    position: relative;
     color: $white;
 
   }
@@ -43,8 +46,77 @@
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    grid-template-areas: "A B C D";
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__panelItems {
+
+    color: $white;
+
+    &--countdown {
+      grid-area: text;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--rest {
+      grid-area: text;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--visitors {
+      grid-area: text;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--weather {
+      grid-area: text;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--days {
+      grid-area: number;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--restNumber {
+      grid-area: number;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--visitorNumber {
+      grid-area: number;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+    &--weatherDegree {
+      grid-area: number;
+      font-family: ProximaNova, sans-serif;
+      font-weight: bold;
+    }
+
+  }
+
+  &__panelBox {
+    border-right: #00D79F solid 1px;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
-    //grid-template-areas:
-    //"";
+    grid-template-areas:
+    "text"
+    "number";
+    justify-items: center;
   }
 }
