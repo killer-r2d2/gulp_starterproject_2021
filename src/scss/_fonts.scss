@@ -88,11 +88,12 @@ h1 {
   line-height: 40px;
   font-family: Adelle, sans-serif;
   color: #000000;
-  font-weight: bold;
+  font-weight: normal;
 
   @include large {
     font-size: 56px;
     line-height: 80px;
+    font-weight: bold;
   }
 
 }

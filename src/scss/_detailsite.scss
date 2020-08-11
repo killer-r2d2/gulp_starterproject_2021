@@ -162,15 +162,23 @@
     width: 100%;
     height: 40px;
     display: grid;
-    grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
+    grid-template-columns: auto;
     grid-template-areas: "A B C D E F G ";
-    justify-items: center;
     grid-gap: 5px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 120px;
+    padding-left: 16px;
     margin-top: 23px;
+
+    @include medium {
+      padding-left: 120px;
+    }
+
+    @include large {
+      justify-items: center;
+    }
+
   }
 
   &__homeLink {
@@ -226,22 +234,38 @@
 
   &__content {
     position: relative;
-    padding-left: 320px;
-    padding-right: 425px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-top: 115px;
     width: 100%;
+
+    @include medium {
+      padding-left: 120px;
+      padding-right: 225px;
+    }
+
+    @include large {
+
+      padding-left: 320px;
+      padding-right: 425px;
+    }
   }
 
   &__locDateContainer {
     margin-top: 40px;
     margin-bottom: 36px;
     display: grid;
-    max-width: 400px;
+    max-width: 222px;
     width: 100%;
     grid-template-rows: 100%;
     grid-template-columns: auto;
-    grid-template-areas: "A B C D";
+    grid-template-areas:"A B" "C D";
     align-items: center;
+
+    @include medium {
+      grid-template-areas: "A B C D";
+      max-width: 400px;
+    }
   }
 
   &__icon {
@@ -262,7 +286,7 @@
 
     &--1 {
       grid-area: B;
-      margin-right: 31px;
+      //margin-right: 31px;
     }
 
     &--2 {
@@ -282,9 +306,7 @@
   }
 
   &__noticeContainer {
-    position: absolute;
-    left: 75%;
-    bottom: 52%;
+    margin-bottom: 72px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
@@ -293,11 +315,26 @@
     "2"
     "3"
     "4";
+    justify-content: center;
+
+    @include large {
+      position: absolute;
+      left: 75%;
+      bottom: 52%;
+      margin-bottom: unset;
+    }
   }
 
   &__noticeContainer--1 {
     grid-area: 1;
     margin-bottom: 1em;
+    justify-self: center;
+
+    @include large {
+      justify-self: flex-start;
+    }
+
+
 
   }
 
@@ -313,6 +350,11 @@
 
   &__noticeContainer--4 {
     grid-area: 4;
+    justify-self: center;
+
+    @include large {
+      justify-self: flex-start;
+    }
   }
 
 
@@ -320,7 +362,7 @@
     max-width: 593px;
     width: 100%;
     height: 392px;
-    background-color: yellow;
+    background-color: lightgray;
   }
 
   &__star {
