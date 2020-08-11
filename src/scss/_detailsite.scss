@@ -385,6 +385,7 @@
 .lineUpSection {
 
   width: 100%;
+  background-color: #F6F6F6;
 
 
   &__content {
@@ -410,11 +411,37 @@
 
     &__title {
       width: 100%;
+      padding-top: 106px;
     }
 
   &__lead {
     margin-bottom: 55px;
     width: 100%;
+  }
+
+  &__btn--1 {
+    width: 100%;
+
+    @include medium {
+      width: 147px;
+    }
+
+  }
+
+  &__btn--2 {
+    display: none;
+
+    @include medium {
+      display: inline-block;
+    }
+  }
+
+  &__btn--3 {
+    display: none;
+
+    @include medium {
+      display: inline-block;
+    }
   }
 
 

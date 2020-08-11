@@ -38,3 +38,20 @@
     color: $white;
   }
 }
+
+// Tab Button
+
+.tabBtn{
+  height: 48px;
+  width: 147px;
+  background-color: transparent;
+  border: solid $black100 2px;
+  cursor: pointer;
+
+
+  &:hover {
+    background-color: $black100;
+    color: $white;
+  }
+}
+
