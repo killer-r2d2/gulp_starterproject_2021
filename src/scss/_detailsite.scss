@@ -444,6 +444,78 @@
     }
   }
 
+  // start styling schedule
+
+  &__scheduleContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
+  }
+
+  &__timeBox {
+    grid-area: box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "time group1 group2";
+
+    &--1 {
+      background-color: hotpink;
+      grid-area: A;
+    }
+
+    &--2 {
+      background-color: hotpink;
+      grid-area: B;
+    }
+
+    &--3 {
+      background-color: hotpink;
+      grid-area: C;
+    }
+
+    &--4 {
+      background-color: hotpink;
+      grid-area: D;
+    }
+
+    &--5 {
+      background-color: hotpink;
+      grid-area: E;
+    }
+
+    &--6 {
+      background-color: hotpink;
+      grid-area: F;
+    }
+
+    &--7 {
+      background-color: hotpink;
+      grid-area: G;
+    }
+  }
+
+
+  &__groupBox {
+    width: 289px;
+    height: 48px;
+    background-color: $white;
+    padding-left: 16px;
+    align-items: center;
+    display: grid;
+  }
+
+  &__time {
+    justify-self: center;
+    align-self: center;
+  }
+
+
+
+
+
+
 
 }
 
