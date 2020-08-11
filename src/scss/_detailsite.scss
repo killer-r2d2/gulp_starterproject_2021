@@ -444,6 +444,10 @@
     }
   }
 
+  &__btnContainer {
+    margin-bottom: 89px;
+  }
+
   // start styling schedule
 
   &__scheduleContainer {
@@ -451,47 +455,45 @@
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
+    max-width: 642px;
+    width: 100%;
+    grid-row-gap: 32px;
+    padding: 0 525px 136px 243px;
   }
 
   &__timeBox {
     grid-area: box;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 64px 289px 289px;
     grid-template-rows: auto;
     grid-template-areas: "time group1 group2";
+    grid-gap: 15px;
 
     &--1 {
-      background-color: hotpink;
       grid-area: A;
     }
 
     &--2 {
-      background-color: hotpink;
       grid-area: B;
     }
 
     &--3 {
-      background-color: hotpink;
       grid-area: C;
     }
 
     &--4 {
-      background-color: hotpink;
       grid-area: D;
     }
 
     &--5 {
-      background-color: hotpink;
       grid-area: E;
     }
 
     &--6 {
-      background-color: hotpink;
       grid-area: F;
     }
 
     &--7 {
-      background-color: hotpink;
       grid-area: G;
     }
   }
