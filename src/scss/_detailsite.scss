@@ -154,9 +154,12 @@
 
 .textSection {
 
+  width: 100%;
+
 
   &__breadCrumbContainer {
-    width: 410px;
+    max-width: 410px;
+    width: 100%;
     height: 40px;
     display: grid;
     grid-template-columns: 16% 14% 14% 14% 14% 14% 14%;
@@ -183,9 +186,10 @@
       grid-area: E;
     }
   }
-   &__homeIcon {
-     fill: #C2C2C2;
-   }
+
+  &__homeIcon {
+    fill: #C2C2C2;
+  }
 
   &__festivals {
     color: #C2C2C2;
@@ -221,17 +225,19 @@
   }
 
   &__content {
+    position: relative;
     padding-left: 320px;
     padding-right: 425px;
-    background-color: orange;
     margin-top: 115px;
+    width: 100%;
   }
 
   &__locDateContainer {
     margin-top: 40px;
     margin-bottom: 36px;
     display: grid;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     grid-template-rows: 100%;
     grid-template-columns: auto;
     grid-template-areas: "A B C D";
@@ -266,17 +272,64 @@
 
   &__lead {
     margin-bottom: 55px;
+    width: 100%;
   }
 
   &__intro {
     color: rgba(0, 0, 0, 0.75);
     margin-bottom: 1em;
+    width: 100%;
   }
 
+  &__noticeContainer {
+    position: absolute;
+    left: 75%;
+    bottom: 52%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4";
+  }
+
+  &__noticeContainer--1 {
+    grid-area: 1;
+    margin-bottom: 1em;
+
+  }
+
+  &__noticeContainer--2 {
+    grid-area: 2;
+    margin-bottom: 1em;
+  }
+
+  &__noticeContainer--3 {
+    grid-area: 3;
+    margin-bottom: 40px;
+  }
+
+  &__noticeContainer--4 {
+    grid-area: 4;
+  }
+
+
   &__sliderContainer {
-    width: 593px;
+    max-width: 593px;
+    width: 100%;
     height: 392px;
     background-color: yellow;
+  }
+
+  &__star {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__title {
+    width: 100%;
   }
 
 

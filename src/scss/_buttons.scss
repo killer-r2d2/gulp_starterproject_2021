@@ -2,6 +2,21 @@
 
 .primaryButton {
 
+  width: 343px;
+  height: 48px;
+  background: $black100;
+  color: $white;
+  border: 2px solid #000000;
+  cursor: pointer;
+
+  @include large {
+    width: 201px;
+  }
+
+  &:hover {
+    background-color: $greyC2;
+  }
+
 }
 
 
