@@ -545,6 +545,21 @@
     }
   }
 
+  &__video {
+    width: 100%;
+    max-width: 1440px;
+    height: 392px;
+
+    &--changeHeight {
+      height: 784px;
+    }
+
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 
 
 
