@@ -560,11 +560,102 @@
     }
   }
 
+}
+
+// end styling lineUpSection
+
+// start styling knowledgeSection
+
+.knowledgeSection {
+
+  width: 100%;
+  background-color: #F2F2F2;
+
+
+  &__content {
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 139px;
+    width: 100%;
+
+    @include medium {
+      padding-left: 120px;
+      padding-right: 225px;
+    }
+
+    @include large {
+
+      padding-left: 320px;
+      padding-right: 425px;
+    }
+  }
 
 
 
+  &__lead {
+    margin-top: 39px;
+    margin-bottom: 59px;
+  }
 
+
+  // start styling the accordionContainer
+
+  &__accordionContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "A" "B" "C" "D";
+  }
+
+  &__accordionBox {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titleContainer" "lowerContainer";
+
+  }
+
+  &__titleContainer {
+    border-bottom: solid black;
+    grid-area: titleContainer;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title choose";
+    grid-gap: 68px;
+  }
+
+  &__title {
+    grid-area: title;
+    width: 100%;
+  }
+
+  &__choose {
+    grid-area: choose;
+    justify-self: flex-end;
+  }
+
+
+  &__lowerContainer {
+    grid-area: lowerContainer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "text" "option";
+  }
+
+  &__text {
+    grid-area: text;
+  }
+
+  &__option {
+    grid-area: option;
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+  }
 
 
 }
-
