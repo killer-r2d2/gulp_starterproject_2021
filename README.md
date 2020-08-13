@@ -121,6 +121,9 @@ DIPLOMA THESIS WEB DEV 19/20
 ###URL (OPERATIVE VERSION):
 
 ###TECHNICAL DOCUMENTATION:
+1. To embed the google map on the detailsite of the festival, I used
+the google Maps JavaScript API (// https://developers.google.com/maps/documentation/javascript/overview
+) and the documentation. So, it's foreign code
 
 
 
