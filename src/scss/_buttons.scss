@@ -37,6 +37,10 @@
     background-color: $black100;
     color: $white;
   }
+
+  &--white {
+    border: solid $white 2px;
+  }
 }
 
 // Tab Button

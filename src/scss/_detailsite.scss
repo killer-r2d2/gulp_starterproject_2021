@@ -569,6 +569,7 @@
 .knowledgeSection {
 
   width: 100%;
+  padding-bottom: 190px;
   background-color: #F2F2F2;
 
 
@@ -635,15 +636,23 @@
   &__choose {
     grid-area: choose;
     justify-self: flex-end;
+    cursor: pointer;
   }
 
 
   &__lowerContainer {
-    grid-area: lowerContainer;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content;
-    grid-template-areas: "text" "option";
+
+
+    display: none;
+
+    &--show {
+      grid-area: lowerContainer;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content max-content;
+      grid-template-areas: "text" "option";
+    }
+
   }
 
   &__text {
@@ -658,6 +667,61 @@
     height: 400px;
     width: 100%;
   }
+
+
+}
+
+// end styling knowledgeSection
+
+// start styling teaserSection
+
+.teaserSection {
+
+  width: 100%;
+  height: 504px;
+
+  // container1
+  &__container1 {
+    background-color: $indiemint;
+    width: 100%;
+    height: 376px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 300px;
+    height: 222.54px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 77px;
+  }
+
+  &__iconfill {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__btn {
+    color: $white;
+  }
+
+
+
+  // container 2
+  &__container2 {
+    background-color: $Indieminthell;
+    width: 100%;
+    height: 128px;
+  }
+
 
 
 }

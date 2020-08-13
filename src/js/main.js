@@ -18,8 +18,8 @@ function togglermenu() {
     const layer = document.querySelector("#navSection");
     layer.classList.toggle("navSection--show");
     layer.classList.toggle("navSection");
+    const headerSection = document.querySelector(".headerSection")
     headerSection.classList.toggle("headerSection--changeColor");
-    // headerSection.classList.toggle("headerSection");
     const ticket = document.querySelector("#navigation__ticketkauf");
     ticket.classList.toggle("navigation__ticket--white");
     ticket.classList.toggle("navigation__ticket");
@@ -91,8 +91,6 @@ changeColor.addEventListener('click', () => {
 
 });
 
-// initMap();
-
 function initMap() {
     // Map options
     var options = {
@@ -113,6 +111,14 @@ function initMap() {
     });
 }
 
+
+// show function for accordionBox
+const showBtn = documen.querySelector(".knowledgeSection__choose");
+showBtn.addEventListener('click', showMe);
+
+function showMe() {
+    console.log("hallo hölle");
+}
 
 
 
