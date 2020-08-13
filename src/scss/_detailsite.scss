@@ -678,7 +678,6 @@
 .teaserSection {
 
   width: 100%;
-  height: 504px;
 
   // container1
   &__container1 {
@@ -707,6 +706,7 @@
 
   &__title {
     color: $white;
+    text-align: center;
   }
 
   &__btn {
@@ -717,9 +717,108 @@
 
   // container 2
   &__container2 {
+
+
+
+
     background-color: $Indieminthell;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "box1" "box2";
+
+
+    @include large {
+      height: 128px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "box1 box2";
+    }
+  }
+
+  &__arrowFill {
+    fill: $white;
+  }
+
+  &__boxA {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "A B C";
+    grid-column-gap: 25px;
+  }
+
+  &__arrowPic {
+
+    cursor: pointer;
+
+    &--left {
+      transform: rotate(-90deg);
+      grid-area: A;
+      align-self: center;
+      justify-self: center;
+
+    }
+
+    &--right {
+      transform: rotate(90deg);
+      grid-area: C;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
+  &__boxB {
+    border-top: solid white 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "A B C";
+    grid-column-gap: 25px;
+
+    @include large {
+      border-top: none;
+    }
+  }
+
+  &__text {
+    color: $white;
+
+    &--area1 {
+      grid-area: B;
+      align-self: center;
+      justify-self: center;
+    }
+
+    &--area2 {
+      grid-area: B;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
+  &__img {
+    width: 128px;
     height: 128px;
+    background-color: lightblue;
+
+    @include medium {
+      width: 312px;
+    }
+
+    &--left {
+      grid-area: C;
+      justify-self: flex-end;
+      background-image: url("../images/Links/NexFestival.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--right {
+      grid-area: A;
+      background-image: url("../images/Links/Reload2015-3691.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
 
