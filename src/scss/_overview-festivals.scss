@@ -130,6 +130,10 @@
     }
   }
 
+  &__detailSite {
+    text-decoration: none;
+  }
+
 
 
   &__cardBox {
@@ -287,6 +291,7 @@
 
   &__notice {
     display: none;
+    color: black;
 
     @include medium {
       display: inline-block;
