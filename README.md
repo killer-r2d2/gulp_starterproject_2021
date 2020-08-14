@@ -114,11 +114,14 @@ DIPLOMA THESIS WEB DEV 19/20
 | 13.08.2020 | HTML AND CSS AND JS                              |      10 |
 
 ###QUESTIONS:
-1. GOOGLE MAPS API
+
 2. JAVASCRIPT EVENTLISTENER
 3. PATTERN
-4. TICKET ORDER PROCESS
-  
+
+Answers overscroll-behavior (contain)  
+
+Login
+stop propagation auf login box
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
 

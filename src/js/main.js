@@ -1,6 +1,3 @@
-// import * as googleMaps from ' ./google-maps';
-// import { initMap } from './google-maps.js'; // import a single function
-
 // select the hamburger box with a variable
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
 menutoggler.addEventListener('click', togglermenu);
@@ -62,7 +59,10 @@ function togglerlogin() {
 
 // select the list icon with a variable
 const viewList = document.querySelector(".overviewSection__labelContainer--list");
-viewList.addEventListener('click', listView);
+// we check if the variable viewList (class .overviewSection__labelContainer--list) exist
+if(viewList) {
+    viewList.addEventListener('click', listView);
+}
 
 // listView function
 function listView() {
@@ -74,7 +74,10 @@ function listView() {
 
 // select the list icon with a variable
 const viewTiles = document.querySelector(".overviewSection__labelContainer--tiles");
-viewTiles.addEventListener('click', tilesView);
+// we check if the variable viewTiles(class .overviewSection__labelContainer--tiles) exist
+if(viewTiles) {
+    viewTiles.addEventListener('click', tilesView);
+}
 
 // tilesView function
 function tilesView() {
@@ -86,15 +89,19 @@ function tilesView() {
 // change the color of the notice star by a click. I use an arrow function of ES6
 
 const changeColor = document.querySelector(".overviewSection__noticeContainer");
-changeColor.addEventListener('click', () => {
-    console.log('sonne');
+// we check if the variable changeColor(class .overviewSection__noticeContainer) exist
+if (changeColor) {
+    changeColor.addEventListener('click', () => {
+        console.log('sonne');
 
-});
+    });
+}
+
 
 function initMap() {
     // Map options
     var options = {
-        zoom:8,
+        zoom:14,
         center:{lat:47.4250593,lng:9.3765878},
         mapId: '2ab83db5f283fb46',
         disableDefaultUI: true
@@ -113,13 +120,19 @@ function initMap() {
 
 
 // show function for accordionBox
-const showBtn = documen.querySelector(".knowledgeSection__choose");
-showBtn.addEventListener('click', showMe);
-
-function showMe() {
-    console.log("hallo hölle");
+const showBtn = document.querySelector(".knowledgeSection__choose");
+// we check if the variable showBtn(class .knowledgeSection__choose) exist
+if (showBtn) {
+    showBtn.addEventListener('click', showMe);
 }
 
+
+function showMe() {
+    const showInfo = document.querySelector(".knowledgeSection__lowerContainer");
+    showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
+    console.log('hallo hölle');
+    showInfo.classList.toggle("knowledgeSection__lowerContainer");
+}
 
 
 
