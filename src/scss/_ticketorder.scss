@@ -1,3 +1,7 @@
+.textSection__locDateContainer--align {
+  align-self: center;
+}
+
 .ticketOrder {
 
 // start to style the top banner
@@ -130,10 +134,18 @@
       display: grid;
       grid-template-columns: auto;
       grid-template-areas: "A B C D";
+      grid-column-gap: 15px;
+      margin-top: 45px;
+      margin-bottom: 156px;
     }
 
     &--B {
-      background-color: yellow;
+      display: grid;
+      grid-template-columns: 290px 290px;
+      grid-template-areas: "A B";
+      grid-column-gap: 15px;
+      margin-top: 45px;
+      margin-bottom: 156px;
     }
   }
 
@@ -142,6 +154,7 @@
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: "A" "B" "C";
+    max-width: 290px;
 
   }
 
@@ -149,6 +162,10 @@
     grid-area: A;
     background-color: $indiemint;
     height: 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   &__icon {
@@ -166,12 +183,17 @@
 
   &__amount {
     color: $white;
+    font-weight: normal;
   }
 
   &__middleContainer {
     grid-area: B;
     background-color: $white;
     height: 88px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__middleText {
@@ -182,10 +204,31 @@
     color: $indiemint;
   }
 
+  &__middleBox1 {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__middleBox2 {
+    width: 238px;
+    height: 16px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 8px;
+
+  }
+
+  &__availableBox {
+    background-color: $indiemint;
+  }
+
   &__lowerContainer {
     grid-area: C;
     background-color: transparent;
     height: 72px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   &__btn {
