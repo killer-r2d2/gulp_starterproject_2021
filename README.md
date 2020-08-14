@@ -108,8 +108,16 @@ DIPLOMA THESIS WEB DEV 19/20
 | 07.08.2020 | HTML AND CSS AND                                 |      6 |
 | 08.08.2020 | HTML AND CSS AND                                 |      10 |
 | 09.08.2020 | HTML AND CSS AND                                 |      8 |
+| 10.08.2020 | HTML AND CSS AND                                 |      8 |
+| 11.08.2020 | HTML AND CSS AND                                 |      6 |
+| 12.08.2020 | HTML AND CSS AND                                 |      6 |
+| 13.08.2020 | HTML AND CSS AND JS                              |      10 |
 
-
+###QUESTIONS:
+1. GOOGLE MAPS API
+2. JAVASCRIPT EVENTLISTENER
+3. PATTERN
+4. TICKET ORDER PROCESS
   
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
