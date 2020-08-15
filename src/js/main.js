@@ -87,7 +87,6 @@ function tilesView() {
 }
 
 // change the color of the notice star by a click. I use an arrow function of ES6
-
 const changeColor = document.querySelector(".overviewSection__noticeContainer");
 // we check if the variable changeColor(class .overviewSection__noticeContainer) exist
 if (changeColor) {
@@ -119,19 +118,20 @@ function initMap() {
 }
 
 
-// show function for accordionBox
-const showBtn = document.querySelector(".knowledgeSection__choose");
-// we check if the variable showBtn(class .knowledgeSection__choose) exist
-if (showBtn) {
-    showBtn.addEventListener('click', showMe);
+// select the accordionContainer
+const knowledgeWrappper = document.querySelector(".knowledgeSection__accordionContainer");
+// we check if the variable knowledgeWrappper(class .knowledgeSection__accordionContainer) exist
+if (knowledgeWrappper) {
+    knowledgeWrappper.addEventListener('click', showMe);
 }
 
-
-function showMe() {
-    const showInfo = document.querySelector(".knowledgeSection__lowerContainer");
-    showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
-    console.log('hallo hölle');
-    showInfo.classList.toggle("knowledgeSection__lowerContainer");
+// show function for accordionBox with delegate approach
+function showMe(event) {
+    if(event.target.classList.contains("knowledgeSection__choose")) {
+        console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+        const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
+        showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
+    }
 }
 
 

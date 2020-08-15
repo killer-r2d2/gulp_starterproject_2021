@@ -643,14 +643,14 @@
   &__lowerContainer {
 
 
-     display: none;
+    display: none;
+    grid-area: lowerContainer;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: "text" "option";
 
     &--show {
-      grid-area: lowerContainer;
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content max-content;
-      grid-template-areas: "text" "option";
     }
 
   }
