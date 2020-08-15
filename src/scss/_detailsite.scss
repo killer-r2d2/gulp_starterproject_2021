@@ -618,6 +618,7 @@
     grid-template-rows: auto auto;
     grid-template-areas: "titleContainer" "lowerContainer";
 
+
   }
 
   &__titleContainer {
@@ -625,7 +626,7 @@
     grid-area: titleContainer;
     display: grid;
     align-items: flex-end;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-areas: "title choose";
   }
 
@@ -649,6 +650,13 @@
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     grid-template-areas: "text" "option";
+    margin-top: 48px;
+    grid-row-gap: 52px;
+
+    @include medium {
+      margin-top: 64px;
+      grid-row-gap: 40px;
+    }
 
     &--show {
       display: grid;
