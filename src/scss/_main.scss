@@ -82,22 +82,7 @@
   }
 
 
-  .titleSection__img {
-    width: 100%;
-    height: 176px;
-    margin-top: 56px;
-    object-fit: cover;
-    object-position: 50%;
 
-    @include small {
-      height: 218px;
-    }
-
-    @include medium {
-      height: 450px;
-    }
-
-  }
 
   .titleSection__genres {
 
@@ -140,6 +125,25 @@
       }
     }
 
+  }
+
+}
+
+.titleSection__img {
+  width: 100%;
+  height: 176px;
+  margin-top: 56px;
+  object-fit: cover;
+  object-position: 50%;
+  margin-bottom: 68px;
+
+  @include small {
+    height: 218px;
+  }
+
+  @include medium {
+    height: 450px;
+    margin-bottom: 82px;
   }
 
 }
