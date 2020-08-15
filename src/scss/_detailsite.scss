@@ -644,13 +644,13 @@
 
 
     display: none;
+    grid-area: lowerContainer;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: "text" "option";
 
     &--show {
-      grid-area: lowerContainer;
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: max-content max-content;
-      grid-template-areas: "text" "option";
     }
 
   }
@@ -711,7 +711,13 @@
 
   &__btn {
     color: $white;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
 
 
 

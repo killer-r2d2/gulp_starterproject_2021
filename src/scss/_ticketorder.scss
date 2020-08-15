@@ -1,0 +1,299 @@
+.textSection__locDateContainer--align {
+  align-self: center;
+}
+
+.textSection__title__ticketOrder {
+  text-align: center;
+
+
+
+  @include medium {
+    text-align: start;
+  }
+}
+
+.ticketOrder {
+
+// start to style the top banner
+  &__topBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 104px;
+    background-color: $indiemint;
+  }
+
+  &__icon {
+    width: 51.88px;
+    height: 38.52px;
+  }
+
+  &__iconfill {
+    fill: $white;
+  }
+
+// start with the breadCrumbContainer
+  &__breadCrumbContainer {
+    max-width: 410px;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "A B C D E F G H I";
+    grid-gap: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 16px;
+    margin-top: 23px;
+
+    @include medium {
+      padding-left: 120px;
+    }
+
+    @include large {
+      justify-items: center;
+    }
+
+  }
+
+  &__homeLink {
+    grid-area: A;
+  }
+
+  &__rightArrow {
+    width: 8px;
+    height: 8px;
+    grid-area: B;
+
+    &--2 {
+      grid-area: E;
+    }
+
+    &--3 {
+      grid-area: H;
+    }
+  }
+
+  &__homeIcon {
+    fill: #C2C2C2;
+  }
+
+  &__festivals {
+    color: #C2C2C2;
+    grid-area: C;
+    align-self: flex-end;
+
+    &--2 {
+      grid-area: F;
+    }
+  }
+
+  &__dropdownContainer {
+    width: 18px;
+    height: 18px;
+    border: solid 1px #C2C2C2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+    grid-area: D;
+    cursor: pointer;
+
+  }
+
+  &__dropdownContainer--2 {
+    grid-area: G;
+  }
+
+
+  &__dropdown {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__ticket {
+
+    &--3 {
+      grid-area: I;
+    }
+  }
+
+}
+
+// end of styling breadCrumbContainer
+
+// start with ticketChooseSection
+
+.ticketChooseSection {
+  width: 100%;
+  background-color: $greyF0;
+  padding: 67px 16px 200px 16px;;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include medium {
+    padding: 67px 120px 200px 120px;
+  }
+
+  &__container {
+    width: 100%;
+
+    &--A {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-areas: "A" "B" "C" "D";
+      margin-top: 45px;
+      margin-bottom: 156px;
+      justify-items: center;
+      grid-row-gap: 40px;
+      grid-template-rows: auto;
+
+      @include medium {
+        grid-template-areas: "A B" "C D";
+        grid-column-gap: 15px;
+      }
+
+      @include large {
+        grid-template-areas: "A B C D";
+        justify-items: flex-start;
+      }
+    }
+
+    &--B {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-areas: "A" "B";
+      grid-column-gap: 15px;
+      margin-top: 45px;
+      margin-bottom: 152px;
+      justify-items: center;
+      grid-row-gap: 40px;
+
+      @include medium {
+        grid-row-gap: unset;
+        grid-template-columns: 290px 290px;
+        grid-template-rows: auto;
+        grid-template-areas: "A B";
+        justify-items: flex-start;
+        margin-bottom: 78px;
+      }
+    }
+  }
+
+  &__box {
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "A" "B" "C";
+    max-width: 343px;
+    width: 100%;
+
+    @include medium {
+      max-width: 290px;
+    }
+
+  }
+
+  &__upperContainer {
+    grid-area: A;
+    background-color: $indiemint;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    width: 50.98px;
+    height: 50.98px;
+  }
+
+  &__iconFill {
+    fill: white;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__amount {
+    color: $white;
+    font-weight: normal;
+  }
+
+  &__middleContainer {
+    grid-area: B;
+    background-color: $white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 25px 24px 25px;
+  }
+
+  &__middleText {
+    color: $indiemint;
+  }
+
+  &__middleCount {
+    color: $indiemint;
+  }
+
+  &__middleBox1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__middleBox2 {
+    width: 100%;
+    height: 16px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 8px;
+
+  }
+
+  &__availableBox {
+    background-color: $indiemint;
+  }
+
+  &__lowerContainer {
+    grid-area: C;
+    background-color: transparent;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 49px;
+    height: 48px;
+    border: solid black 1px;
+    font-size: 30px;
+  }
+
+  &__buyBtn {
+    align-self: center;
+  }
+
+  &__border {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 40px;
+
+    @include medium {
+      margin-bottom: 38px;
+    }
+  }
+}

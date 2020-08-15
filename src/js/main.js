@@ -1,6 +1,3 @@
-// import * as googleMaps from ' ./google-maps';
-// import { initMap } from './google-maps.js'; // import a single function
-
 // select the hamburger box with a variable
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
 menutoggler.addEventListener('click', togglermenu);
@@ -62,7 +59,10 @@ function togglerlogin() {
 
 // select the list icon with a variable
 const viewList = document.querySelector(".overviewSection__labelContainer--list");
-viewList.addEventListener('click', listView);
+// we check if the variable viewList (class .overviewSection__labelContainer--list) exist
+if(viewList) {
+    viewList.addEventListener('click', listView);
+}
 
 // listView function
 function listView() {
@@ -74,7 +74,10 @@ function listView() {
 
 // select the list icon with a variable
 const viewTiles = document.querySelector(".overviewSection__labelContainer--tiles");
-viewTiles.addEventListener('click', tilesView);
+// we check if the variable viewTiles(class .overviewSection__labelContainer--tiles) exist
+if(viewTiles) {
+    viewTiles.addEventListener('click', tilesView);
+}
 
 // tilesView function
 function tilesView() {
@@ -84,17 +87,20 @@ function tilesView() {
 }
 
 // change the color of the notice star by a click. I use an arrow function of ES6
-
 const changeColor = document.querySelector(".overviewSection__noticeContainer");
-changeColor.addEventListener('click', () => {
-    console.log('sonne');
+// we check if the variable changeColor(class .overviewSection__noticeContainer) exist
+if (changeColor) {
+    changeColor.addEventListener('click', () => {
+        console.log('sonne');
 
-});
+    });
+}
+
 
 function initMap() {
     // Map options
     var options = {
-        zoom:8,
+        zoom:14,
         center:{lat:47.4250593,lng:9.3765878},
         mapId: '2ab83db5f283fb46',
         disableDefaultUI: true
@@ -112,14 +118,23 @@ function initMap() {
 }
 
 
-// show function for accordionBox
-const showBtn = documen.querySelector(".knowledgeSection__choose");
-showBtn.addEventListener('click', showMe);
-
-function showMe() {
-    console.log("hallo hölle");
+// select the accordionContainer
+const knowledgeWrappper = document.querySelector(".knowledgeSection__accordionContainer");
+// we check if the variable knowledgeWrappper(class .knowledgeSection__accordionContainer) exist
+if (knowledgeWrappper) {
+    knowledgeWrappper.addEventListener('click', showMe);
 }
 
+// show function for accordionBox with delegate approach
+function showMe(event) {
+    // the event.target represents the choose button and whatched if there is (contains) a choose button with
+    // the class (classList) knowledgeSection__choose.
+    if(event.target.classList.contains("knowledgeSection__choose")) {
+        console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+        const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
+        showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
+    }
+}
 
 
 

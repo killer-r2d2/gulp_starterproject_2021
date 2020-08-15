@@ -28,6 +28,7 @@
   background-color: transparent;
   border: solid $black100 2px;
   cursor: pointer;
+  text-decoration: none;
 
   @include large {
     width: 201px;
@@ -40,6 +41,13 @@
 
   &--white {
     border: solid $white 2px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $black100;
+
+    }
   }
 }
 
