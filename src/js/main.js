@@ -134,6 +134,13 @@ function showMe(event) {
         const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
         showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
     }
+    // change the text
+    const textMore = document.querySelector(".knowledgeSection__choose");
+    if (textMore.innerHTML === "Mehr") {
+        textMore.innerHTML = "Weniger";
+    } else {
+        textMore.innerHTML = "Mehr";
+    }
 }
 
 
