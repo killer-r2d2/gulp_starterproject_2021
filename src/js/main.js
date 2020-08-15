@@ -133,14 +133,16 @@ function showMe(event) {
         console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
         const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
         showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
+        // change the text also
+        const textMore = event.target.parentNode.parentNode.querySelector('.knowledgeSection__choose');
+        if (textMore.innerHTML === "Mehr") {
+            textMore.innerHTML = "Weniger";
+        } else {
+            textMore.innerHTML = "Mehr";
+        }
     }
-    // change the text
-    const textMore = document.querySelector(".knowledgeSection__choose");
-    if (textMore.innerHTML === "Mehr") {
-        textMore.innerHTML = "Weniger";
-    } else {
-        textMore.innerHTML = "Mehr";
-    }
+
+
 }
 
 
