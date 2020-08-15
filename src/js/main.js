@@ -130,9 +130,10 @@ function showMe(event) {
     // the event.target represents the choose button and whatched if there is (contains) a choose button with
     // the class (classList) knowledgeSection__choose.
     if(event.target.classList.contains("knowledgeSection__choose")) {
-        console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+        // console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
         const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
         showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
+
         // change the text also
         const textMore = event.target.parentNode.parentNode.querySelector('.knowledgeSection__choose');
         if (textMore.innerHTML === "Mehr") {
@@ -141,8 +142,20 @@ function showMe(event) {
             textMore.innerHTML = "Mehr";
         }
     }
+}
 
+const magazinWrapper = document.querySelector(".magazinSection__container");
+// we check if the variable magazinWrapper(class .MagazinSection__container) exist.
+if (magazinWrapper) {
+    magazinWrapper.addEventListener('click', showToRead);
+}
 
+function showToRead(event) {
+    if(event.target.classList.contains("magazineSection__box--Btn")) {
+        // console.log(event.target.parentNode.parentNode.querySelector(".magazinSection__text"));
+        const showLower = event.target.parentNode.parentNode.querySelector(".magazinSection__text");
+        showLower.classList.toggle("magazinSection__text--show");
+    }
 }
 
 
