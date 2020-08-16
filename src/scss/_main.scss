@@ -159,6 +159,10 @@
   align-items: center;
   justify-content: center;
 
+  @include large {
+    padding: 0 144px 0 144px;
+  }
+
   &__h1 {
     text-align: center;
     margin-bottom: 83px;
