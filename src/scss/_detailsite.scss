@@ -360,12 +360,7 @@
   }
 
 
-  &__sliderContainer {
-    max-width: 593px;
-    width: 100%;
-    height: 392px;
-    background-color: lightgray;
-  }
+
 
   &__star {
     width: 20px;
@@ -380,6 +375,39 @@
 }
 
 // end of styling textSection
+
+// start with slider
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+
+.carousel_pic {
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel___btnContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.carousel__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  border: none;
+}
+// end of slider
 
 // start styling lineUpSection
 
