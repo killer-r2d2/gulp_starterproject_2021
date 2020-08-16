@@ -146,6 +146,8 @@ of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned th
 and the result works fine on the desktop version. I know that my slider is not the one of the
 stylguide, but it's' my own one.
 
+3. I wasn't able to implement the masonry for the newsSection and magazinSection.
+So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
 
 
 
