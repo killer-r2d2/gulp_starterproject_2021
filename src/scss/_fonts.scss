@@ -64,7 +64,13 @@
   font-size: 17px;
   line-height: 28px;
   font-family: ProximaNova, sans-serif;
-  font-weight: bold;
+  font-weight: normal;
+
+  @include medium {
+    font-weight: bold;
+  }
+
+
 }
 
 .breadcrumbInfosDatesLikes {
@@ -119,11 +125,12 @@ h2 {
   line-height: 32px;
   font-family: Adelle, sans-serif;
   color: #000000;
-  font-weight: bold;
+  font-weight: normal;
 
   @include large {
       font-size: 32px;
       line-height: 40px;
+      font-weight: bold;
 
   }
 }
