@@ -179,7 +179,7 @@
     width: 100%;
   }
 
-  &__text {
+  &__lower {
     font-family: Roboto, sans-serif;
     font-size: 17px;
     line-height: 28px;
@@ -209,14 +209,6 @@
   }
 
 }
-
-
-
-
-
-
-
-
 
 // start with bannerSection
 
@@ -351,7 +343,6 @@
       background-repeat: no-repeat;
       background-position: center;
       @include large() {
-        //margin-left: 53px;
       }
 
     }

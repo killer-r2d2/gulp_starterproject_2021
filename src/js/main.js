@@ -144,17 +144,26 @@ function showMe(event) {
     }
 }
 
-const magazinWrapper = document.querySelector(".magazinSection__container");
-// we check if the variable magazinWrapper(class .MagazinSection__container) exist.
-if (magazinWrapper) {
-    magazinWrapper.addEventListener('click', showToRead);
+// select the magazinSection__container
+const magazineWrapper = document.querySelector(".magazineSection__container");
+// we check if the variable magazineWrapper(class .magazineSection__container) exist
+if (magazineWrapper) {
+    magazineWrapper.addEventListener('click', showMeMore);
 }
 
-function showToRead(event) {
-    if(event.target.classList.contains("magazineSection__box--Btn")) {
-        // console.log(event.target.parentNode.parentNode.querySelector(".magazinSection__text"));
-        const showLower = event.target.parentNode.parentNode.querySelector(".magazinSection__text");
-        showLower.classList.toggle("magazinSection__text--show");
+// show function for magazineSection__box with delegate approach
+function showMeMore(event) {
+    if(event.target.classList.contains("magazineSection__btn")) {
+        const showText = event.target.parentNode.parentNode.querySelector(".magazineSection__lower");
+        showText.classList.toggle("magazineSection__lower--show");
+
+        // change the text also
+        const textChange = event.target.parentNode.parentNode.querySelector('.magazineSection__btn');
+        if (textChange.innerHTML === "LESEN") {
+            textChange.innerHTML = "ZUKLAPPEN";
+        } else {
+            textChange.innerHTML = "LESEN";
+        }
     }
 }
 
