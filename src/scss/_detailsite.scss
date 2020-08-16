@@ -158,7 +158,7 @@
 
   width: 100%;
 
-
+  // start with the breadCrumbContainer
   &__breadCrumbContainer {
     max-width: 410px;
     width: 100%;
@@ -167,8 +167,6 @@
     grid-template-columns: auto;
     grid-template-areas: "A B C D E F G ";
     grid-gap: 5px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     padding-left: 16px;
     margin-top: 23px;
@@ -233,6 +231,7 @@
     width: 10px;
     height: 10px;
   }
+  // end of breadCrumbContainer
 
   &__content {
     position: relative;
@@ -406,6 +405,7 @@
   height: 50px;
   border-radius: 60%;
   border: none;
+  cursor: pointer;
 }
 // end of slider
 

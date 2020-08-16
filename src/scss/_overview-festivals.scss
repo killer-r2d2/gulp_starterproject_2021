@@ -10,6 +10,95 @@
     padding: 0 120px 0 120px;
   }
 
+
+  // start with the breadCrumbContainer
+  &__breadCrumbContainer {
+    max-width: 134px;
+    top: -15%;
+    left: 120px;
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "A B C D";
+    grid-gap: 5px;
+    align-items: center;
+    position: absolute;
+
+
+
+
+
+  }
+
+  &__homeLink {
+    grid-area: A;
+  }
+
+  &__rightArrow {
+    width: 8px;
+    height: 8px;
+    grid-area: B;
+
+    &--2 {
+      grid-area: E;
+    }
+
+    &--3 {
+      grid-area: H;
+    }
+  }
+
+  &__homeIcon {
+    fill: #C2C2C2;
+  }
+
+  &__festivals {
+    color: #C2C2C2;
+    grid-area: C;
+    align-self: flex-end;
+
+    &--2 {
+      grid-area: F;
+    }
+  }
+
+  &__dropdownContainer {
+    width: 18px;
+    height: 18px;
+    border: solid 1px #C2C2C2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80%;
+    grid-area: D;
+    cursor: pointer;
+
+  }
+
+  &__dropdownContainer--2 {
+    grid-area: G;
+  }
+
+
+  &__dropdown {
+    width: 10px;
+    height: 10px;
+  }
+
+  &__ticket {
+
+    &--3 {
+      grid-area: I;
+    }
+  }
+
+
+
+// end of styling breadCrumbContainer
+
 // start with controll panel (date, location, tiles, list)
 
   &__controlPanel {
