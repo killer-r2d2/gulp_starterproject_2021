@@ -152,7 +152,7 @@
 // start with magazinSection
 // we use the CSS-GRID layout technic CSS-grid
 
-.magazinSection {
+.magazineSection {
   padding: 0 16px 0 16px;
   display: flex;
   flex-direction: column;
@@ -163,29 +163,23 @@
     margin-bottom: 83px;
   }
 
-}
+  &__container {
 
-.magazinSection__container {
-
-  margin-bottom: 48px;
+    margin-bottom: 48px;
 
 
-  @include large {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
+    @include large {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 1em;
+    }
   }
 
-
-  .magazineSection__box {
+  &__box {
     width: 100%;
-
-
-    //@include small {
-    //  text-align: center;
   }
 
-  .magazinSection__text {
+  &__text {
     font-family: Roboto, sans-serif;
     font-size: 17px;
     line-height: 28px;
@@ -202,20 +196,24 @@
 
   }
 
-}
+  &__btn {
+    border: none;
+    margin-top: 6px;
+    text-decoration: underline;
+    background-color: transparent;
 
+    @include large {
+      display: none;
+    }
 
-.magazineSection__box--Btn {
-  border: none;
-  margin-top: 6px;
-  text-decoration: underline;
-  background-color: transparent;
-
-  @include large {
-    display: none;
   }
 
 }
+
+
+
+
+
 
 
 
