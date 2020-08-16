@@ -189,14 +189,13 @@
 
     &--show {
       display: inline-block;
-      transition: ease-in-out;
 
     }
 
     @include large {
       display: inline-block;
       text-align: left;
-      opacity: 0;
+
     }
 
   }
