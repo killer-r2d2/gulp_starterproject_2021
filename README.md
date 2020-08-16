@@ -112,6 +112,9 @@ DIPLOMA THESIS WEB DEV 19/20
 | 11.08.2020 | HTML AND CSS AND                                 |      6 |
 | 12.08.2020 | HTML AND CSS AND                                 |      6 |
 | 13.08.2020 | HTML AND CSS AND JS                              |      10 |
+| 14.08.2020 | HTML AND CSS AND JS                              |      10 |
+| 15.08.2020 | HTML AND CSS AND JS                              |      10 |
+| 16.08.2020 | HTML AND CSS AND JS                              |      10 |
 
 ###QUESTIONS:
 
@@ -134,7 +137,13 @@ stop propagation auf login box
 ###TECHNICAL DOCUMENTATION:
 1. To embed the google map on the detailsite of the festival, I used
 the google Maps JavaScript API (// https://developers.google.com/maps/documentation/javascript/overview
-) and the documentation. So, it's foreign code
+) and the documentation.
+
+2. To embed the slider of the detailsite, I made a youtube turtorial
+of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned the basics to build a slider
+and the result works fine on the desktop version. I know that my slider is not the one of the
+stylguide, but it is my own one.
+
 
 
 
