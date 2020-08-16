@@ -185,14 +185,18 @@
     font-size: 17px;
     line-height: 28px;
     display: none;
+    transition: ease-in-out;
 
     &--show {
       display: inline-block;
+      transition: ease-in-out;
+
     }
 
     @include large {
       display: inline-block;
       text-align: left;
+      opacity: 0;
     }
 
   }
