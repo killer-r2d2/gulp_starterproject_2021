@@ -155,6 +155,7 @@ So, i deceided to use flexbox for the newsSection and css-grid for the magazinSe
 
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
 
+
 ###Eidesstattliche Erklärung:
 Hiermit erkläre ich, dass ich die Diplomarbeit selbständig verfasst / programmiert und
 keine anderen als die angegebenen Quellen und Hilfsmittel benutzt und die aus

@@ -390,10 +390,24 @@
   height: 500px;
 }
 
-.test {
+.carousel_pic {
   width: 100%;
   object-fit: contain;
 }
+
+.carousel___btnContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.carousel__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+  border: none;
+}
+// end of slider
 
 // start styling lineUpSection
 
