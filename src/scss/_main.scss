@@ -2,12 +2,13 @@
 
 .titleSection {
   width: 100%;
-  margin-top: 68px;
+  margin-top: 137px;
   margin-bottom: 21px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 16px 0 16px;
+  position: relative;
 
   &__h1 {
     margin-bottom: 1em;
