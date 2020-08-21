@@ -88,7 +88,11 @@ function startBrowserSync() {
 }
 
 function copyImages() {
-    return gulp.src("src/images/*.(gif|jpg|png)").pipe(gulp.dest("dist/images/"));
+    return gulp.src("src/images/**/*.*").pipe(gulp.dest("dist/images/"));
+}
+
+function copyfonts() {
+    return gulp.src("src/fonts/*.*").pipe(gulp.dest("dist/fonts/"));
 }
 
 function copyHtml() {
@@ -97,7 +101,7 @@ function copyHtml() {
         .pipe(
             htmlreplace({
                 js: "js/main.min.js",
-                css: "css/main.min.css",
+                css: "css/style.min.css",
             })
         )
         .pipe(gulp.dest("dist/"));
@@ -124,6 +128,6 @@ gulp.task(
     gulp.series(
         startProductionBuild,
         runClean,
-        gulp.parallel(copyHtml, runSass, bundleJs)
+        gulp.parallel(copyHtml, runSass, bundleJs, copyImages, copyfonts)
     )
 );

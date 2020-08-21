@@ -1,3 +1,6 @@
+
+import * as Map from './map.js';
+
 // select the hamburger box with a variable
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
 menutoggler.addEventListener('click', togglermenu);
@@ -96,6 +99,8 @@ if (changeColor) {
     });
 }
 
+
+window.initMap = Map.initMap;
 
 function initMap() {
     // Map options
@@ -213,6 +218,12 @@ carouselSlide.addEventListener('transitionend', ()=> {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
+
+// start the counter for the tickets
+
+
+
 
 
 
