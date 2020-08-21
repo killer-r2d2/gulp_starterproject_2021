@@ -1,5 +1,3 @@
-
-
 function initMap() {
     // Map options
     var options = {
