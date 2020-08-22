@@ -86,11 +86,12 @@ function startBrowserSync() {
         },
     });
 }
-
+// to move all images to dist
 function copyImages() {
     return gulp.src("src/images/**/*.*").pipe(gulp.dest("dist/images/"));
 }
 
+// to move all fonts to dist
 function copyfonts() {
     return gulp.src("src/fonts/*.*").pipe(gulp.dest("dist/fonts/"));
 }

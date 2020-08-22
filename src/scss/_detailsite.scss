@@ -40,9 +40,10 @@
 
   &__bigPic {
     width: 100%;
-    object-fit: cover;
-    object-position: 50%;
-
+    height: 1289px;
+    background-image: url("../images/links/BigFestival.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   &__banner {

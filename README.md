@@ -131,8 +131,12 @@ stop propagation auf login box
 
 
 ###SETUP GUIDE:
+npm install
+gulp watch
+gulp build
 
 ###URL (OPERATIVE VERSION):
+http://deepdevdiver.com/
 
 ###TECHNICAL DOCUMENTATION:
 1. To embed the google map on the detailsite of the festival, i used
