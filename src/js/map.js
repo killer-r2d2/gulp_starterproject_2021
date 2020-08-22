@@ -1,8 +1,8 @@
 function initMap() {
     // Map options
     var options = {
-        zoom:14,
-        center:{lat:47.4250593,lng:9.3765878},
+        zoom:16,
+        center:{lat:47.445229,lng:9.472451},
         mapId: '2ab83db5f283fb46',
         disableDefaultUI: true
     }
@@ -12,9 +12,9 @@ function initMap() {
 
     // Add your marker
     var marker = new google.maps.Marker({
-        position:{lat:47.4425183,lng:9.4704406},
+        position:{lat:47.445229,lng:9.472451},
         map:map,
-        icon:'detail_place.svg'
+        icon:'../../images/icons/detail_place.svg'
     });
 }
 
