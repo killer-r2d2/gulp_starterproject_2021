@@ -269,7 +269,7 @@
     height: 173px;
     grid-area: pic;
     position: absolute;
-    background-image: url("../images/Links/iPodTouch-Portrait-Silver.png");
+    background-image: url("../images/links/iPodTouch-Portrait-Silver.png");
     background-size: cover;
     background-repeat: no-repeat;
     left: 50%;
@@ -360,7 +360,7 @@
 
     &--google {
       grid-area: panel;
-      background-image: url("../images/Links/google-play-badge.png");
+      background-image: url("../images/links/google-play-badge.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -373,7 +373,7 @@
       background-position: center;
       grid-area: panel;
       margin-left: 53px;
-      background-image: url("../images/Links/app-store-badge.svg");
+      background-image: url("../images/links/app-store-badge.svg");
       background-repeat: no-repeat;
     }
 
@@ -471,7 +471,7 @@
   }
 
   &__play {
-    background-image: url("../images/Icons/detail_video_play.svg");
+    background-image: url("../images/icons/detail_video_play.svg");
     width: 29px;
     height: 40px;
     background-repeat: no-repeat;
@@ -533,7 +533,7 @@
   }
 
   &__heart {
-    background-image: url("../images/Icons/detail_like_filled.svg");
+    background-image: url("../images/icons/detail_like_filled.svg");
     height: 20px;
     width: 20px;
     background-repeat: no-repeat;
