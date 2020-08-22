@@ -180,14 +180,12 @@ Date: 21.06.2020
 
 #### TOTDO
 1. header logo link
-2. favicon
 3. cursor button
 4. login stop progragation
 5. login/ticket icon hover
 6. music player
 7. nav layer logo 
 8. google map
-9. detailsite pictures? (open air ZH, Musikfestwochen)
 10. ticket order counter
 11. detailsite respsponsive
 
