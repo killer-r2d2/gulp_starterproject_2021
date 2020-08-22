@@ -115,6 +115,12 @@ DIPLOMA THESIS WEB DEV 19/20
 | 14.08.2020 | HTML AND CSS AND JS                              |      10 |
 | 15.08.2020 | HTML AND CSS AND JS                              |      10 |
 | 16.08.2020 | HTML AND CSS AND JS                              |      10 |
+| 17.08.2020 | HTML AND CSS AND JS                              |       3 |
+| 21.08.2020 | gulp                                             |       3 |
+| 22.08.2020 | hosting, filezilla                               |       3 |
+| 22.08.2020 | bugs                                             |       3 |
+
+
 
 ###QUESTIONS:
 
@@ -131,9 +137,9 @@ stop propagation auf login box
 
 
 ###SETUP GUIDE:
-npm install
-gulp watch
-gulp build
+1. npm install
+2. gulp watch
+3. gulp build
 
 ###URL (OPERATIVE VERSION):
 http://deepdevdiver.com/
@@ -171,6 +177,19 @@ oder vergleichbarer Form vorgelegt. Sie wurde bisher auch nicht veröffentlicht.
 Name: Roger Killer
 Date: 21.06.2020
 
+#### TOTDO
+1. header logo link
+2. favicon
+3. cursor button
+4. login stop progragation
+5. login/ticket icon hover
+6. music player
+7. nav layer logo 
+8. google map
+9. detailsite pictures? (open air ZH, Musikfestwochen)
+10. ticket order counter
+11. detailsite respsponsive
+12. startsite google, appstore, iphone
 
 
     
