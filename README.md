@@ -160,6 +160,9 @@ stylguide, but it's' my own one.
 3. I wasn't able to implement the masonry for the newsSection and magazinSection.
 So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
 
+4. The pngs for the discovery Section were not available.
+Beda Bächler has organized these for the class. I now owe him a beer.
+
 
 
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGIY, AND JUSTIFICATION):
