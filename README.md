@@ -161,12 +161,12 @@ stylguide, but it's' my own one.
 So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
 
 4. The pngs for the discovery Section were not available.
-My scool made Beda Bächler has organized these for the class. I now owe him a beer.
+My school made Beda Bächler has organized these for the class. I now owe him a beer.
 ![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
 
 
 
-###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGIY, AND JUSTIFICATION):
+###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECschuleHNOLOGIY, AND JUSTIFICATION):
 
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
 

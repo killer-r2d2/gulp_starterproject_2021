@@ -15,26 +15,9 @@
     background-color: rgba(0, 0, 0, 0.85);
   }
 
-  .headerSection__Icon {
+  &__Icon {
     display: flex;
     justify-content: space-between;
-
-    .headerSection__flLogo {
-      width: 156px;
-      height: 23px;
-      display: none;
-
-      @include medium {
-        margin-left: auto;
-        display: inline-block;
-      }
-
-      //@include small {
-      //  display: inline-block;
-      //  margin-left: 25%;
-      //}
-
-    }
 
     .headerSection__hamburgerBox {
 
@@ -105,7 +88,41 @@
 
   }
 
-  .headerSection__Icon--navLike {
+  // black festival logo
+  &__flLogo {
+    width: 156px;
+    height: 23px;
+    display: none;
+
+    @include medium {
+      margin-left: auto;
+      display: inline-block;
+    }
+
+    &--hide {
+      display: none;
+    }
+  }
+
+
+  // white festival logo
+  &__flLogoWhite {
+    display: none;
+
+    &--show {
+      width: 156px;
+      height: 23px;
+      display: none;
+
+      @include medium {
+        margin-left: auto;
+        display: inline-block;
+      }
+
+    }
+  }
+
+  &__Icon--navLike {
     width: 65%;
     height: 64px;
     display: flex;
