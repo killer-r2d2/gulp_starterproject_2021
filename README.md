@@ -161,7 +161,8 @@ stylguide, but it's' my own one.
 So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
 
 4. The pngs for the discovery Section were not available.
-Beda Bächler has organized these for the class. I now owe him a beer.
+My scool made Beda Bächler has organized these for the class. I now owe him a beer.
+![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
 
 
 
@@ -185,7 +186,6 @@ Date: 21.06.2020
 1. header logo link
 4. login stop progragation
 5. login/ticket icon hover
-6. music player
 7. nav layer logo 
 10. ticket order counter
 11. detailsite respsponsive
