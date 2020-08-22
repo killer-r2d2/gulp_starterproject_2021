@@ -40,10 +40,25 @@
 
   &__bigPic {
     width: 100%;
-    height: 1289px;
+    height: 337px;
     background-image: url("../images/links/BigFestival.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include medium {
+      height: 600px;
+
+    }
+
+    @include medium {
+      height: 800px;
+
+    }
+
+    @include large {
+      height: 1289px;
+
+    }
   }
 
   &__banner {

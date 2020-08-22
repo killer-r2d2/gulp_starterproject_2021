@@ -28,9 +28,6 @@ body, body * {
   justify-content: center;
   background-color: #F0F0F0;;
 
-  @include small {
-    background-color: red;
-  }
 
 }
 
