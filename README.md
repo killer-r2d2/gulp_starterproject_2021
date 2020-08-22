@@ -140,6 +140,7 @@ stop propagation auf login box
 1. npm install
 2. gulp watch
 3. gulp build
+4. happy coding 
 
 ###URL (OPERATIVE VERSION):
 http://deepdevdiver.com/
@@ -189,7 +190,6 @@ Date: 21.06.2020
 9. detailsite pictures? (open air ZH, Musikfestwochen)
 10. ticket order counter
 11. detailsite respsponsive
-12. startsite google, appstore, iphone
 
 
     
