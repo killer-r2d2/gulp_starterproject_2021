@@ -10,6 +10,8 @@
   z-index: 1;
   background-color: $white;
   position: fixed;
+  padding: 16px 16px 16px 16px;
+  border-bottom: #E5E5E5 1px solid;
 
   &--changeColor {
     background-color: rgba(0, 0, 0, 0.85);
@@ -21,7 +23,7 @@
 
     .headerSection__hamburgerBox {
 
-      padding-left: 2%;
+
 
 
       .headerSection__hamburger {
@@ -127,11 +129,8 @@
     height: 64px;
     display: flex;
     align-items: center;
-    border: #E5E5E5 1px solid;
     border-right: none;
     justify-content: flex-start;
-    border-top: none;
-    border-left: none;
 
   }
 
@@ -209,7 +208,7 @@
   height: 64px;
   display: flex;
   align-items: center;
-  border: #E5E5E5 1px solid;
+  border-left: #E5E5E5 1px solid;
   border-top: none;
   border-right: none;
 
