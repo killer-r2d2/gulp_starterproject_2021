@@ -10,7 +10,7 @@
   z-index: 1;
   background-color: $white;
   position: fixed;
-  padding: 16px 16px 16px 16px;
+  padding: 16px 0 16px 16px;
   border-bottom: #E5E5E5 1px solid;
 
   &--changeColor {
@@ -195,8 +195,6 @@
 
 }
 
-
-// start with navSection
 
 .headerSection__text--hide {
   //display: none;
