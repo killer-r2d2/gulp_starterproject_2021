@@ -119,6 +119,7 @@ DIPLOMA THESIS WEB DEV 19/20
 | 21.08.2020 | gulp                                             |       3 |
 | 22.08.2020 | hosting, filezilla                               |       3 |
 | 22.08.2020 | bugs                                             |       3 |
+| 23.08.2020 | bugs, HTML AND CSS AND JS                        |       8 |
 
 
 
@@ -163,6 +164,8 @@ So, i deceided to use flexbox for the newsSection and css-grid for the magazinSe
 4. The pngs for the discovery Section were not available.
 My school made Beda Bächler has organized these for the class. I now owe him a beer.
 ![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
+
+
 
 
 

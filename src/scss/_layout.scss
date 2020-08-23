@@ -2,9 +2,12 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* Setup box sizing*/
+
+
+  /* Setup box sizing*/
 
 *, *::before, *::after {
   box-sizing: border-box;
