@@ -90,13 +90,20 @@
   }
 
   // black festival logo
+  &__flLogoLink {
+    margin-left: 32%;
+
+    &--white {
+      margin-left: -5%;
+    }
+  }
+
   &__flLogo {
     width: 156px;
     height: 23px;
     display: none;
 
     @include medium {
-      margin-left: auto;
       display: inline-block;
     }
 
@@ -115,8 +122,8 @@
       height: 23px;
       display: none;
 
+
       @include medium {
-        margin-left: auto;
         display: inline-block;
       }
 
@@ -304,7 +311,7 @@
 
 
 .headerSection__IconLike {
-  margin-left: 28%;
+
 
   @include medium {
     visibility: hidden;
