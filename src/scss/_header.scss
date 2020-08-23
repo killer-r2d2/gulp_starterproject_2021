@@ -2,7 +2,6 @@
 
 .headerSection {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 1440px;
@@ -125,7 +124,7 @@
   }
 
   &__Icon--navLike {
-    width: 65%;
+    width: 60%;
     height: 64px;
     display: flex;
     align-items: center;
@@ -202,7 +201,7 @@
 
 
 .headerSection__Icon--loginTicket {
-  width: 35%;
+  width: 40%;
   height: 64px;
   display: flex;
   align-items: center;
@@ -220,8 +219,8 @@
     align-items: center;
     cursor: pointer;
 
-    @include small {
-      width: 50%;
+    @include medium {
+      width: 60%;
     }
 
     .headerSection__IconTicketText {
@@ -268,8 +267,8 @@
     }
 
 
-    @include small {
-      width: 50%;
+    @include medium {
+      width: 40%;
     }
 
 
