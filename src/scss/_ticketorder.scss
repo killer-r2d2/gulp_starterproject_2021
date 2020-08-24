@@ -141,6 +141,10 @@
     padding: 67px 120px 200px 120px;
   }
 
+  &__number {
+    width: 30%;
+  }
+
   &__container {
     width: 100%;
 
@@ -268,11 +272,12 @@
 
   &__lowerContainer {
     grid-area: C;
+    padding: 0 34px 0 34px;
     background-color: transparent;
     height: 72px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
 
