@@ -120,6 +120,7 @@ DIPLOMA THESIS WEB DEV 19/20
 | 22.08.2020 | hosting, filezilla                               |       3 |
 | 22.08.2020 | bugs                                             |       3 |
 | 23.08.2020 | bugs, HTML AND CSS AND JS                        |       8 |
+| 23.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
 
 
 
