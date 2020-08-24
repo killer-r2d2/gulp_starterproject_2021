@@ -211,9 +211,8 @@ function plus(event) {
         // console.log(event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number'));
         const numberPlus = event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number');
         console.log(numberPlus.innerText);
-        numberPlus.style.backgroundColor = 'hotpink';
-        let numberTickets = parseInt(numberPlus.innerText);
-        numberTickets++;
+        let numberTickets = parseInt(numberPlus.innerText); //parseInt(): takes a string and gives an number back.
+        numberTickets++; // increment
         numberPlus.innerText = numberTickets;
     }
 
@@ -230,10 +229,12 @@ function minus(event) {
     if(event.target.classList.contains('ticketChooseSection__btn--minus')) {
         console.log(event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number'));
         const numberMinus = event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number');
-        numberMinus.style.backgroundColor = 'yellow';
-        let numberTick = parseInt(numberMinus.innerText);
-        numberTick--;
-        numberMinus.innerText = numberTick;
+        let numberTick = parseInt(numberMinus.innerText); //parseInt(): takes a string and gives an number back.
+        if(numberTick != 0) {
+            numberTick--; // decrement
+            numberMinus.innerText = numberTick;
+        }
+
     }
 
 }
