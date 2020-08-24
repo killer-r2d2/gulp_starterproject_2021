@@ -186,12 +186,9 @@ Name: Roger Killer
 Date: 21.06.2020
 
 #### TOTDO
-1. header logo link
 4. login stop progragation
 5. login/ticket icon hover
-7. nav layer logo 
 10. ticket order counter
-11. detailsite respsponsive
 
 
     

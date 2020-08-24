@@ -5,6 +5,7 @@ window.initMap = initMap;
 // select the hamburger box with a variable
 const menutoggler = document.querySelector(".headerSection__hamburgerBox");
 menutoggler.addEventListener('click', togglermenu);
+
 // // togglermenu function
 function togglermenu() {
     // select the hamburger with the id
@@ -65,7 +66,7 @@ function togglerlogin() {
 // select the list icon with a variable
 const viewList = document.querySelector(".overviewSection__labelContainer--list");
 // we check if the variable viewList (class .overviewSection__labelContainer--list) exist
-if(viewList) {
+if (viewList) {
     viewList.addEventListener('click', listView);
 }
 
@@ -80,7 +81,7 @@ function listView() {
 // select the list icon with a variable
 const viewTiles = document.querySelector(".overviewSection__labelContainer--tiles");
 // we check if the variable viewTiles(class .overviewSection__labelContainer--tiles) exist
-if(viewTiles) {
+if (viewTiles) {
     viewTiles.addEventListener('click', tilesView);
 }
 
@@ -102,8 +103,6 @@ if (changeColor) {
 }
 
 
-
-
 // select the accordionContainer
 const knowledgeWrappper = document.querySelector(".knowledgeSection__accordionContainer");
 // we check if the variable knowledgeWrappper(class .knowledgeSection__accordionContainer) exist
@@ -115,11 +114,10 @@ if (knowledgeWrappper) {
 function showMe(event) {
     // the event.target represents the choose button and whatched if there is (contains) a choose button with
     // the class (classList) knowledgeSection__choose.
-    if(event.target.classList.contains("knowledgeSection__choose")) {
-        // console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+    if (event.target.classList.contains("knowledgeSection__choose")) {
+        console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
         const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
         showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
-
         // change the text also
         const textMore = event.target.parentNode.parentNode.querySelector('.knowledgeSection__choose');
         if (textMore.innerHTML === "Mehr") {
@@ -139,7 +137,7 @@ if (magazineWrapper) {
 
 // show function for magazineSection__box with delegate approach
 function showMeMore(event) {
-    if(event.target.classList.contains("magazineSection__btn")) {
+    if (event.target.classList.contains("magazineSection__btn")) {
         const showText = event.target.parentNode.parentNode.querySelector(".magazineSection__lower");
         showText.classList.toggle("magazineSection__lower--show");
 
@@ -154,76 +152,107 @@ function showMeMore(event) {
 }
 
 
-
-
 // start with slider
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
+// const carouselSlide = document.querySelector('.carousel-slide');
+// const carouselImages = document.querySelectorAll('.carousel-slide img');
+//
+// // slider Buttons
+// const prevBtn = document.querySelector('#prevBtn');
+// const nextBtn = document.querySelector('#nextBtn');
 
-    // slider Buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
 
-
-    // slider Counter
-let counter = 1;
-const size = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-    // Button listeners
-nextBtn.addEventListener('click',() => {
-    if(counter >= carouselImages.length -1) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-prevBtn.addEventListener('click',() => {
-    if(counter <= 0) return;
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter--;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
-
-carouselSlide.addEventListener('transitionend', ()=> {
-    if(carouselImages[counter].id === 'lastClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length -2 ;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
-    if(carouselImages[counter].id === 'firstClone') {
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length - counter ;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    }
-});
+// slider Counter
+// let counter = 1;
+// const size = carouselImages[0].clientWidth;
+//
+// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//
+//     // Button listeners
+// nextBtn.addEventListener('click',() => {
+//     if(counter >= carouselImages.length -1) return;
+//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
+//     counter++;
+//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// });
+//
+// prevBtn.addEventListener('click',() => {
+//     if(counter <= 0) return;
+//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
+//     counter--;
+//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// });
+//
+// carouselSlide.addEventListener('transitionend', ()=> {
+//     if(carouselImages[counter].id === 'lastClone') {
+//         carouselSlide.style.transition = "none";
+//         counter = carouselImages.length -2 ;
+//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     }
+//     if(carouselImages[counter].id === 'firstClone') {
+//         carouselSlide.style.transition = "none";
+//         counter = carouselImages.length - counter ;
+//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     }
+// });
 
 
 // start the counter for the tickets
-const att = document.querySelector('.ticketChooseSection__btn--plus');
-if(att) {
-    att.addEventListener('click', plusnumber);
-}
-function plusnumber() {
-    console.log('plus');
+
+// admit function (increment) with delegate approach
+const countWrapper = document.querySelector(".ticketChooseSection__container");
+// we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
+if (countWrapper) {
+    countWrapper.addEventListener('click', plus);
 }
 
-// let remove = document.querySelector('.ticketChooseSection__btn--minus');
-// if(remove) {
-//      add.addEventListener('click', minus);
+function plus(event) {
+    if(event.target.classList.contains('ticketChooseSection__btn--plus')) {
+        // console.log(event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number'));
+        const numberPlus = event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number');
+        console.log(numberPlus.innerText);
+        numberPlus.style.backgroundColor = 'hotpink';
+        let numberTickets = parseInt(numberPlus.innerText);
+        numberTickets++;
+        numberPlus.innerText = numberTickets;
+    }
+
+}
+
+// admit function (decrement) with delegate approach
+const countWrapper2 = document.querySelector(".ticketChooseSection__container");
+// we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
+if (countWrapper2) {
+    countWrapper2.addEventListener('click', minus);
+}
+
+function minus(event) {
+    if(event.target.classList.contains('ticketChooseSection__btn--minus')) {
+        console.log(event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number'));
+        const numberMinus = event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number');
+        numberMinus.style.backgroundColor = 'yellow';
+        let numberTick = parseInt(numberMinus.innerText);
+        numberTick--;
+        numberMinus.innerText = numberTick;
+    }
+
+}
+
+// console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+
+
+
+// // remove function (decrement)
+// const remove = document.querySelector('.ticketChooseSection__btn--minus');
+// // we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
+// if (remove) {
+//     remove.addEventListener('click', () => {
+//             console.log("hallo wasser");
+//         }
+//     );
 // }
-//
-// let int = document.querySelector('.ticketChooseSection__number');
-// let integer = 0;
-//
-//
-//
-// remove.addEventListener('click', function() {
-//     // integer -= 1;
-//     // int.innerHTML = integer;
-//     console.log('minus');
-// });
+
+
+
 
 
