@@ -202,11 +202,28 @@ carouselSlide.addEventListener('transitionend', ()=> {
 
 
 // start the counter for the tickets
+const att = document.querySelector('.ticketChooseSection__btn--plus');
+if(att) {
+    att.addEventListener('click', plusnumber);
+}
+function plusnumber() {
+    console.log('plus');
+}
 
-
-
-
-
-
+// let remove = document.querySelector('.ticketChooseSection__btn--minus');
+// if(remove) {
+//      add.addEventListener('click', minus);
+// }
+//
+// let int = document.querySelector('.ticketChooseSection__number');
+// let integer = 0;
+//
+//
+//
+// remove.addEventListener('click', function() {
+//     // integer -= 1;
+//     // int.innerHTML = integer;
+//     console.log('minus');
+// });
 
 
