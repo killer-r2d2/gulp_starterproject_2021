@@ -1,76 +1,89 @@
+.loginSection {
 
+  &__triangle {
+    position: absolute;
+    border-bottom: solid 24px black;
+    border-left: solid 24px transparent;
+    border-right: solid 24px transparent;
+    border-right: solid 24px transparent;
+    left: 234px;
+    top: -14px;
+  }
 
+  &__containter {
+    position: absolute;
+    width: 310px;
+    height: 425px;
+    display: none;
+    background-color: #000000;
+    top: 98px;
+    left: -230px;
 
-.loginSection__triangle {
-  position: absolute;
-  border-bottom: solid 24px black;
-  border-left: solid 24px transparent;
-  border-right: solid 24px transparent;
-  border-right: solid 24px transparent;
-  left: 234px;
-  top: -14px;
-}
+    &--open {
+      display: inline-block;
+      z-index: 1;
+      cursor: none;
+    }
 
+  }
 
-.loginSection__containter {
-  position: absolute;
-  width: 310px;
-  height: 425px;
-  display: none;
-  background-color: #000000;
-  top: 98px;
-  left: -230px;
+  &__input {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 1em;
+    background-color: #F6F6F6;
+    border: none;
+    color: #C2C2C2;
+    opacity: 0.9;
+    padding: 11px 14px 15px 11px;
+  }
 
-  &--open {
-    display: inline-block;
-    z-index: 1;
+  &__register {
+    margin-top: 1em;
+    width: 100%;
+    height: 48px;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__passwordText {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 24px;
+    margin-top: 1em;
+    cursor: pointer;
   }
 
 
 
+  &__text {
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__BoxA {
+    height: 70%;
+    border-bottom: #C2C2C2 solid 1px ;
+    padding: 32px 25px 40px 25px;
+  }
+
+  &__BoxB {
+    height: 30%;
+    padding: 40px 25px 40px 25px;
+  }
+
+
 }
 
-.LoginSection__BoxA {
-  height: 70%;
-  border-bottom: #C2C2C2 solid 1px ;
-  padding: 32px 25px 40px 25px;
-}
 
-.LoginSection__BoxB {
-  height: 30%;
-  padding: 40px 25px 40px 25px;
-}
 
-.loginSection__input {
-  width: 100%;
-  height: 48px;
-  margin-bottom: 1em;
-  background-color: #F6F6F6;
-  border: none;
-  color: #C2C2C2;
-  opacity: 0.9;
-  padding: 11px 14px 15px 11px;
-}
 
-.loginSection__register {
-  margin-top: 1em;
-  width: 100%;
-  height: 48px;
-  background-color: #FFFFFF;
-  border: none;
-}
 
-.loginSection__passwordText {
-  width: 100%;
-  text-align: center;
-  color: #FFFFFF;
-  line-height: 24px;
-  margin-top: 1em;
-}
 
-.loginSection__text {
-  width: 100%;
-  text-align: center;
-  color: #FFFFFF;
-}
+
+
+
 
