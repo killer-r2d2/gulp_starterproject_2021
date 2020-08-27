@@ -47,13 +47,19 @@ logintoggler.addEventListener('click', togglerlogin);
 function togglerlogin() {
     const loginshow = document.querySelector('#loginSection__containter');
     loginshow.classList.toggle("loginSection__containter--open");
-    loginshow.classList.toggle("loginSection__container");
     const logincolor = document.querySelector("#navigation_login");
     logincolor.classList.toggle("navigation__login--black");
-    logincolor.classList.toggle("navigation__login");
     const changeColor = document.querySelector(".headerSection__IconLoginText");
     changeColor.classList.toggle("headerSection__IconLoginText--color");
 }
+
+// add stopPropagation to the login container.
+const loginview = document.querySelector('.loginSection__containter');
+loginview.addEventListener('click', function (event) {
+    event.stopPropagation();
+})
+
+
 
 
 // Change the view between list and tiles of the festivals site
