@@ -121,6 +121,12 @@ DIPLOMA THESIS WEB DEV 19/20
 | 22.08.2020 | bugs                                             |       3 |
 | 23.08.2020 | bugs, HTML AND CSS AND JS                        |       8 |
 | 23.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
+| 24.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
+| 26.08.2020 | bugs, HTML AND CSS AND JS                        |      13 |
+| 27.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
+
+
+
 
 
 
@@ -154,7 +160,7 @@ the google Maps JavaScript API (// https://developers.google.com/maps/documentat
  https://www.youtube.com/watch?v=Zxf1mnP5zcw&feature=emb_rel_pause) This was my first time that I used an API like this.
 I struggled a bit til I found out that I had to register my self first.
 
-2. To embed the slider of the detailsite, I watched a youtube turtorial
+2. the slider story. To embed the slider of the detailsite, I watched a youtube turtorial
 of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned the basics to build a slider
 and the result works fine on the desktop version. I know that my slider is not the one of the
 stylguide, but it's' my own one.
