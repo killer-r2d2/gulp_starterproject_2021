@@ -15,20 +15,15 @@ function togglermenu() {
     hamburger.classList.toggle("headerSection__hamburger");
     const layer = document.querySelector("#navSection");
     layer.classList.toggle("navSection--show");
-    layer.classList.toggle("navSection");
     const headerSection = document.querySelector(".headerSection")
     headerSection.classList.toggle("headerSection--changeColor");
     const ticket = document.querySelector("#navigation__ticketkauf");
     ticket.classList.toggle("navigation__ticket--white");
-    ticket.classList.toggle("navigation__ticket");
     const login = document.querySelector("#navigation_login");
     login.classList.toggle("navigation__login--white");
-    login.classList.toggle("navigation__login");
     const like = document.querySelector("#detail_like_filled");
-    like.classList.toggle("navigation__like");
     like.classList.toggle("navigation__like--white");
     const headerLogoBlack = document.querySelector("#flLogo");
-    console.log("erwischt");
     headerLogoBlack.classList.toggle("headerSection__flLogo--hide");
     const headerLogoWhite = document.querySelector("#flLogoWhite");
     headerLogoWhite.classList.toggle("headerSection__flLogoWhite--show");
