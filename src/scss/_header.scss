@@ -26,6 +26,7 @@
 
 
       .headerSection__hamburger {
+        transition: ease-in-out 0.5s;
         height: 24px;
         width: 24px;
         display: flex;
@@ -40,7 +41,24 @@
 
         }
 
+        // properties when you close the hamburger:
 
+        .rack.upper {
+          transform: rotate(0deg);
+          transition: ease-in-out 0.5s;
+        }
+
+        .rack.middle {
+          opacity: 1;
+          transition: ease-in-out 0.5s;
+        }
+
+        .rack.lower {
+          transform: rotate(0deg);
+          transition: ease-in-out 0.5s;
+        }
+
+        // properties when you open the hamburger:
         // .headerSection__hamburger-close
         &-close {
           cursor: pointer;
