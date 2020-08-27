@@ -203,7 +203,7 @@ const nextBtn = document.querySelector('#nextBtn');
 // start the counter for the tickets
 
 // admit function (increment) with delegate approach
-const countWrapper = document.querySelector(".ticketChooseSection__container");
+const countWrapper = document.querySelector(".ticketChooseSection");
 // we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
 if (countWrapper) {
     countWrapper.addEventListener('click', plus);
@@ -211,6 +211,7 @@ if (countWrapper) {
 
 function plus(event) {
     if(event.target.classList.contains('ticketChooseSection__btn--plus')) {
+        console.log('oya');
         // console.log(event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number'));
         const numberPlus = event.target.parentNode.parentNode.querySelector('.ticketChooseSection__number');
         console.log(numberPlus.innerText);
@@ -222,7 +223,7 @@ function plus(event) {
 }
 
 // admit function (decrement) with delegate approach
-const countWrapper2 = document.querySelector(".ticketChooseSection__container");
+const countWrapper2 = document.querySelector(".ticketChooseSection<");
 // we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
 if (countWrapper2) {
     countWrapper2.addEventListener('click', minus);
