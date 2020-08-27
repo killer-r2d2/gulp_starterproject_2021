@@ -255,6 +255,12 @@
   .headerSection__IconTicket:hover {
     background-color: #C2C2C2;
     color: $black100;
+
+    .navigation__ticket {
+      fill: black;
+    }
+
+
   }
 
 
@@ -302,7 +308,10 @@
 
   .headerSection__IconLogin:hover {
     background-color: #C2C2C2;
-    fill: $black100;
+
+     .navigation__login {
+       fill: black;
+     }
 
   }
 

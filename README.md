@@ -194,7 +194,6 @@ Date: 21.06.2020
 
 #### TOTDO
 4. login stop progragation
-5. login/ticket icon hover
 10. ticket order counter
 
 
