@@ -236,9 +236,33 @@
     "pic"
     "content";
 
+    &--borderBottomHipHopp {
+      border-bottom: solid $HipHoppink;
+    }
+
+    &--borderBottomElectronic {
+      border-bottom: solid $Electronicviolett;
+    }
+
+    &--borderBottomJazz {
+      border-bottom: solid $Jazzgelb;
+    }
+
+    &--borderBottomIndie {
+      border-bottom: solid $indiemint;
+    }
+
+    &--borderBottomPopRock {
+      border-bottom: solid $PopRockblau;
+
+    }
+
     @include medium {
       height: 576px;
     }
+
+
+
 
 
 
