@@ -124,21 +124,9 @@ DIPLOMA THESIS WEB DEV 19/20
 | 24.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
 | 26.08.2020 | bugs, HTML AND CSS AND JS                        |      13 |
 | 27.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
+| 27.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
 
 
-
-
-
-
-###QUESTIONS:
-
-2. JAVASCRIPT EVENTLISTENER
-3. PATTERN
-
-Answers overscroll-behavior (contain)  
-
-Login
-stop propagation auf login box
   
 ###ABSTRACT / MANAGEMENT SUMMARY:
 
@@ -161,9 +149,18 @@ the google Maps JavaScript API (// https://developers.google.com/maps/documentat
 I struggled a bit til I found out that I had to register my self first.
 
 2. the slider story. To embed the slider of the detailsite, I watched a youtube turtorial
-of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned the basics to build a slider
-and the result works fine on the desktop version. I know that my slider is not the one of the
-stylguide, but it's' my own one.
+of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned a few basics to build a slider
+and the result worked fine on the desktop version but not on mobile. After a conversation with my friends at Mosaix,
+they adviced me to use one of the below: 
+
+- https://owlcarousel2.github.io/OwlCarousel2/
+- https://splidejs.com/
+- and a self made slider of Mosaix
+
+I tryed all three (time: 3 days), but none of them worked fine at the end.
+![](https://media.giphy.com/media/xiAqCzbB3eZvG/giphy.gif)
+It was really frustrating.
+So, I decieded to go back to my youtube slider. It might have been wise to learn this in school.
 
 3. I wasn't able to implement the masonry for the newsSection and magazinSection.
 So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
@@ -172,13 +169,45 @@ So, i deceided to use flexbox for the newsSection and css-grid for the magazinSe
 My school made Beda Bächler has organized these for the class. I now owe him a beer.
 ![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
 
-
-
-
-
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECschuleHNOLOGIY, AND JUSTIFICATION):
 
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
+
+I started to work for my DIPLOMA THESIS right after the briefing. My plan was:
+
+1. Build the html structure for all sites/elements.
+2. Implement the css for mobile.
+3. Implement the css for desctop.
+4. Implement javascript.
+5. Organize the Hosting.
+6. Done.
+
+At point 2, I realized that my approach took too much time. I started the implementing of
+desctop and mobile version at the same time. So, I had not to edit everything twice. 
+To start with javaScript was hard, it had been a while that we used it in school.
+I was able to refresh it at the free coding sesssions with my classmades (thanks dudes).
+Till the first school day after the holidays, I was on the right track.
+On the remaining 4 school days I was able to get some important inputs,
+thanks to Killian for his patience.
+
+Today is the 28.08.2020, 12:26pm. I am not finished with everything, but I have done my best and 
+I'm proud of my work. During this time I've learnd a lot, Applying the school's knowledge to a project was a very 
+good experience. It gave me more confidence with the different languages and technologies.
+I really enjoyed working on this project, it confirmed that I enjoy realizing designs/things.
+When I think back to the time when I started my education (Web Integrator 2019), until now, I have been
+taught an enormous amount of knowledge. Sometimes i feel like a Flowerpot that is filled with soil, and someone
+waters it, but the soil can no longer absorb water and needs time to soak up the water (does that make sence?).
+
+Anyway, I will continue to follow the path as a web developer in the future, because it feels right.
+
+
+PS: Thanks to:
+- All teachers of Web Professionals
+- My girlfriend Michaela for kicking me in my ass
+- My classmades
+- My family
+- And all other supporters I've forgot
+
 
 
 ###Eidesstattliche Erklärung:
@@ -190,11 +219,8 @@ oder vergleichbarer Form vorgelegt. Sie wurde bisher auch nicht veröffentlicht.
 
 
 Name: Roger Killer
-Date: 21.06.2020
+Date: 29.08.2020
 
-#### TOTDO
-4. login stop progragation
-10. ticket order counter
 
 
     
