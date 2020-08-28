@@ -345,6 +345,11 @@
     grid-area: title;
     font-weight: normal;
 
+
+    &:hover {
+      color: $greyC2;
+    }
+
     @include medium {
       font-weight: bold;
     }
@@ -369,6 +374,10 @@
     flex-direction: row;
     justify-self: flex-end;
     cursor: pointer;
+
+    &:hover {
+      color: $greyC2;
+    }
 
 
     @include medium {
