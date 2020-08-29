@@ -25,11 +25,9 @@
     align-items: center;
     position: absolute;
 
-
-
-
-
   }
+
+
 
   &__homeLink {
     grid-area: A;
@@ -638,5 +636,9 @@
   }
 
 
+}
+
+a {
+  text-decoration: none;
 }
 

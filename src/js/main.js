@@ -223,7 +223,7 @@ function plus(event) {
 }
 
 // admit function (decrement) with delegate approach
-const countWrapper2 = document.querySelector(".ticketChooseSection<");
+const countWrapper2 = document.querySelector(".ticketChooseSection");
 // we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
 if (countWrapper2) {
     countWrapper2.addEventListener('click', minus);
@@ -243,19 +243,11 @@ function minus(event) {
 
 }
 
-// console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
+
+// start the notice function for overviewSection
 
 
 
-// // remove function (decrement)
-// const remove = document.querySelector('.ticketChooseSection__btn--minus');
-// // we check if the variable viewList (class .ticketChooseSection__btn--plus) exist
-// if (remove) {
-//     remove.addEventListener('click', () => {
-//             console.log("hallo wasser");
-//         }
-//     );
-// }
 
 
 
