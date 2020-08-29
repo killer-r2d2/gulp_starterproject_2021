@@ -236,6 +236,8 @@ function minus(event) {
 
 }
 
+
+
 // start notice star overview-festivals
 
 // admit function with delegate approach
