@@ -93,16 +93,6 @@ function tilesView() {
     tilesShow.classList.remove("overviewSection__cardContainerlist");
 }
 
-// change the color of the notice star by a click. I use an arrow function of ES6
-const changeColor = document.querySelector(".overviewSection__noticeContainer");
-// we check if the variable changeColor(class .overviewSection__noticeContainer) exist
-if (changeColor) {
-    changeColor.addEventListener('click', () => {
-        console.log('sonne');
-
-    });
-}
-
 
 // select the accordionContainer
 const knowledgeWrappper = document.querySelector(".knowledgeSection__accordionContainer");
@@ -246,9 +236,31 @@ function minus(event) {
 
 }
 
+// start notice star overview-festivals
+
+// admit function with delegate approach
+const clickStar = document.querySelector('.overviewSection');
+// we check if the variable clickStar (class .overviewSection) exist
+if(clickStar) {
+    clickStar.addEventListener('click', noticeFestival);
+}
+
+function noticeFestival(event) {
+    if(event.target.classList.contains('overviewSection__noticeContainer')); {
+        const whiteStar = event.target.parentNode.parentNode.parentNode.querySelector('.overviewSection__noticeStarWhite');
+        whiteStar.classList.toggle('overviewSection__noticeStarWhite--hidde');
+        const blackStar = event.target.parentNode.parentNode.parentNode.querySelector('.overviewSection__noticeStarBlack');
+        blackStar.classList.toggle('overviewSection__noticeStarBlack--show');
+    }
+}
 
 
 
+// function showMeMore(event) {
+//     if (event.target.classList.contains("magazineSection__btn")) {
+//         const showText = event.target.parentNode.parentNode.querySelector(".magazineSection__lower");
+//         showText.classList.toggle("magazineSection__lower--show");
+//
 
 
 

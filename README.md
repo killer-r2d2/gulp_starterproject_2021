@@ -175,6 +175,9 @@ My school made Beda Bächler has organized these for the class. I now owe him a 
 
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGY, AND JUSTIFICATION):
 
+see above (TECHNOLOGY CHOICE)
+
+
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
 
 I started to work for my DIPLOMA THESIS right after the briefing. My plan was:
