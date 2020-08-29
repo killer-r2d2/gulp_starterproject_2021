@@ -453,11 +453,37 @@
     height: unset;
     grid-template-areas: "content";
 
+
     @include medium {
       grid-template-columns: 14% auto;
       grid-template-rows: 104px;
       grid-template-areas: "pic content";
+      border-bottom: none;
+
+      &--borderBottomHipHopp {
+        border-right: solid $HipHoppink;
+      }
+
+      &--borderBottomElectronic {
+        border-right: solid $Electronicviolett;
+      }
+
+      &--borderBottomJazz {
+        border-right: solid $Jazzgelb;
+      }
+
+      &--borderBottomIndie {
+        border-right: solid $indiemint;
+      }
+
+      &--borderBottomPopRock {
+        border-right: solid $PopRockblau;
+
+      }
+
     }
+
+
   }
 
   & .overviewSection__pic {
