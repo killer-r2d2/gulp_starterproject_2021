@@ -125,7 +125,8 @@ DIPLOMA THESIS WEB DEV 19/20
 | 24.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
 | 26.08.2020 | bugs, HTML AND CSS AND JS                        |      13 |
 | 27.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
-| 27.08.2020 | bugs, HTML AND CSS AND JS                        |      10 |
+| 28.08.2020 | bugs, HTML AND CSS AND JS                        |      4 |
+| 29.08.2020 | bugs, HTML AND CSS AND JS                        |      12 |
 
 
   
