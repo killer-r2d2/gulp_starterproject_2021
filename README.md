@@ -3,7 +3,8 @@ DIPLOMA THESIS WEB DEV 19/20
 
 ##FESTIVAL LOVERS
 ##MADE BY: ROGER KILLER
-##DATE: 14.06.2020
+##START DATE: 14.06.2020
+##CLOSING DATE: 29.08.2020
 
 ###TECHNOLOGY CHOICE:
 
@@ -24,24 +25,24 @@ DIPLOMA THESIS WEB DEV 19/20
                    WE CAN BUILD DYNAMIC SITES.
                    
 - **PHP STORM**:
-  - JUSTIFICATION: PHP STORM IS A DEVELOPMENT ENVIROMENT AND I USE IT 
-                   ALSO ON MY JOB AS A JUNIOR FRONTEND-DEVELOPER AT MOSAIX.
-                   IT'S A GOOD PRACTICE-TRAINING TO USE IT FOR MY DIPLOMA THESIS.
+  - JUSTIFICATION: PHP STORM IS A DEVELOPMENT ENVIRONMENT. I ALSO USE IT
+                   IN MY JOB AS JUNIOR FRONTEND DEVELOPER AT MOSAIX.
+                   IT'S A GOOD PRACTICE TRAINING TO USE IT FOR MY DIPLOMA THESIS.
 
 - **SASS/SCSS**
-  - JUSTIFICATION: SASS(Syntactically Awesome Stylesheets) IS A STYLESHEET LANGUAGE, WHICH IS A
+  - JUSTIFICATION: SASS(SYNTACTICALLY AWESOME STYLESHEETS) IS A STYLESHEET LANGUAGE THAT IS A
                    PREPROCESSOR. IT HELPS TO CREATE CASCADING STYLE SHEETS. 
 
 - **GULP**
   - JUSTIFICATION: GULP IS A TASKRUNNER WHICH HELPS DURING THE DEVELOPMENT.
-                   HE TAKES CARE OF REPETITIVE WORK.
+                   IT TAKES CARE OF REPETITIVE WORK.
 
 - **GITHUB**
   - JUSTIFICATION: GITHUB IS A NETWORK-BASED SERVICE FOR VERSIONIZATION AND COLLABORATION.
-                   I WILL USE IT TO VERSIONIAZ MY PROJECT.
+                   I WILL USE IT TO VERSIONIZE MY PROJECT.
   
 - **MAMP**
-   - JUSTIFICATION: IT'S A FREE AND LOCAL SERVER ENVIROMENT. I USE IT TO VERIFY MY CODE. IT HAS ALSO A MYSQL SERVER 
+   - JUSTIFICATION: IT'S A FREE AND LOCAL SERVER ENVIRONMENT. I USE IT TO VERIFY MY CODE. IT ALSO HAS A MYSQL SERVER 
                     WHICH I CAN USE FOR MY BACKEND.
 
 ###MILESTONES/TIMETABLE
@@ -52,11 +53,11 @@ DIPLOMA THESIS WEB DEV 19/20
 - **16.06.20**
   - HAND OVER BASIC DISPOSITION (LATEST ON 04.07.20)
 - **28.06.20**
-  - HTML STRUCTURE (INCL. BEM (BLOCK ELEMENT MODIFIER)) FINISEHD
+  - HTML STRUCTURE (INCL. BEM (BLOCK ELEMENT MODIFIER)) FINISHED
 - **12.07.20**
-  - CSS/SCSS STRUCTURE FINISEHD
+  - CSS/SCSS STRUCTURE FINISHED
 - **02.08.20**
-  - JAVA SCRIPT FINISEHD
+  - JAVA SCRIPT FINISHED
 - **08.08.20**
   - HOSTING ORGANIZED
 - **16.08.20**
@@ -69,7 +70,7 @@ DIPLOMA THESIS WEB DEV 19/20
   - TECHNICAL DISCUSSION
   
   
-###WORK DOCUMENTAION
+###WORK DOCUMENTATION
 
 | DATE      |      WHAT                     |                      HOURS |
 |----------|:------------------:|---------------------------------------:|
@@ -142,34 +143,34 @@ DIPLOMA THESIS WEB DEV 19/20
 http://deepdevdiver.com/
 
 ###TECHNICAL DOCUMENTATION:
-1. To embed the google map on the detailsite of the festival, i used
-the google Maps JavaScript API (// https://developers.google.com/maps/documentation/javascript/overview
-), i also watched a turtorial to learn the basics()
- https://www.youtube.com/watch?v=Zxf1mnP5zcw&feature=emb_rel_pause) This was my first time that I used an API like this.
-I struggled a bit til I found out that I had to register my self first.
+1. To embed the google map on the detailsite of the festival, I used
+the google Maps JavaScript API (// https://developers.google.com/maps/documentation/javascript/overview)
+, i also watched a turtorial to learn the basics()
+ https://www.youtube.com/watch?v=Zxf1mnP5zcw&feature=emb_rel_pause) This was the first time I used an API like this.
+I struggled a bit until I figured out that I had to register myself first.
 
-2. the slider story. To embed the slider of the detailsite, I watched a youtube turtorial
+2. The slider story. To embed the slider of the detailsite, I watched a youtube tutorial
 of Dev Ed (https://www.youtube.com/watch?v=KcdBOoK3Pfw&t=1334s). I've learned a few basics to build a slider
 and the result worked fine on the desktop version but not on mobile. After a conversation with my friends at Mosaix,
-they adviced me to use one of the below: 
+they advised me to use one of the below: 
 
 - https://owlcarousel2.github.io/OwlCarousel2/
 - https://splidejs.com/
 - and a self made slider of Mosaix
 
-I tryed all three (time: 3 days), but none of them worked fine at the end.
+I tried all three (time: 3 days), but none of them worked fine at the end.
 ![](https://media.giphy.com/media/xiAqCzbB3eZvG/giphy.gif)
 It was really frustrating.
-So, I decieded to go back to my youtube slider. It might have been wise to learn this in school.
+So, I decieded to go back to my youtube slider. It might have been wise to learn this at school.
 
 3. I wasn't able to implement the masonry for the newsSection and magazinSection.
-So, i deceided to use flexbox for the newsSection and css-grid for the magazinSection.
+So I decided to use flexbox for the newsSection and css-grid for the magazinSection.
 
 4. The pngs for the discovery Section were not available.
 My school made Beda Bächler has organized these for the class. I now owe him a beer.
 ![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
 
-###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECschuleHNOLOGIY, AND JUSTIFICATION):
+###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGY, AND JUSTIFICATION):
 
 ###SUMMARY AND OUTLOOK, PERSONAL NOTE:
 
@@ -177,35 +178,36 @@ I started to work for my DIPLOMA THESIS right after the briefing. My plan was:
 
 1. Build the html structure for all sites/elements.
 2. Implement the css for mobile.
-3. Implement the css for desctop.
+3. Implement the css for desktop.
 4. Implement javascript.
 5. Organize the Hosting.
 6. Done.
 
 At point 2, I realized that my approach took too much time. I started the implementing of
-desctop and mobile version at the same time. So, I had not to edit everything twice. 
-To start with javaScript was hard, it had been a while that we used it in school.
-I was able to refresh it at the free coding sesssions with my classmades (thanks dudes).
-Till the first school day after the holidays, I was on the right track.
-On the remaining 4 school days I was able to get some important inputs,
+desktop and mobile version at the same time. That way I had not to edit everything twice. 
+To start with javaScript was hard, it had been a while that we used it at school.
+I was able to refresh it at the free coding sessions with my classmates (thanks dudes).
+Until the first school day after holidays, I was on the right track.
+On the remaining four school days I was able to get some important inputs,
 thanks to Killian for his patience.
 
-Today is the 28.08.2020, 12:26pm. I am not finished with everything, but I have done my best and 
-I'm proud of my work. During this time I've learnd a lot, Applying the school's knowledge to a project was a very 
+Today is the 28.08.2020, 12:26pm. I haven't finished everything, but I have done my best and 
+I'm proud of my work. During this time I've learned a lot, applying the school's knowledge to a project was a very 
 good experience. It gave me more confidence with the different languages and technologies.
 I really enjoyed working on this project, it confirmed that I enjoy realizing designs/things.
 When I think back to the time when I started my education (Web Integrator 2019), until now, I have been
-taught an enormous amount of knowledge. Sometimes i feel like a Flowerpot that is filled with soil, and someone
-waters it, but the soil can no longer absorb water and needs time to soak up the water (does that make sence?).
+taught an enormous amount of knowledge. Sometimes I feel like a Flowerpot that is filled with soil, and someone
+waters it, but the soil can no longer absorb water and needs time to soak it up (does that make any sense?).
 
 Anyway, I will continue to follow the path as a web developer in the future, because it feels right.
 
 
 PS: Thanks to:
 - All teachers of Web Professionals
-- My girlfriend Michaela for kicking me in my ass
-- My classmades
+- My girlfriend Michaela for kicking my ass
+- My classmates
 - My family
+- The Mosaix crew
 - And all other supporters I've forgot
 
 
