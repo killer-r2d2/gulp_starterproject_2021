@@ -351,6 +351,7 @@
     grid-area: 1;
     margin-bottom: 1em;
     justify-self: center;
+    cursor: pointer;
 
     @include large {
       justify-self: flex-start;
@@ -379,12 +380,24 @@
     }
   }
 
-
-
-
-  &__star {
+  &__starBlack {
     width: 20px;
     height: 20px;
+    display: none;
+
+    &--show {
+      display: inline-block;
+    }
+  }
+
+
+  &__starWhite {
+    width: 20px;
+    height: 20px;
+
+    &--hide {
+      display: none;
+    }
   }
 
   &__title {
