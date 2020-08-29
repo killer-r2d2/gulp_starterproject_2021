@@ -161,7 +161,10 @@ they advised me to use one of the below:
 I tried all three (time: 3 days), but none of them worked fine at the end.
 ![](https://media.giphy.com/media/xiAqCzbB3eZvG/giphy.gif)
 It was really frustrating.
-So, I decieded to go back to my youtube slider. It might have been wise to learn this at school.
+So, I decieded to go back to my youtube slider.
+The javaScript for the slider is commented out (at the moment), if you like to activate the slider,
+go to main.js and remove the comment.
+It might have been wise to learn this at school.
 
 3. I wasn't able to implement the masonry for the newsSection and magazinSection.
 So I decided to use flexbox for the newsSection and css-grid for the magazinSection.

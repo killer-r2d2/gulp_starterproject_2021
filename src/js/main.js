@@ -153,18 +153,19 @@ function showMeMore(event) {
 }
 
 // start with slider
+//
+// const carouselSlide = document.querySelector('.carousel-slide');
+// const carouselImages = document.querySelectorAll('.carousel-slide img');
+//
+//     // slider Buttons
+// const prevBtn = document.querySelector('#prevBtn');
+// const nextBtn = document.querySelector('#nextBtn');
+//
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
-
-// slider Buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
-
-
-// // slider Counter
+    // // slider Counter
 // let counter = 1;
 // const size = carouselImages[0].clientWidth;
+//
 //
 // carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //
@@ -195,6 +196,8 @@ const nextBtn = document.querySelector('#nextBtn');
 //         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //     }
 // });
+
+// end of the slider
 
 
 
@@ -243,8 +246,6 @@ function minus(event) {
 
 }
 
-
-// start the notice function for overviewSection
 
 
 
