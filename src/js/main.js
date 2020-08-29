@@ -254,7 +254,6 @@ function noticeFestival(event) {
     }
 }
 
-
 // start notice star detailsite
 const clickStar2 = document.querySelector('.textSection__noticeContainer--1');
 if(clickStar2) {
