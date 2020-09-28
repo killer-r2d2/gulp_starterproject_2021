@@ -139,6 +139,7 @@ DIPLOMA THESIS WEB DEV 19/20
 2. gulp watch
 3. gulp build
 4. happy coding 
+test
 
 ###URL (OPERATIVE VERSION):
 http://deepdevdiver.com/

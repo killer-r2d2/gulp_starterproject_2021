@@ -10,7 +10,6 @@
   "license": "ISC",
   "browserslist": [
     "last 2 version"
-
   ],
   "dependencies": {
     "i": "^0.3.6",
