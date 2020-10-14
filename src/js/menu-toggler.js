@@ -23,13 +23,9 @@ function togglermenu() {
     headerLogoBlack.classList.toggle("headerSection__flLogo--hide");
     const headerLogoWhite = document.querySelector("#flLogoWhite");
     headerLogoWhite.classList.toggle("headerSection__flLogoWhite--show");
-    const text = document.querySelector(".headerSection__text");
     // change the text
-    if (text.innerHTML === "Menu") {
-        text.innerHTML = "Schliessen";
-        text.style.color = "white";
-    } else {
-        text.innerHTML = "Menu";
-        text.style.color = "black"
-    }
+    const closeText = document.querySelector(".headerSection__textClose");
+    closeText.classList.toggle("headerSection__textClose--show");
+    const showText = document.querySelector(".headerSection__textMenu");
+    showText.classList.toggle("headerSection__textMenu--hidden");
 }
