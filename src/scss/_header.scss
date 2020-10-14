@@ -16,6 +16,27 @@
     background-color: rgba(0, 0, 0, 0.85);
   }
 
+  &__textMenu {
+    margin-left: 11px;
+    color: black;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__textClose {
+
+    display: none;
+
+    &--show {
+      display: inline-block;
+      color: white;
+      margin-left: 11px;
+    }
+  }
+
+
   &__Icon {
     display: flex;
     justify-content: space-between;
@@ -94,17 +115,6 @@
 
       }
     }
-
-    .headerSection__text {
-      margin-left: 11px;
-      color: black;
-
-      &--color {
-        color: white;
-      }
-    }
-
-
   }
 
   // black festival logo
@@ -217,11 +227,6 @@
 
 
 
-}
-
-
-.headerSection__text--hide {
-  //display: none;
 }
 
 

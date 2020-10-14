@@ -13,6 +13,7 @@ window.initMap = initMap;
 
 
 
+
 // start with slider
 //
 // const carouselSlide = document.querySelector('.carousel-slide');
