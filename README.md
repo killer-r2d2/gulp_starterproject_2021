@@ -161,7 +161,7 @@ they advised me to use one of the below:
 - and a self made slider of Mosaix
 
 I tried all three (time: 3 days), but none of them worked fine at the end.
-![](https://media.giphy.com/media/xiAqCzbB3eZvG/giphy.gif)
+
 It was really frustrating.
 So, I decieded to go back to my youtube slider.
 The javaScript for the slider is commented out (at the moment), if you like to activate the slider,
@@ -173,7 +173,7 @@ So I decided to use flexbox for the newsSection and css-grid for the magazinSect
 
 4. The pngs for the discovery Section were not available.
 My school made Beda Bächler has organized these for the class. I now owe him a beer.
-![](https://media.giphy.com/media/zXubYhkWFc9uE/giphy.gif)
+
 
 ###TECHNOLOGY CONCEPT (INCL. EVALUATION OF THE TECHNOLOGY, AND JUSTIFICATION):
 
