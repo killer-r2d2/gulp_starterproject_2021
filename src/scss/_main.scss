@@ -485,6 +485,16 @@
     background-size: cover;
     cursor: pointer;
   }
+
+  &__stop {
+    background-image: url("../images/icons/detail_video_break.svg");
+    width: 29px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+  }
 }
 
 
