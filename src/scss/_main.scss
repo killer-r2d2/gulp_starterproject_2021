@@ -435,6 +435,7 @@
     align-items: center;
 
 
+
     &--jazz {
       background-image: url("../images/genres/music_jazz_rep.svg");
 
@@ -477,13 +478,23 @@
 
   }
 
+  &__contBox {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
   &__play {
     background-image: url("../images/icons/detail_video_play.svg");
     width: 29px;
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: pointer;
+
 
     &--hide {
       display: none;
@@ -496,7 +507,6 @@
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
-    cursor: pointer;
     display: none;
 
     &--show {
