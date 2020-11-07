@@ -490,45 +490,37 @@
 
   }
 
-  &__contBox {
+  &__musicBtn {
     cursor: pointer;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-
-  &__play {
-    background-image: url("../images/icons/detail_video_play.svg");
     width: 29px;
     height: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
     background-color: transparent;
+    background-image: url("../images/icons/detail_video_play.svg");
 
 
     &--hide {
       display: none;
     }
-  }
 
-  &__stop {
-    background-image: url("../images/icons/detail_video_break.svg");
-    width: 29px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: none;
-    border: none;
-    background-color: transparent;
+    &--stop {
+      background-image: url("../images/icons/detail_video_break.svg");
+      display: none;
+
+    }
+
 
     &--show {
       display: inline-block;
     }
+
   }
+
+
+
+
 }
 
 
