@@ -10,13 +10,10 @@ function showMeMore(event) {
     if (event.target.classList.contains("magazineSection__btn")) {
         const showText = event.target.parentNode.parentNode.querySelector(".magazineSection__lower");
         showText.classList.toggle("magazineSection__lower--show");
+        const closeText = event.target.parentNode.parentNode.querySelector(".magazineSection__btn--close");
+        closeText.classList.toggle('magazineSection__btn--closeOpen')
+        const readText = event.target.parentNode.parentNode.querySelector('.magazineSection__btn--read');
+        readText.classList.toggle('magazineSection__btn--readHide');
 
-        // change the text also
-        const textChange = event.target.parentNode.parentNode.querySelector('.magazineSection__btn');
-        if (textChange.innerHTML === "LESEN") {
-            textChange.innerHTML = "ZUKLAPPEN";
-        } else {
-            textChange.innerHTML = "LESEN";
-        }
     }
 }

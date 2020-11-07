@@ -219,6 +219,18 @@
       display: none;
     }
 
+    &--close {
+      display: none;
+    }
+
+    &--closeOpen {
+      display: inline-block;
+    }
+
+    &--readHide {
+      display: none;
+    }
+
   }
 
   &__box {
