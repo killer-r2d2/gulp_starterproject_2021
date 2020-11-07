@@ -9,16 +9,13 @@ if (knowledgeWrappper) {
 function showMe(event) {
     // the event.target represents the choose button and whatched if there is (contains) a choose button with
     // the class (classList) knowledgeSection__choose.
-    if (event.target.classList.contains("knowledgeSection__choose")) {
-        console.log(event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer'));
-        const showInfo = event.target.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
-        showInfo.classList.toggle("knowledgeSection__lowerContainer--show");
-        // change the text also
-        const textMore = event.target.parentNode.parentNode.querySelector('.knowledgeSection__choose');
-        if (textMore.innerHTML === "Mehr") {
-            textMore.innerHTML = "Weniger";
-        } else {
-            textMore.innerHTML = "Mehr";
-        }
+    if (event.target.classList.contains("knowledgeSection__btn")) {
+        console.log('hallo');
+        const hideMore = event.target.parentNode.querySelector('.knowledgeSection__btn--chooseMore');
+        hideMore.classList.toggle('knowledgeSection__btn--hide');
+        const showLess = event.target.parentNode.querySelector('.knowledgeSection__btn--chooseLess');
+        showLess.classList.toggle('knowledgeSection__btn--show');
+        const lowerText = event.target.parentNode.parentNode.parentNode.querySelector('.knowledgeSection__lowerContainer');
+        lowerText.classList.toggle('knowledgeSection__lowerContainer--show');
     }
 }

@@ -701,11 +701,31 @@
     width: 100%;
   }
 
-  &__choose {
-    grid-area: choose;
-    justify-self: flex-end;
+  &__btn {
     cursor: pointer;
+
+    &--chooseMore {
+      display: inline-block;
+    }
+
+    &--chooseLess {
+      display: none;
+    }
+
+    &--hide {
+      display: none;
+    }
+
+    &--show {
+      display: inline-block;
+    }
+
+
   }
+
+
+
+
 
 
   &__lowerContainer {
