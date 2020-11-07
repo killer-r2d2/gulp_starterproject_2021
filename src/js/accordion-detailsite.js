@@ -10,7 +10,6 @@ function showMe(event) {
     // the event.target represents the choose button and whatched if there is (contains) a choose button with
     // the class (classList) knowledgeSection__choose.
     if (event.target.classList.contains("knowledgeSection__btn")) {
-        console.log('hallo');
         const hideMore = event.target.parentNode.querySelector('.knowledgeSection__btn--chooseMore');
         hideMore.classList.toggle('knowledgeSection__btn--hide');
         const showLess = event.target.parentNode.querySelector('.knowledgeSection__btn--chooseLess');

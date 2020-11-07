@@ -1,5 +1,8 @@
 const musicBox = document.querySelector(".discoverySection__imgContainer");
-musicBox.addEventListener('click', playMusic);
+if(musicBox) {
+    musicBox.addEventListener('click', playMusic);
+}
+
 
 function playMusic(event) {
     if(event.target.classList.contains("discoverySection__musicBtn")) {
