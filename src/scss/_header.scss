@@ -248,6 +248,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
 
     @include medium {
       width: 60%;
