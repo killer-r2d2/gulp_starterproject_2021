@@ -511,6 +511,7 @@
   &__btn--1 {
     width: 100%;
 
+
     @include medium {
       width: 147px;
     }
@@ -540,7 +541,7 @@
   // start styling schedule
 
   &__scheduleContainer {
-    display: grid;
+    display: none;
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
@@ -548,6 +549,10 @@
     width: 100%;
     grid-row-gap: 32px;
     padding: 0 16px 243px 16px;
+
+    &--show {
+      display: grid;
+    }
 
     @include medium {
       padding: 0 225px 243px 120px;
