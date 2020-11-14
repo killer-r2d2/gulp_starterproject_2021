@@ -8,6 +8,9 @@ function lineupToggle(event) {
     if(event.target.classList.contains("lineUpSection__btn--1")) {
         const scheduleFriday = document.querySelector(".lineUpSection__scheduleContainer");
         scheduleFriday.classList.toggle("lineUpSection__scheduleContainer--show");
+        const fridayBtn = document.querySelector(".lineUpSection__btn--1");
+        fridayBtn.classList.toggle("lineUpSection__btn--show");
+
     }
 
 

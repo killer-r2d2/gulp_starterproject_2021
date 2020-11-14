@@ -489,8 +489,16 @@
   &__btn {
     background-color: transparent;
     position: relative;
+
+    &--show {
+      background-color: $black100;
+      color: $white;
+    }
+
   }
 
+
+  // after attributes
   &__btn::after {
     position: absolute;
     top: 46px;
@@ -502,8 +510,8 @@
     border-right: solid 30px transparent;
     border-top: solid black 30px;
     display: none;
-  }
 
+  }
   &__btn:hover::after {
     display: block;
   }
