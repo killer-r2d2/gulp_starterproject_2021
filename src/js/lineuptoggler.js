@@ -4,14 +4,14 @@ if(lineUp) {
 }
 
 function lineupToggle(event) {
-    console.log("funktioniert");
-    if(event.target.classList.contains("lineUpSection__btn--1")) {
-        const scheduleFriday = document.querySelector(".lineUpSection__scheduleContainer");
-        scheduleFriday.classList.toggle("lineUpSection__scheduleContainer--show");
-        const fridayBtn = document.querySelector(".lineUpSection__btn--1");
-        fridayBtn.classList.toggle("lineUpSection__btn--show");
+    if (event.target.classList.contains("lineUpSection__btn")) {
+        console.log(event.target.classList.contains("lineUpSection__btn"));
+        const schedule = event.target.parentNode.querySelector('.lineUpSection__scheduleContainer');
+        schedule.classList.toggle('lineUpSection__scheduleContainer--show');
+
+
 
     }
-
-
 }
+
+
