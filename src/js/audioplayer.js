@@ -1,15 +1,25 @@
 const musicBox = document.querySelector(".discoverySection__imgContainer");
 if(musicBox) {
-    musicBox.addEventListener('click', playMusic);
+    musicBox.addEventListener('click', playMusic2);
+}
+// is there an element with the class .discoverySection__musicBtn--play ?
+// remove the class .discoverySection__musicBtn--play
+function stopMusic() {
+    let statusMusic = document.querySelectorAll(".discoverySection__musicBtn");
+    for (let i = 0; i < statusMusic.length; i++) {
+        statusMusic[i].classList.remove('discoverySection__musicBtn--play');
+    }
 }
 
-
-function playMusic(event) {
-    if(event.target.classList.contains("discoverySection__musicBtn")) {
-        const hideBtn = event.target.parentNode.querySelector('.discoverySection__musicBtn--play');
-        hideBtn.classList.toggle("discoverySection__musicBtn--hide");
-        const stopBtn = event.target.parentNode.querySelector('.discoverySection__musicBtn--stop');
-        stopBtn.classList.toggle("discoverySection__musicBtn--show");
+function playMusic2(event) {
+    let isPlaying = "";
+    if (event.target.classList.contains("discoverySection__musicBtn--play")) {
+        isPlaying = "true";
+    };
+    stopMusic();// remove the class .discoverySection__musicBtn--play
+    if (isPlaying === "") {
+        const playBtn = event.target.parentNode.querySelector('.discoverySection__musicBtn');
+        playBtn.classList.add("discoverySection__musicBtn--play");
     }
 }
 

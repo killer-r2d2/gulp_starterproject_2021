@@ -500,20 +500,9 @@
     background-color: transparent;
     background-image: url("../images/icons/detail_video_play.svg");
 
-
-    &--hide {
-      display: none;
-    }
-
-    &--stop {
+    &.discoverySection__musicBtn--play {
       background-image: url("../images/icons/detail_video_break.svg");
-      display: none;
 
-    }
-
-
-    &--show {
-      display: inline-block;
     }
 
   }
