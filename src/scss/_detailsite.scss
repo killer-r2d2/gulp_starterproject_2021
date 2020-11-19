@@ -544,30 +544,32 @@
 
   &__btnContainer {
     margin-bottom: 89px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__dayContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   // start styling schedule
 
   &__scheduleContainer {
     display: none;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "A" "B" "C" "D" "E" "F" "G";
-    max-width: 642px;
-    width: 100%;
-    grid-row-gap: 32px;
-    padding: 0 16px 243px 16px;
+    margin-top: 60px;
 
     &--show {
       display: grid;
     }
 
     @include medium {
-      padding: 0 225px 243px 120px;
+      //padding: 0 225px 243px 120px;
     }
 
     @include large {
-      padding: 0 525px 136px 243px;
+      //padding: 0 525px 136px 243px;
     }
 
   }
@@ -582,8 +584,8 @@
 
     @include medium {
       grid-area: box;
-      grid-template-columns: 64px 289px 289px;
-      grid-template-areas: "time group1 group2";
+      grid-template-columns: auto auto auto;
+      grid-template-areas: "time" "group1" "group2";
       grid-gap: 15px;
 
     }
