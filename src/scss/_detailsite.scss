@@ -568,16 +568,8 @@
     display: none;
     margin-top: 60px;
 
-    &--show {
+    &.lineUpSection__scheduleContainer--show {
       display: grid;
-    }
-
-    @include medium {
-      //padding: 0 225px 243px 120px;
-    }
-
-    @include large {
-      //padding: 0 525px 136px 243px;
     }
 
   }

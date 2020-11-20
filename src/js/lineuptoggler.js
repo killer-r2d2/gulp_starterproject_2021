@@ -4,8 +4,6 @@ if(lineUp) {
 }
 
 function hideLineup() {
-
-    console.log('toggleWorks');
     let statuslineup = document.querySelectorAll(".lineUpSection__scheduleContainer");
     for (let i = 0; i < statuslineup.length; i++) {
         statuslineup[i].classList.remove('lineUpSection__scheduleContainer--show');
@@ -13,13 +11,14 @@ function hideLineup() {
 }
 
 function lineupToggle(event) {
+    let isHide = "";
+    if(event.target.classList.contains("lineUpSection__scheduleContainer--show")) {
+        isHide = "true";
+    }
     hideLineup();
-    if (event.target.classList.contains("lineUpSection__btn")) {
-        const schedule = event.target.parentNode.querySelector('.lineUpSection__scheduleContainer');
-        schedule.classList.toggle('lineUpSection__scheduleContainer--show');
-
-
-
+    if (isHide === "") {
+            const schedule = event.target.parentNode.querySelector('.lineUpSection__scheduleContainer');
+            schedule.classList.add('lineUpSection__scheduleContainer--show');
     }
 }
 
