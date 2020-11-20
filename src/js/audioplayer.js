@@ -10,6 +10,7 @@ const musicBox = document.querySelector(".discoverySection__imgContainer");
 if(musicBox) {
     musicBox.addEventListener('click', playMusic2);
 }
+
 // is there an element with the class .discoverySection__musicBtn--play ?
 // remove the class .discoverySection__musicBtn--play
 function stopMusic() {
