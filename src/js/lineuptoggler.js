@@ -10,6 +10,7 @@ function hideLineup() {
     for (let i = 0; i < statuslineup.length; i++) {
         statuslineup[i].classList.remove('lineUpSection__scheduleContainer--show');
     }
+    console.log("not");
 }
 
 function lineupToggle(event) {
@@ -18,6 +19,7 @@ function lineupToggle(event) {
         isHide = "true";
     }
     hideLineup();// remove the class .lineUpSection__scheduleContainer--show.
+
     if (isHide === "") {
             const schedule = event.target.parentNode.querySelector('.lineUpSection__scheduleContainer');
             schedule.classList.add('lineUpSection__scheduleContainer--show');
