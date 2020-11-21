@@ -19,6 +19,7 @@
   &__h3 {
     text-align: center;
     width: 57%;
+    margin-bottom: 40px;
 
 
     @include medium {
@@ -123,6 +124,46 @@
       align-items: center;
       margin-bottom: 5px;
       cursor: pointer;
+      // hover background-colors:
+      // jazz
+      &--jazz:hover {
+        background-color: $Jazzgelb;
+      }
+      &--jazz:active {
+        background-color: $Jazzgelbhell;
+      }
+      // hiphop
+      &--hiphop:hover {
+        background-color: $HipHoppink;
+      }
+      &--hiphop:active {
+        background-color: $HipHoppinkhell;
+      }
+      // indie
+      &--indie:hover {
+        background-color: $indiemint;
+      }
+      &--indie:active {
+        background-color: $Indieminthell;
+      }
+      // poprock
+      &--poprock:hover {
+        background-color: $PopRockblau;
+      }
+      &--poprock:active {
+        background-color: $PopRockblauhell;
+      }
+        // electronic
+      &--electronic:hover {
+        background-color: $Electronicviolett;
+      }
+      &--electronic:active {
+        background-color: $Electronicvioletthell;
+      }
+
+
+
+
 
       &--icon {
         fill: white;
