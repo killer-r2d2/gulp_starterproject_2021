@@ -8,6 +8,7 @@ import * as NoticeStarDetailsite from './noticeStar-detailsite.js';
 import * as LoginToggler from './loggin-toggler.js';
 import * as AudioPlayer from './audioplayer.js';
 import * as LineupToggler from './lineuptoggler.js';
+import * as NoticeHeart from './noticeHeart.js';
 import {initMap} from './map.js';
 window.initMap = initMap;
 

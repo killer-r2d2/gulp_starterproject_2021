@@ -423,8 +423,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      @include large() {
-      }
+
 
     }
 
@@ -603,15 +602,22 @@
     margin-top: 19px;
     padding-top: 10px;
     display: flex;
+
   }
 
+
   &__heart {
+    //cursor: url("../images/icons/amor.svg"), auto;
     cursor: pointer;
-    height: 23px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: hearttrack 1000ms infinite;
+    background-color: hotpink;
+
+    &--beat {
+      animation: hearttrack 1000ms infinite;
+    }
 
     @keyframes hearttrack {
       0% {
@@ -625,11 +631,6 @@
       }
     }
 
-    //
-    //& .detail_like_filled {
-    //  fill: grey;
-    //
-    //}
   }
 
   &__qty {
