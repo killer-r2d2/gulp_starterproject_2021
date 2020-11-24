@@ -14,4 +14,5 @@ function noticeFestival(event) {
         const blackStar = event.target.parentNode.querySelector('.overviewSection__noticeStarBlack');
         blackStar.classList.toggle('overviewSection__noticeStarBlack--show');
     }
+
 }
