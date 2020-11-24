@@ -607,13 +607,12 @@
 
 
   &__heart {
-    //cursor: url("../images/icons/amor.svg"), auto;
-    cursor: pointer;
+    cursor: url("../images/icons/amor.svg"), auto;
     height: 30px;
-    width: 30px;
+    width: 32px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: hotpink;
+    background-image: url("../images/icons/detail_like_filled.svg");
 
     &--beat {
       animation: hearttrack 1000ms infinite;
