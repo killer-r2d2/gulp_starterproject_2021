@@ -32,11 +32,7 @@
   }
 
   &__dropitem {
-    display: none;
-
-    &--show {
-      display: grid;
-    }
+    display: grid;
 
     &--hide {
       display: none;
