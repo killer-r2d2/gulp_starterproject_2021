@@ -22,9 +22,25 @@
     grid-template-columns: auto;
     grid-template-areas: "A B C D";
     grid-gap: 5px;
-    align-items: center;
+    //align-items: center;
     position: absolute;
 
+  }
+
+  &__festivaldrope {
+    list-style-type: none;
+  }
+
+  &__dropitem {
+    display: none;
+
+    &--show {
+      display: grid;
+    }
+
+    &--hide {
+      display: none;
+    }
   }
 
 
