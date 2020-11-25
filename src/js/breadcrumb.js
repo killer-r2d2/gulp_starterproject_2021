@@ -7,6 +7,9 @@ if (arrowDown) {
 
 function showdropdown() {
     console.log("Bier");
+    const arrowUp =document.querySelector(".overviewSection__dropdownarrow");
+    arrowUp.classList.toggle("overviewSection__dropdownarrow--turn");
+
     const dropDown = document.querySelector('.overviewSection__festivaldrope');
     dropDown.classList.toggle('overviewSection__festivaldrope--show');
 }

@@ -77,9 +77,8 @@
   }
 
   &__dropdownContainer {
-    width: 80px;
+    width: 120px;
     height: 40px;
-    border: solid 1px #C2C2C2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -102,6 +101,11 @@
     width: 20px;
     height: 20px;
     background-image: url("../images/icons/steuerung_dropdown.svg");
+    border-radius: 80%;
+    border: 1px solid #C2C2C2;;
+    &--turn {
+      transform: rotate(180deg);
+    }
   }
 
   &__ticket {
