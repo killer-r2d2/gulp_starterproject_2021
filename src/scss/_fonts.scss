@@ -1,168 +1,24 @@
-// include fonts with @font-face
-
-@font-face {
-  src: url("../fonts/Adelle_Bold.otf");
-  font-family: Adelle;
-  font-weight: bold;
-}
-
-;
-
-@font-face {
-  src: url("../fonts/Adelle_Reg.otf");
-  font-family: Adelle;
-}
-
-;
-
-@font-face {
-  src: url("../fonts/ProximaNova-Reg.ttf");
-  font-family: ProximaNova;
-}
-
-;
-
-@font-face {
-  src: url("../fonts/ProximaNova-Light.ttf");
-  font-family: ProximaNova;
-}
-
-;
-
-@font-face {
-  src: url("../fonts/ProximaNova-Bold.ttf");
-  font-family: ProximaNova;
-}
-
-;
+// include fonts with @font-face. Example:
+//
+//@font-face {
+//  src: url("../fonts/Adelle_Bold.otf");
+//  font-family: Adelle;
+//  font-weight: bold;
+//}
 
 
-// Typografie for mobile and desktop
+// Typografie for mobile and desktop Example:
 
-.lead {
-  font-size: 20px;
-  line-height: 32px;
-  color: #000000;
-  font-family: Adelle, sans-serif;
-}
-
-.copy {
-  font-size: 17px;
-  line-height: 28px;
-  color: #000000;
-  font-family: ProximaNova, sans-serif;
-}
-
-
-.footerLabels {
-  font-size: 17px;
-  line-height: 28px;
-  font-family: ProximaNova, sans-serif;
-}
-
-.btnTabsHeader {
-  font-size: 17px;
-  line-height: 28px;
-  font-family: ProximaNova, sans-serif;
-  font-weight: normal;
-
-  @include medium {
-    font-weight: bold;
-  }
-
-
-}
-
-.breadcrumbInfosDatesLikes {
-  font-size: 13px;
-  line-height: 28px;
-  font-family: ProximaNova, sans-serif;
-}
-
-.genreTitle {
-  font-family: Roboto, sans-serif;
-  font-size: 17px;
-  line-height: 28px;
-  margin-left: 24px;
-  margin-right: 5px;
-}
-
-
-// Typografie mobile and desktop
-
-h1 {
-  font-size: 32px;
-  line-height: 40px;
-  font-family: Adelle, sans-serif;
-  color: #000000;
-  font-weight: normal;
-
-  @include large {
-    font-size: 56px;
-    line-height: 80px;
-    font-weight: bold;
-  }
-
-}
-
-.titles {
-
-    font-size: 32px;
-    line-height: 40px;
-    font-family: Adelle, sans-serif;
-    color: #000000;
-    font-weight: bold;
-
-    @include large {
-      font-size: 56px;
-      line-height: 80px;
-    }
-}
-
-
-h2 {
-  font-size: 24px;
-  line-height: 32px;
-  font-family: Adelle, sans-serif;
-  color: #000000;
-  font-weight: normal;
-
-  @include large {
-      font-size: 32px;
-      line-height: 40px;
-      font-weight: bold;
-
-  }
-}
-
-h3 {
-  font-size: 20px;
-  line-height: 32px;
-  font-family: Adelle, sans-serif;
-  color: #000000;
-  font-weight: bold;
-
-  @include large{
-      font-size: 20px;
-      line-height: 32px;
-  }
-}
-
-
-
-.FestivalFont {
-  font-size: 48px;
-  line-height: 40px;
-  font-family: Adelle, sans-serif;
-  color: #FFFFFF;
-  font-weight: bold;
-
-  @include large{
-      font-size: 144px;
-      line-height: 144px;
-
-  }
-
-}
-
-
+//.lead {
+//  font-size: 20px;
+//  line-height: 32px;
+//  color: #000000;
+//  font-family: Adelle, sans-serif;
+//}
+//
+//.copy {
+//  font-size: 17px;
+//  line-height: 28px;
+//  color: #000000;
+//  font-family: ProximaNova, sans-serif;
+//}

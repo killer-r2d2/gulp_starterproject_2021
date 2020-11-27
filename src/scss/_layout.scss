@@ -2,11 +2,7 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-
-
-
   /* Setup box sizing*/
 
 *, *::before, *::after {
@@ -26,24 +22,6 @@ body, body * {
 
 // start with wrapper
 
-.wrapper {
-  display: flex;
-  justify-content: center;
-  background-color: #F0F0F0;;
-
-
-}
-
 // start with container
 
-.container {
-  background-color: $white;
-  max-width: 1440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-
-}
 
