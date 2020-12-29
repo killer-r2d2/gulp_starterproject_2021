@@ -12,8 +12,6 @@
     "last 2 version"
   ],
   "dependencies": {
-    "i": "^0.3.6",
-    "npm": "^6.14.4",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
