@@ -1,6 +1,8 @@
 const gulp = require("gulp");
 const del = require("del");
-const sass = require("gulp-sass");
+const sass = require('gulp-dart-sass');
+
+
 const rename = require("gulp-rename");
 const gulpif = require("gulp-if");
 const htmlreplace = require("gulp-html-replace");
